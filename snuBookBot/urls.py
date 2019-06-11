@@ -20,4 +20,5 @@ import searcher.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', searcher.views.index, name='index'),
+    path('search/', searcher.views.search, name='search'),
 ]
