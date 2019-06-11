@@ -39,7 +39,7 @@ def searchCreator(target, driver):
 def getResults(driver):
     results = {}
     try:
-        elements = WebDriverWait(driver, 10).until(
+        elements = WebDriverWait(driver, 5).until(
             EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".item-title"))
         )
         index = 0
@@ -72,6 +72,31 @@ def search(request):
                     {
                         "simpleText": {
                             "text": answer 
+                        }
+                    }
+                ]
+            }
+        }
+        return JsonResponse(res)
+
+@csrf_exempt
+def test(request):
+    if request.method == 'POST':
+        result = {
+            "harry potter": "해리포터",
+            "didi": "디디의 우산"
+        }
+        req = json.loads(request.body)
+        reqTitle = req["action"]["detailParams"]["title"]["value"]
+        answer = result[reqTitle]
+
+        res = {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "simpleText": {
+                            "text": "디디의 우산"
                         }
                     }
                 ]
