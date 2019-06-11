@@ -13,25 +13,30 @@ from selenium.common.exceptions import TimeoutException
 def index(request):
     return render(request, 'searcher/index.html')
 
-
-options = webdriver.ChromeOptions()
-options.add_argument('headless')
-options.add_argument('window-size=1920x1080')
-options.add_argument("disable-gpu")
-
 url = 'https://primoapac01.hosted.exlibrisgroup.com/primo-explore/search?query='
 others = ',AND&pfilter=pfilter,exact,books,AND&vid=82SNU&mfacet=library,include,MAIN,1&lang=ko_KR&mode=advanced'
-driver = webdriver.Chrome('/usr/bin/chromedriver', options = options)
 
-def searchTitle(target):
+
+def make_driver():
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
+    options.add_argument('window-size=1920x1080')
+    options.add_argument("disable-gpu")
+
+    
+    driver = webdriver.Chrome('/usr/bin/chromedriver', options = options)
+    return driver
+
+
+def searchTitle(target, driver):
     driver.get(url + 'title,contains,' + target + others)
-    return getResults()
+    return getResults(driver)
 
-def searchCreator(target):
+def searchCreator(target, driver):
     driver.get(url + 'creator,contains,' + target + others)
-    return getResults()
+    return getResults(driver)
 
-def getResults():
+def getResults(driver):
     results = {}
     try:
         elements = WebDriverWait(driver, 10).until(
@@ -41,6 +46,7 @@ def getResults():
         for e in elements:
             index += 1
             results[index] = e.text
+        driver.quit()
         return results
     except TimeoutException as ex:
         print("Exception has been thrown. " + str(ex))
@@ -53,7 +59,9 @@ def search(request):
     if request.method == 'POST':
         req = json.loads(request.body)
         reqTitle = req["action"]["detailParams"]["title"]["value"]
-        result = searchTitle(reqTitle)
+        driver = make_driver()
+
+        result = searchTitle(reqTitle, driver)
         # 일단 가져오는지 보게 첫 번째 것만...
         answer = result[1]
         print(answer)
