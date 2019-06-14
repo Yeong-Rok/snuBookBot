@@ -103,3 +103,35 @@ def test(request):
             }
         }
         return JsonResponse(res)
+   
+
+import requests
+from bs4 import BeautifulSoup
+
+@csrf_exempt
+def getPosition(request):
+    if request.method == 'POST':
+        req = json.loads(request.body)
+        reqCallNumber = req["action"]["detailParams"]["callNumber"]["value"]
+        print(reqCallNumber)
+        response = requests.get('http://147.46.181.235/Mobile/BOOK/book_location_info.php?call_num=' + reqCallNumber)
+        html = response.text
+        soup = BeautifulSoup(html, 'html.parser')
+        room = soup.select('#main_info > #cont_tit > .txtLayer')[0].text
+        bookshelf, callNumber = soup.select('#main_info > #info_location_txt > .txtInfo')[0].text.split('청구기호 : ')
+        print(room, bookshelf, callNumber)
+        res = {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "data": {
+                            "room": room,
+                            "bookshelf": bookshelf,
+                            "callNumber": callNumber
+                        }
+                    }
+                ]
+            }
+        }
+        return JsonResponse(res)
