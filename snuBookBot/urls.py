@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
 import searcher.views
 
 urlpatterns = [
@@ -23,4 +24,5 @@ urlpatterns = [
     path('search/', searcher.views.search, name='search'),
     path('test/', searcher.views.test, name='test'),
     path('position/', searcher.views.getPosition, name='getPosition'),
+    path('room/', include('searcher.urls')),
 ]
