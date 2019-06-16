@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
 <html lang="en-us">
@@ -352,7 +353,7 @@
 			.bg_img {
 				width: 100%;
 				height: 20vw;
-				background-image: url('./sign.png');
+				background-image: url("{% static 'searcher/callNum_sign.png' %}");
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: 120%;
@@ -1194,7 +1195,7 @@
 			</div>
 			
 			<div style="position: fixed; bottom: 3vw; right: 4vw;">
-				<a href="#top"><img src="./top btn.png" width=60vw height=40vw></a>	
+				<a href="#top"><img src="{% static 'searcher/top_btn.png' %}" width=60vw height=40vw></a>	
 			</div>
 			
 		</div>
