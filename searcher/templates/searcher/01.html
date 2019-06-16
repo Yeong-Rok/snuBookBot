@@ -4,13 +4,26 @@
 
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width">
+		<link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,700,900|Nanum+Myeongjo:800&display=swap&subset=korean" rel="stylesheet">
 
 		<style type="text/css">
+			html, body { width: 100%; height: 100%; margin: 0; padding: 0;}
+			
 			.div_root {
 				margin: auto;
 				max-width: 100%;
 				height: 100%;
 				overflow: auto;
+				font-family: "Gothic A1";
+			}
+			
+			.map {
+				width: 90vw;
+				height: 410vw; /*끝까지 하는 법 물어보기!!*/
+				box-shadow: 0 0 0 1px darkgray inset;
+				padding: 0 3% 0 3%;
+				margin: 0 auto;
+				background-color: #fcfaf7;
 			}
 			
 			.left {
@@ -24,6 +37,7 @@
 		    	width: 10%;
 		    	height: 100%;
 		    	display: inline-block;
+		    	font-size: 3vw;
 		    }
 		    
 		    .right {
@@ -31,31 +45,47 @@
 		        width: 45%;
 		        height: 100%;
 		    }
+		    
 		    .shelf {
 		    	width: 100%;
-		    	margin: 30px 0px 30px 0px;
+		    	margin: 5vw 0 5vw 0;
+		    	color: rgb(130,130,130);
+		    	font-size: 2.5vw;
+		    	font-weight: 400;
 		    }
 		    
-		    .shelf_A {
-		    	width: 100%;
-				background-color: rgb(210,210,210);
-				display: inline-block;
+		    .bLeft  {
+		    	text-align: right;
 		    }
-		    .shelf_B {
+		    
+		    .bRight {
+		    	text-align: left;
+		    }
+		    
+		    .A {
 		    	width: 100%;
-				background-color: rgb(180,180,180);
+				background-color: rgb(220,220,220);
 				display: inline-block;
 		    }
 		    
-		    .shelf_Aspace {
+		    .B {
 		    	width: 100%;
-				background-color: white;
+				background-color: rgb(200,200,200);
 				display: inline-block;
 		    }
-		    .shelf_Bspace {
+		    
+		    .shelf_space {
 		    	width: 100%;
-				background-color: white;
+				font-size: 2.5vw;
+				margin: 5vw 0 5vw 0;
+				background-color: #fcfaf7;
+			}
+			
+		    .space {
+		    	width: 100%;
+				background-color: #fcfaf7;
 				display: inline-block;
+				font-size: 2.5vw;
 		    }
 		    
 		    tbody {
@@ -65,476 +95,641 @@
 		    
 			td {
 				width: 100%;
-				height: 10px;
+				height: 3vw;
 				display: inline-block;
+				padding-top: 0.5vw;
 			}
 			
+			.hLight {
+				font-weight: 900;
+				color: white;
+				font-size: 2.5vw;
+				-webkit-animation: colorchange 2s infinite;
+			}
+			
+			.marquee span{
+				margin: 0;
+				padding: 0;
+				-webkit-animation: marquee 1s ease-in-out infinite;
+				position: relative;
+			}
+			
+			@-webkit-keyframes colorchange {
+		      0%	{background: #096791;}
+		      25%	{background: #1e0c8c;}
+		      50%	{background: #890c89;}
+		      75%	{background: #890c25;}
+		      100%	{background: #096791;}
+		    }
+		    
+		    @-webkit-keyframes marquee {
+			  0%	{left: 0%;}
+			  50%	{left: -20%;}
+			  100%	{left: 0%;}
+			}
+
 			.num10r {
 				padding-right: 60%;
 			}
-			
 			.num9r {
 				padding-right: 54%;
 			}
-			
 			.num8r {
 				padding-right: 48%;
 			}
-			
 			.num7r {
 				padding-right: 42%;
 			}
-			
 			.num6r {
 				padding-right: 36%;
 			}
-			
 			.num5r {
 				padding-right: 30%;
 			}
-			
 			.num4r {
 				padding-right: 24%;
 			}
-			
 			.num3r {
 				padding-right: 18%;
 			}
-			
 			.num2r {
 				padding-right: 12%;
 			}
-			
 			.num1r {
 				padding-right: 6%;
 			}
-			
-			.shelf_space {
-				height: 100%;
-				margin: 30px 0px 30px 0px;
-				background-color: white;
+			.num10l {
+				padding-left: 60%;
 			}
-		
+			.num9l {
+				padding-left: 54%;
+			}
+			.num8l {
+				padding-left: 48%;
+			}
+			.num7l {
+				padding-left: 42%;
+			}
+			.num6l {
+				padding-left: 36%;
+			}
+			.num5l {
+				padding-left: 30%;
+			}
+			.num4l {
+				padding-left: 24%;
+			}
+			.num3l {
+				padding-left: 18%;
+			}
+			.num2l {
+				padding-left: 12%;
+			}
+			.num1l {
+				padding-left: 6%;
+			}
+			
+			.locationTitle {
+				display: block;
+				width: 90vw;
+				height: 4.5vw;
+				font-family: "Nanum Myeongjo";
+				font-size: 4.5vw;
+				font-weight: 800;
+				margin: 0 auto;
+				padding: 5vw 5vw 12vw 5vw;
+				background-color: white;
+				position: fixed;
+				text-align: left;
+				vertical-align: middle;
+				top: 0vw;
+				overflow: hidden; 
+				text-overflow: ellipsis;
+				white-space:nowrap;;
+				box-shadow: 0px 7px 10px -1px #77777725;
+			}
+			
+			.callNum {
+				font-family: "Gohtic A1";
+				width: 90vw;
+				height: 5vw;
+				font-size: 4vw;
+				font-weight: 400;
+				text-align: left;
+				margin: 1vw -5vw;
+				padding: 0 5vw 0 5vw;
+				color: #003aaf;
+				background-color: white;
+				position: fixed;
+				top: 12vw;
+			}
+			
+			.bookInfo {
+				text-align: center;
+				width: 100%;
+				margin-top: 25vw;
+			}
+			
+			.locationSub {
+				font-size: 3.5vw;
+				font-weight: 700;
+				text-align: center;
+			}
+			
+			.shelfInfo {
+				margin: 0 auto;
+				width: 50vw;
+				height: 100%;
+				padding: 3% 3% 8% 3%;
+				border: 1px solid darkgray;
+			}
+			
+			.shelfFace {
+				width: 5%;
+				height: 7vw;
+				display: inline-block;
+				color: navy;
+				font-size: 4vw;
+				font-weight: 700;
+				float: left;
+				padding-top: 1%;
+			}
+			
+			.bookshelfNum {
+				width: 90%;
+				height: 7vw;
+				display: inline-block;
+				color: navy;
+				font-weight: 900;
+				font-size: 5vw;
+				float: left;
+			}
+			
+			.category {
+				width: 100%;
+				/*height: 100%;*/
+				color: black;
+				font-size: 3.5vw;
+				font-weight: 700;
+			}
+			
+			.callNumberLeft {
+				width: 40%;
+				float: left;
+				display: inline-block;
+				margin-top: 5.5vw;
+				margin-left: 4vw;
+				margin-right: 1vw;
+				margin-bottom: 4vw;
+				font-size: 2.5vw;
+				font-weight: 900;
+			}
+			
+			.callNumberRight {
+				width: 40%;
+				float: left;
+				display: inline-block;
+				margin-top: 5.5vw;
+				margin-left: 1vw;
+				margin-right: 4vw;
+				margin-bottom: 4vw;
+				font-size: 2.5vw;
+				font-weight: 900;
+			}
+			
+			.bg_img {
+				width: 100%;
+				height: 20vw;
+				background-image: url('./sign.png');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: 120%;
+			}
+			
+			p {
+				margin-top: 1vw;
+				margin-bottom: 1vw;
+			}
 		
 		</style>
 	</head>
 	
 	<body>
+	
 		<div class="div_root">
-			<div class="left">
-				<table id="bookshelf010" class="shelf">
-					<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-				</table>
-			    
-		  		<table id="bookshelf011" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf012" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf013" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf014" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf015" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf016" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf017" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf018" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf019" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf020" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf021" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf022" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf023" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf024" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf025" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf026" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf027" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf028" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf029" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf029-1" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf029-2" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf030" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf031" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf032" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf033" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf034" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf035" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf036" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf037" class="shelf">
-		  			<tbody>
-						<tr class="shelf_A"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_B"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
+			<a name="top">&nbsp;</a>
+			<div class="bookInfo">
+				<div class="locationTitle"> 
+					<!--책 제목--> 세일즈맨의 죽음 / 아서 밀러 지음 ; 오화섭 옮김. <br/>
+				<p class="callNum"> 청구기호&nbsp; <span style="font-family: Gothic A1; font-weight: 700;">042.52 M612dKo3</span> </p>
+				</div>
+				
+				<div class="shelfInfo">
+					<div class="shelfFace"> <!--서가 면--> B </div> 
+					<div class="bookshelfNum"> <!--서가번호--> 014 </div>
+					<div class="shelfFace"> <!--서가 면--> A </div>
+					<div class="category"> <!--대분류--> 000 총류 [General works] </div>
+					<div style="width: 90%; height: 0.3vw; background-color: black; margin-top: 1vw; margin-left: auto; margin-right: auto;"><!--구분선--></div> 
+					<div class="bg_img"> 
+						<div class="callNumberLeft"> 
+							<p><!--첫청구기호--> 070.4 C </p>
+							<p><!--끝청구기호--> ~070.92 F </p>
+						</div>
+						<div class="callNumberRight"> 
+							<p><!--첫청구기호--> 041 H </p>
+							<p><!--~끝청구기호--> ~070.4 B </p>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 			
-			<div class="center">&nbsp;</div>
+			<div><p>&nbsp;</p></div>
 			
-			<div class="right">
-				<table id="bookshelf009" class="shelf num8r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-		  		<table id="bookshelf008" class="shelf num7r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf007" class="shelf num7r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf006" class="shelf num7r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf005" class="shelf num8r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf004" class="shelf num8r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf003" class="shelf num9r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf002" class="shelf num8r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf001" class="shelf num8r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			
-	  			
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			<table class="shelf_space">
-		  			<tbody>
-						<tr class="shelf_Bspace"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_Aspace"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf043" class="shelf num9r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf042" class="shelf num8r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf041" class="shelf num8r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf040" class="shelf num7r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf039" class="shelf num7r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
-	  			
-	  			<table id="bookshelf038" class="shelf num7r">
-		  			<tbody>
-						<tr class="shelf_B"><!-- 첫번째 줄 시작 --><td></td></tr><!-- 첫번째 줄 끝 -->
-						<tr class="shelf_A"><!-- 두번째 줄 시작 --><td></td></tr><!-- 두번째 줄 끝 -->
-					</tbody>
-	  			</table>
+			<p class="locationSub"> 3층 단행본 1자료실</p> 
+			<p class="locationSub">014번 서가 A열 3번째 칸<span style="font-weight:400;">에 있습니다.</span></p>
+			<div><p>&nbsp;</p></div>
+			
+			<p style="text-align: center; font-size: 3vw; font-weight:700; color: rgb(140,140,140);">단행본 1자료실 지도 ↓</p>
+			
+			<div class="map">
+				<div class="left">
+					<table id="bookshelf010" class="shelf bLeft num0l">
+						<tbody>
+							<tr class="A"><td>10A&nbsp;</td></tr>
+							<tr class="B"><td>10B&nbsp;</td></tr>
+						</tbody>
+					</table>
+			  		<table id="bookshelf011" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>11A&nbsp;</td></tr>
+							<tr class="B"><td>11B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf012" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>12A&nbsp;</td></tr>
+							<tr class="B"><td>12B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf013" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>13A&nbsp;</td></tr>
+							<tr class="B"><td>13B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf014" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A hLight"><td><span class="marquee"> 14A&nbsp;</span></td></tr>
+							<tr class="B"><td>14B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf015" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>15A&nbsp;</td></tr>
+							<tr class="B"><td>15B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf016" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>16A&nbsp;</td></tr>
+							<tr class="B"><td>16B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf017" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>17A&nbsp;</td></tr>
+							<tr class="B"><td>17B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf018" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>18A&nbsp;</td></tr>
+							<tr class="B"><td>18B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf019" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>19A&nbsp;</td></tr>
+							<tr class="B"><td>19B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf020" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>20A&nbsp;</td></tr>
+							<tr class="B"><td>20B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf021" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>21A&nbsp;</td></tr>
+							<tr class="B"><td>21B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf022" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>22A&nbsp;</td></tr>
+							<tr class="B"><td>22B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf023" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>23A&nbsp;</td></tr>
+							<tr class="B"><td>23B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf024" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>24A&nbsp;</td></tr>
+							<tr class="B"><td>24B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf025" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>25A&nbsp;</td></tr>
+							<tr class="B"><td>25B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf026" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>26A&nbsp;</td></tr>
+							<tr class="B"><td>26B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf027" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>27A&nbsp;</td></tr>
+							<tr class="B"><td>27B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf028" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>28A&nbsp;</td></tr>
+							<tr class="B"><td>28B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf029" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>29A&nbsp;</td></tr>
+							<tr class="B"><td>29B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf029-1" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>29-1A&nbsp;</td></tr>
+							<tr class="B"><td>29-1B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf029-2" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>29-2A&nbsp;</td></tr>
+							<tr class="B"><td>29-2B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf030" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>30A&nbsp;</td></tr>
+							<tr class="B"><td>30B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf031" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>31A&nbsp;</td></tr>
+							<tr class="B"><td>31B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf032" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>32A&nbsp;</td></tr>
+							<tr class="B"><td>32B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf033" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>33A&nbsp;</td></tr>
+							<tr class="B"><td>33B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf034" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>34A&nbsp;</td></tr>
+							<tr class="B"><td>34B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf035" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>35A&nbsp;</td></tr>
+							<tr class="B"><td>35B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf036" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>36A&nbsp;</td></tr>
+							<tr class="B"><td>36B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf037" class="shelf bLeft num0l">
+			  			<tbody>
+							<tr class="A"><td>37A&nbsp;</td></tr>
+							<tr class="B"><td>37B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+				</div>
+			
+				<div class="center">&nbsp;</div>
+			
+				<div class="right">
+					<table id="bookshelf009" class="shelf bRight num8r">
+			  			<tbody>
+							<tr class="B"><td>&nbsp;9B</td></tr>
+							<tr class="A"><td>&nbsp;9A</td></tr>
+						</tbody>
+		  			</table>
+			  		<table id="bookshelf008" class="shelf bRight num7r">
+			  			<tbody>
+							<tr class="B"><td>&nbsp;8B</td></tr>
+							<tr class="A"><td>&nbsp;8A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf007" class="shelf bRight num7r">
+			  			<tbody>
+							<tr class="B"><td>&nbsp;7B</td></tr>
+							<tr class="A"><td>&nbsp;7A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf006" class="shelf bRight num7r">
+			  			<tbody>
+							<tr class="B"><td>&nbsp;6B</td></tr>
+							<tr class="A"><td>&nbsp;6A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf005" class="shelf bRight num8r">
+			  			<tbody>
+							<tr class="B"><td>&nbsp;5B</td></tr>
+							<tr class="A"><td>&nbsp;5A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf004" class="shelf bRight num8r">
+			  			<tbody>
+							<tr class="B"><td>&nbsp;4B</td></tr>
+							<tr class="A"><td>&nbsp;4A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf003" class="shelf bRight num9r">
+			  			<tbody>
+							<tr class="B"><td>&nbsp;3B</td></tr>
+							<tr class="A"><td>&nbsp;3A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf002" class="shelf bRight num8r">
+			  			<tbody>
+							<tr class="B"><td>&nbsp;2B</td></tr>
+							<tr class="A"><td>&nbsp;2A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf001" class="shelf bRight num8r">
+			  			<tbody>
+							<tr class="B"><td>&nbsp;1B</td></tr>
+							<tr class="A"><td>&nbsp;1A</td></tr>
+						</tbody>
+		  			</table>
+		  			
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			
+		  			<table id="bookshelf043" class="shelf bRight num9r">
+			  			<tbody>
+							<tr class="B"><td>43B</td></tr>
+							<tr class="A"><td>43A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf042" class="shelf bRight num8r">
+			  			<tbody>
+							<tr class="B"><td>42B</td></tr>
+							<tr class="A"><td>42A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf041" class="shelf bRight num8r">
+			  			<tbody>
+							<tr class="B"><td>41B</td></tr>
+							<tr class="A"><td>41A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf040" class="shelf bRight num7r">
+			  			<tbody>
+							<tr class="B"><td>40B</td></tr>
+							<tr class="A"><td>40A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf039" class="shelf bRight num7r">
+			  			<tbody>
+							<tr class="B"><td>39B</td></tr>
+							<tr class="A"><td>39A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table id="bookshelf038" class="shelf bRight num7r">
+			  			<tbody>
+							<tr class="B"><td>38B</td></tr>
+							<tr class="A"><td>38A</td></tr>
+						</tbody>
+		  			</table>
+				</div>
 			</div>
+			
+			<div style="position: fixed; bottom: 3vw; right: 4vw;">
+				<a href="#top"><img src="./top btn.png" width=60vw height=40vw></a>	
+			</div>
+			
 		</div>
+			
 
 	</body>
 </html>

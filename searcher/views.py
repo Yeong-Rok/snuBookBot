@@ -123,15 +123,14 @@ def getPosition(request):
         room = soup.select('#main_info > #cont_tit > .txtLayer')[0].text
         bookshelf, callNumber = soup.select('#main_info > #info_location_txt > .txtInfo')[0].text.split('청구기호 : ')
         print(room, bookshelf, callNumber)
+        answer = "찾으시는 책은 " + room + "의 " + bookshelf + "에 있습니다."
         res = {
             "version": "2.0",
             "template": {
                 "outputs": [
                     {
-                        "data": {
-                            "room": room,
-                            "bookshelf": bookshelf,
-                            "callNumber": callNumber
+                        "simpleText": {
+                            "text": answer
                         }
                     }
                 ]
