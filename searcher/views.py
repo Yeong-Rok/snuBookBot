@@ -16,6 +16,9 @@ def index(request):
 def room1(request):
      return render(request, 'searcher/01.html')
 
+def room6(request):
+     return render(request, 'searcher/06.html')
+
 url = 'https://primoapac01.hosted.exlibrisgroup.com/primo-explore/search?query='
 others = ',AND&pfilter=pfilter,exact,books,AND&vid=82SNU&mfacet=library,include,MAIN,1&lang=ko_KR&mode=advanced'
 
