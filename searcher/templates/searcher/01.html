@@ -19,7 +19,7 @@
 			
 			.map {
 				width: 90vw;
-				height: 410vw; /*끝까지 하는 법 물어보기!!*/
+				height: 415vw; /*끝까지 하는 법 물어보기!!*/
 				box-shadow: 0 0 0 1px darkgray inset;
 				padding: 0 3% 0 3%;
 				margin: 0 auto;
@@ -28,28 +28,54 @@
 			
 			.left {
 		        float: left;
-		        width: 45%;
+		        width: 42%;
 		        height: 100%;
 		    }
 		    
 		    .center {
 		    	float: left;
-		    	width: 10%;
+		    	width: 16%;
 		    	height: 100%;
-		    	display: inline-block;
 		    	font-size: 3vw;
 		    }
 		    
 		    .right {
 		        float: left;
-		        width: 45%;
+		        width: 42%;
 		        height: 100%;
+		    }
+		    
+		    .direction {
+		    	width: 100%;
+		    }
+		    
+		    .spanL {
+		    	width: 50%;
+		    	float: left;
+		    	text-align:left;
+		    	font-size: 2.5vw;
+		    	font-weight: 900;
+		    	margin: 0;
+		    	padding: 0;
+		    	display: inline-block;
+		    	color: #fcfaf7;
+		    }
+		    
+		    .spanR {
+		    	width: 50%;
+		    	float: right;
+		    	text-align:right;
+		    	font-size: 2.5vw;
+		    	font-weight: 900;
+		    	margin: 0;
+		    	padding: 0;
+		    	display: inline-block;
+		    	color: #fcfaf7;
 		    }
 		    
 		    .shelf {
 		    	width: 100%;
 		    	margin: 5vw 0 5vw 0;
-		    	color: rgb(130,130,130);
 		    	font-size: 2.5vw;
 		    	font-weight: 400;
 		    }
@@ -66,12 +92,14 @@
 		    	width: 100%;
 				background-color: rgb(220,220,220);
 				display: inline-block;
+				color: rgb(130,130,130);
 		    }
 		    
 		    .B {
 		    	width: 100%;
 				background-color: rgb(200,200,200);
 				display: inline-block;
+				color: rgb(130,130,130);
 		    }
 		    
 		    .shelf_space {
@@ -92,7 +120,10 @@
 		    	width: 100%;
 		    	display: inline-block;
 		    }
-		    
+		    tr {
+		    	width: 100%;
+		    	display: inline-block;
+		    }
 			td {
 				width: 100%;
 				height: 3vw;
@@ -104,30 +135,17 @@
 				font-weight: 900;
 				color: white;
 				font-size: 2.5vw;
-				-webkit-animation: colorchange 2s infinite;
+				/*-webkit-animation: colorchange 0.7s ease-in-out infinite;*/
+				background-color: #e52505;
 			}
 			
-			.marquee span{
-				margin: 0;
-				padding: 0;
-				-webkit-animation: marquee 1s ease-in-out infinite;
-				position: relative;
-			}
 			
 			@-webkit-keyframes colorchange {
-		      0%	{background: #096791;}
-		      25%	{background: #1e0c8c;}
-		      50%	{background: #890c89;}
-		      75%	{background: #890c25;}
-		      100%	{background: #096791;}
+		      0%	{opacity: 1;}
+		      50%	{opacity: 0.15;}
+		      100%	{opacity: 1;}
 		    }
 		    
-		    @-webkit-keyframes marquee {
-			  0%	{left: 0%;}
-			  50%	{left: -20%;}
-			  100%	{left: 0%;}
-			}
-
 			.num10r {
 				padding-right: 60%;
 			}
@@ -190,6 +208,7 @@
 			}
 			
 			.locationTitle {
+				z-index: 1;
 				display: block;
 				width: 90vw;
 				height: 4.5vw;
@@ -244,9 +263,34 @@
 				border: 1px solid darkgray;
 			}
 			
-			.shelfFace {
+			.directionFace {
+				color: white;
+				height: 5vw;
+				font-size: 5vw;
+				margin: 1vw 4vw;
+				vertical-align: middle;
+			}
+			
+			
+			.hLightDirection {
+				color: #e52505;
+				-webkit-animation: colorchange 1s ease-in-out infinite;
+			}
+			
+			.shelfFaceL {
 				width: 5%;
-				height: 7vw;
+				height: 4vw;
+				display: inline-block;
+				color: navy;
+				font-size: 4vw;
+				font-weight: 700;
+				float: left;
+				padding-top: 1%;
+			}
+			
+			.shelfFaceR {
+				width: 5%;
+				height: 4vw;
 				display: inline-block;
 				color: navy;
 				font-size: 4vw;
@@ -257,12 +301,19 @@
 			
 			.bookshelfNum {
 				width: 90%;
-				height: 7vw;
+				height: 5vw;
 				display: inline-block;
-				color: navy;
+				color: #e52505;
 				font-weight: 900;
 				font-size: 5vw;
 				float: left;
+			}
+			
+			.underline {
+				width: 12vw;
+				height: 0.5vw;
+				display: inline-block;
+				margin: 0 5vw;
 			}
 			
 			.category {
@@ -320,14 +371,15 @@
 			<a name="top">&nbsp;</a>
 			<div class="bookInfo">
 				<div class="locationTitle"> 
-					<!--책 제목--> 세일즈맨의 죽음 / 아서 밀러 지음 ; 오화섭 옮김. <br/>
+					<!--책 제목--> 세일즈맨의 죽음 / 아서 밀러 지음 ; 이선숙 옮김. <br/>
 				<p class="callNum"> 청구기호&nbsp; <span style="font-family: Gothic A1; font-weight: 700;">042.52 M612dKo3</span> </p>
 				</div>
 				
 				<div class="shelfInfo">
-					<div class="shelfFace"> <!--서가 면--> B </div> 
-					<div class="bookshelfNum"> <!--서가번호--> 014 </div>
-					<div class="shelfFace"> <!--서가 면--> A </div>
+					<div class="shelfFaceL"> <!--서가 면--> B </div> 
+					<div class="bookshelfNum"> <!--서가번호--> <span class="directionFace">←</span> 014 <span class="directionFace">→</span></div>
+					<div class="shelfFaceR"> <!--서가 면--> A </div>
+					<div class="underline"> &nbsp; </div>
 					<div class="category"> <!--대분류--> 000 총류 [General works] </div>
 					<div style="width: 90%; height: 0.3vw; background-color: black; margin-top: 1vw; margin-left: auto; margin-right: auto;"><!--구분선--></div> 
 					<div class="bg_img"> 
@@ -347,378 +399,559 @@
 			<div><p>&nbsp;</p></div>
 			
 			<p class="locationSub"> 3층 단행본 1자료실</p> 
-			<p class="locationSub">014번 서가 A열 3번째 칸<span style="font-weight:400;">에 있습니다.</span></p>
+			<p class="locationSub"><span style="color: #e52505">14A</span>번 서가 3번째 칸<span style="font-weight:400;">에 있습니다.</span></p>
 			<div><p>&nbsp;</p></div>
 			
 			<p style="text-align: center; font-size: 3vw; font-weight:700; color: rgb(140,140,140);">단행본 1자료실 지도 ↓</p>
 			
 			<div class="map">
 				<div class="left">
-					<table id="bookshelf010" class="shelf bLeft num0l">
+					<table class="shelf bLeft num0l">
 						<tbody>
-							<tr class="A"><td>10A&nbsp;</td></tr>
-							<tr class="B"><td>10B&nbsp;</td></tr>
+							<tr class="A 10A"><td>10A&nbsp;</td></tr>
+							<tr class="B 10B"><td>10B&nbsp;</td></tr>
 						</tbody>
 					</table>
-			  		<table id="bookshelf011" class="shelf bLeft num0l">
+			  		<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>11A&nbsp;</td></tr>
-							<tr class="B"><td>11B&nbsp;</td></tr>
+							<tr class="A 11A"><td>11A&nbsp;</td></tr>
+							<tr class="B 11B"><td>11B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf012" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>12A&nbsp;</td></tr>
-							<tr class="B"><td>12B&nbsp;</td></tr>
+							<tr class="A 12A"><td>12A&nbsp;</td></tr>
+							<tr class="B 12B"><td>12B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf013" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>13A&nbsp;</td></tr>
-							<tr class="B"><td>13B&nbsp;</td></tr>
+							<tr class="A 13A"><td>13A&nbsp;</td></tr>
+							<tr class="B 13B"><td>13B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf014" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A hLight"><td><span class="marquee"> 14A&nbsp;</span></td></tr>
-							<tr class="B"><td>14B&nbsp;</td></tr>
+							<tr class="A 14A"><td>14A&nbsp;</td></tr>
+							<tr class="B 14B"><td>14B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf015" class="shelf bLeft num0l">
+		  			<table  class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>15A&nbsp;</td></tr>
-							<tr class="B"><td>15B&nbsp;</td></tr>
+							<tr class="A 15A"><td>15A&nbsp;</td></tr>
+							<tr class="B 15B"><td>15B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf016" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>16A&nbsp;</td></tr>
-							<tr class="B"><td>16B&nbsp;</td></tr>
+							<tr class="A 16A"><td>16A&nbsp;</td></tr>
+							<tr class="B 16B"><td>16B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf017" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>17A&nbsp;</td></tr>
-							<tr class="B"><td>17B&nbsp;</td></tr>
+							<tr class="A 17A"><td>17A&nbsp;</td></tr>
+							<tr class="B 17B"><td>17B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf018" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>18A&nbsp;</td></tr>
-							<tr class="B"><td>18B&nbsp;</td></tr>
+							<tr class="A 18A"><td>18A&nbsp;</td></tr>
+							<tr class="B 18B"><td>18B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf019" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>19A&nbsp;</td></tr>
-							<tr class="B"><td>19B&nbsp;</td></tr>
+							<tr class="A 19A"><td>19A&nbsp;</td></tr>
+							<tr class="B 19B"><td>19B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf020" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>20A&nbsp;</td></tr>
-							<tr class="B"><td>20B&nbsp;</td></tr>
+							<tr class="A 20A"><td>20A&nbsp;</td></tr>
+							<tr class="B 20B"><td>20B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf021" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>21A&nbsp;</td></tr>
-							<tr class="B"><td>21B&nbsp;</td></tr>
+							<tr class="A 21A"><td>21A&nbsp;</td></tr>
+							<tr class="B 21B"><td>21B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf022" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>22A&nbsp;</td></tr>
-							<tr class="B"><td>22B&nbsp;</td></tr>
+							<tr class="A 22A"><td>22A&nbsp;</td></tr>
+							<tr class="B 22B"><td>22B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf023" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>23A&nbsp;</td></tr>
-							<tr class="B"><td>23B&nbsp;</td></tr>
+							<tr class="A 23A"><td>23A&nbsp;</td></tr>
+							<tr class="B 23B"><td>23B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf024" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>24A&nbsp;</td></tr>
-							<tr class="B"><td>24B&nbsp;</td></tr>
+							<tr class="A 24A"><td>24A&nbsp;</td></tr>
+							<tr class="B 24B"><td>24B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf025" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>25A&nbsp;</td></tr>
-							<tr class="B"><td>25B&nbsp;</td></tr>
+							<tr class="A 25A"><td>25A&nbsp;</td></tr>
+							<tr class="B 25B"><td>25B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf026" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>26A&nbsp;</td></tr>
-							<tr class="B"><td>26B&nbsp;</td></tr>
+							<tr class="A 26A"><td>26A&nbsp;</td></tr>
+							<tr class="B 26B"><td>26B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf027" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>27A&nbsp;</td></tr>
-							<tr class="B"><td>27B&nbsp;</td></tr>
+							<tr class="A 27A"><td>27A&nbsp;</td></tr>
+							<tr class="B 27B"><td>27B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf028" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>28A&nbsp;</td></tr>
-							<tr class="B"><td>28B&nbsp;</td></tr>
+							<tr class="A 28A"><td>28A&nbsp;</td></tr>
+							<tr class="B 28B"><td>28B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf029" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>29A&nbsp;</td></tr>
-							<tr class="B"><td>29B&nbsp;</td></tr>
+							<tr class="A 29A"><td>29A&nbsp;</td></tr>
+							<tr class="B 29B"><td>29B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf029-1" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>29-1A&nbsp;</td></tr>
-							<tr class="B"><td>29-1B&nbsp;</td></tr>
+							<tr class="A 29-1A"><td>29-1A&nbsp;</td></tr>
+							<tr class="B 29-1B"><td>29-1B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf029-2" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>29-2A&nbsp;</td></tr>
-							<tr class="B"><td>29-2B&nbsp;</td></tr>
+							<tr class="A 29-2A"><td>29-2A&nbsp;</td></tr>
+							<tr class="B 29-2B"><td>29-2B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf030" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>30A&nbsp;</td></tr>
-							<tr class="B"><td>30B&nbsp;</td></tr>
+							<tr class="A 30A"><td>30A&nbsp;</td></tr>
+							<tr class="B 30B"><td>30B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf031" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>31A&nbsp;</td></tr>
-							<tr class="B"><td>31B&nbsp;</td></tr>
+							<tr class="A 31A"><td>31A&nbsp;</td></tr>
+							<tr class="B 31B"><td>31B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf032" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>32A&nbsp;</td></tr>
-							<tr class="B"><td>32B&nbsp;</td></tr>
+							<tr class="A 32A"><td>32A&nbsp;</td></tr>
+							<tr class="B 32B"><td>32B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf033" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>33A&nbsp;</td></tr>
-							<tr class="B"><td>33B&nbsp;</td></tr>
+							<tr class="A 33A"><td>33A&nbsp;</td></tr>
+							<tr class="B 33B"><td>33B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf034" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>34A&nbsp;</td></tr>
-							<tr class="B"><td>34B&nbsp;</td></tr>
+							<tr class="A 34A"><td>34A&nbsp;</td></tr>
+							<tr class="B 34B"><td>34B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf035" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>35A&nbsp;</td></tr>
-							<tr class="B"><td>35B&nbsp;</td></tr>
+							<tr class="A 35A"><td>35A&nbsp;</td></tr>
+							<tr class="B 35B"><td>35B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf036" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>36A&nbsp;</td></tr>
-							<tr class="B"><td>36B&nbsp;</td></tr>
+							<tr class="A 36A"><td>36A&nbsp;</td></tr>
+							<tr class="B 36B"><td>36B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf037" class="shelf bLeft num0l">
+		  			<table class="shelf bLeft num0l">
 			  			<tbody>
-							<tr class="A"><td>37A&nbsp;</td></tr>
-							<tr class="B"><td>37B&nbsp;</td></tr>
+							<tr class="A 37A"><td>37A&nbsp;</td></tr>
+							<tr class="B 37B"><td>37B&nbsp;</td></tr>
 						</tbody>
 		  			</table>
 				</div>
 			
-				<div class="center">&nbsp;</div>
+				<div class="center">
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 10A">←</span><span class="spanR 9B">→</span></td></tr>
+							<tr><td><span class="spanL 10B">←</span><span class="spanR 9A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 11A">←</span><span class="spanR 8B">→</span></td></tr>
+							<tr><td><span class="spanL 11B">←</span><span class="spanR 8A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 12A">←</span><span class="spanR 7B">→</span></td></tr>
+							<tr><td><span class="spanL 12B">←</span><span class="spanR 7A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 13A">←</span><span class="spanR 6B">→</span></td></tr>
+							<tr><td><span class="spanL 13B">←</span><span class="spanR 6A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 14A">←</span><span class="spanR 5B">→</span></td></tr>
+							<tr><td><span class="spanL 14B">←</span><span class="spanR 5A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 15A">←</span><span class="spanR 4B">→</span></td></tr>
+							<tr><td><span class="spanL 15B">←</span><span class="spanR 4A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 16A">←</span><span class="spanR 3B">→</span></td></tr>
+							<tr><td><span class="spanL 16B">←</span><span class="spanR 3A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 17A">←</span><span class="spanR 2B">→</span></td></tr>
+							<tr><td><span class="spanL 17B">←</span><span class="spanR 2A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 18A">←</span><span class="spanR 1B">→</span></td></tr>
+							<tr><td><span class="spanL 18B">←</span><span class="spanR 1A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 19A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 19B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 20A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 20B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 21A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 21B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 22A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 22B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 23A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 23B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 24A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 24B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 25A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 25B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 26A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 26B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 27A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 27B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 28A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 28B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 29A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 29B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 29-1A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 29-1B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 29-2A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 29-2B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 30A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 30B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 31A">←</span><span class="spanR">→</span></td></tr>
+							<tr><td><span class="spanL 31B">←</span><span class="spanR">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 32A">←</span><span class="spanR 43B">→</span></td></tr>
+							<tr><td><span class="spanL 32B">←</span><span class="spanR 43A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 33A">←</span><span class="spanR 42B">→</span></td></tr>
+							<tr><td><span class="spanL 33B">←</span><span class="spanR 42A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 34A">←</span><span class="spanR 41B">→</span></td></tr>
+							<tr><td><span class="spanL 34B">←</span><span class="spanR 41A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 35A">←</span><span class="spanR 40B">→</span></td></tr>
+							<tr><td><span class="spanL 35B">←</span><span class="spanR 40A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 36A">←</span><span class="spanR 39B">→</span></td></tr>
+							<tr><td><span class="spanL 36B">←</span><span class="spanR 39A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 37A">←</span><span class="spanR 38B">→</span></td></tr>
+							<tr><td><span class="spanL 37B">←</span><span class="spanR 38A">→</span></td></tr>
+						</tbody>
+					</table>
+				</div>
 			
 				<div class="right">
-					<table id="bookshelf009" class="shelf bRight num8r">
+					<table class="shelf bRight num8r">
 			  			<tbody>
-							<tr class="B"><td>&nbsp;9B</td></tr>
-							<tr class="A"><td>&nbsp;9A</td></tr>
+							<tr class="B 9B"><td>&nbsp;9B</td></tr>
+							<tr class="A 9A"><td>&nbsp;9A</td></tr>
 						</tbody>
 		  			</table>
-			  		<table id="bookshelf008" class="shelf bRight num7r">
+			  		<table class="shelf bRight num7r">
 			  			<tbody>
-							<tr class="B"><td>&nbsp;8B</td></tr>
-							<tr class="A"><td>&nbsp;8A</td></tr>
+							<tr class="B 8B"><td>&nbsp;8B</td></tr>
+							<tr class="A 8A"><td>&nbsp;8A</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf007" class="shelf bRight num7r">
+		  			<table class="shelf bRight num7r">
 			  			<tbody>
-							<tr class="B"><td>&nbsp;7B</td></tr>
-							<tr class="A"><td>&nbsp;7A</td></tr>
+							<tr class="B 7B"><td>&nbsp;7B</td></tr>
+							<tr class="A 7A"><td>&nbsp;7A</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf006" class="shelf bRight num7r">
+		  			<table class="shelf bRight num7r">
 			  			<tbody>
-							<tr class="B"><td>&nbsp;6B</td></tr>
-							<tr class="A"><td>&nbsp;6A</td></tr>
+							<tr class="B 6B"><td>&nbsp;6B</td></tr>
+							<tr class="A 6A"><td>&nbsp;6A</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf005" class="shelf bRight num8r">
+		  			<table class="shelf bRight num8r">
 			  			<tbody>
-							<tr class="B"><td>&nbsp;5B</td></tr>
-							<tr class="A"><td>&nbsp;5A</td></tr>
+							<tr class="B 5B"><td>&nbsp;5B</td></tr>
+							<tr class="A 5A"><td>&nbsp;5A</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf004" class="shelf bRight num8r">
+		  			<table class="shelf bRight num8r">
 			  			<tbody>
-							<tr class="B"><td>&nbsp;4B</td></tr>
-							<tr class="A"><td>&nbsp;4A</td></tr>
+							<tr class="B 4B"><td>&nbsp;4B</td></tr>
+							<tr class="A 4A"><td>&nbsp;4A</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf003" class="shelf bRight num9r">
+		  			<table class="shelf bRight num9r">
 			  			<tbody>
-							<tr class="B"><td>&nbsp;3B</td></tr>
-							<tr class="A"><td>&nbsp;3A</td></tr>
+							<tr class="B 3B"><td>&nbsp;3B</td></tr>
+							<tr class="A 3A"><td>&nbsp;3A</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf002" class="shelf bRight num8r">
+		  			<table class="shelf bRight num8r">
 			  			<tbody>
-							<tr class="B"><td>&nbsp;2B</td></tr>
-							<tr class="A"><td>&nbsp;2A</td></tr>
+							<tr class="B 2B"><td>&nbsp;2B</td></tr>
+							<tr class="A 2A"><td>&nbsp;2A</td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf001" class="shelf bRight num8r">
+		  			<table class="shelf bRight num8r">
 			  			<tbody>
-							<tr class="B"><td>&nbsp;1B</td></tr>
-							<tr class="A"><td>&nbsp;1A</td></tr>
-						</tbody>
-		  			</table>
-		  			
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
-						</tbody>
-		  			</table>
-		  			<table class="shelf_space">
-			  			<tbody>
-							<tr class="space"><td></td></tr>
-							<tr class="space"><td></td></tr>
+							<tr class="B 1B"><td>&nbsp;1B</td></tr>
+							<tr class="A 1A"><td>&nbsp;1A</td></tr>
 						</tbody>
 		  			</table>
 		  			
-		  			<table id="bookshelf043" class="shelf bRight num9r">
+		  			<table class="shelf_space">
 			  			<tbody>
-							<tr class="B"><td>43B</td></tr>
-							<tr class="A"><td>43A</td></tr>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf042" class="shelf bRight num8r">
+		  			<table class="shelf_space">
 			  			<tbody>
-							<tr class="B"><td>42B</td></tr>
-							<tr class="A"><td>42A</td></tr>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf041" class="shelf bRight num8r">
+		  			<table class="shelf_space">
 			  			<tbody>
-							<tr class="B"><td>41B</td></tr>
-							<tr class="A"><td>41A</td></tr>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf040" class="shelf bRight num7r">
+		  			<table class="shelf_space">
 			  			<tbody>
-							<tr class="B"><td>40B</td></tr>
-							<tr class="A"><td>40A</td></tr>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf039" class="shelf bRight num7r">
+		  			<table class="shelf_space">
 			  			<tbody>
-							<tr class="B"><td>39B</td></tr>
-							<tr class="A"><td>39A</td></tr>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
 						</tbody>
 		  			</table>
-		  			<table id="bookshelf038" class="shelf bRight num7r">
+		  			<table class="shelf_space">
 			  			<tbody>
-							<tr class="B"><td>38B</td></tr>
-							<tr class="A"><td>38A</td></tr>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf_space">
+			  			<tbody>
+							<tr class="space"><td></td></tr>
+							<tr class="space"><td></td></tr>
+						</tbody>
+		  			</table>
+		  			
+		  			<table class="shelf bRight num9r">
+			  			<tbody>
+							<tr class="B 43B"><td>43B</td></tr>
+							<tr class="A 43A"><td>43A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num8r">
+			  			<tbody>
+							<tr class="B 42B"><td>42B</td></tr>
+							<tr class="A 42A"><td>42A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num8r">
+			  			<tbody>
+							<tr class="B 41B"><td>41B</td></tr>
+							<tr class="A 41A"><td>41A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num7r">
+			  			<tbody>
+							<tr class="B 40B"><td>40B</td></tr>
+							<tr class="A 40A"><td>40A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num7r">
+			  			<tbody>
+							<tr class="B 39B"><td>39B</td></tr>
+							<tr class="A 39A"><td>39A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num7r">
+			  			<tbody>
+							<tr class="B 38B"><td>38B</td></tr>
+							<tr class="A 38A"><td>38A</td></tr>
 						</tbody>
 		  			</table>
 				</div>

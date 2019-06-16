@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width">
+		<link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,700,900|Nanum+Myeongjo:800&display=swap&subset=korean" rel="stylesheet">
+
+		<style type="text/css">
+			html, body { width: 100%; height: 100%; margin: 0; padding: 0;}
+			
+			.div_root {
+				margin: auto;
+				max-width: 100%;
+				height: 100%;
+				overflow: auto;
+				font-family: "Gothic A1";
+			}
+			
+			.map {
+				width: 90vw;
+				height: 595vw; /*끝까지 하는 법 물어보기!!*/
+				box-shadow: 0 0 0 1px darkgray inset;
+				padding: 0 3% 0 3%;
+				margin: 0 auto;
+				background-color: #fcfaf7;
+			}
+			
+			.left {
+		        float: left;
+		        width: 42%;
+		        height: 100%;
+		    }
+		    
+		    .center {
+		    	float: left;
+		    	width: 16%;
+		    	height: 100%;
+		    	font-size: 3vw;
+		    }
+		    
+		    .right {
+		        float: left;
+		        width: 42%;
+		        height: 100%;
+		    }
+		    
+		    .direction {
+		    	width: 100%;
+		    }
+		    
+		    .spanL {
+		    	width: 50%;
+		    	float: left;
+		    	text-align:left;
+		    	font-size: 2.5vw;
+		    	font-weight: 900;
+		    	margin: 0;
+		    	padding: 0;
+		    	display: inline-block;
+		    	color: #fcfaf7;
+		    }
+		    
+		    .spanR {
+		    	width: 50%;
+		    	float: right;
+		    	text-align:right;
+		    	font-size: 2.5vw;
+		    	font-weight: 900;
+		    	margin: 0;
+		    	padding: 0;
+		    	display: inline-block;
+		    	color: #fcfaf7;
+		    }
+		    
+		    .shelf {
+		    	width: 100%;
+		    	margin: 5vw 0 5vw 0;
+		    	font-size: 2.5vw;
+		    	font-weight: 400;
+		    }
+		    
+		    .bLeft  {
+		    	text-align: right;
+		    }
+		    
+		    .bRight {
+		    	text-align: left;
+		    }
+		    
+		    .A {
+		    	width: 100%;
+				background-color: rgb(220,220,220);
+				display: inline-block;
+				color: rgb(130,130,130);
+		    }
+		    
+		    .B {
+		    	width: 100%;
+				background-color: rgb(200,200,200);
+				display: inline-block;
+				color: rgb(130,130,130);
+		    }
+		    
+		    .shelf_space {
+		    	width: 100%;
+				font-size: 2.5vw;
+				margin: 5vw 0 5vw 0;
+				background-color: #fcfaf7;
+			}
+			
+		    .space {
+		    	width: 100%;
+				background-color: #fcfaf7;
+				display: inline-block;
+				font-size: 2.5vw;
+		    }
+		    
+		    tbody {
+		    	width: 100%;
+		    	display: inline-block;
+		    }
+		    tr {
+		    	width: 100%;
+		    	display: inline-block;
+		    }
+			td {
+				width: 100%;
+				height: 3vw;
+				display: inline-block;
+				padding-top: 0.5vw;
+			}
+			
+			.hLight {
+				font-weight: 900;
+				color: white;
+				font-size: 2.5vw;
+				/*-webkit-animation: colorchange 0.7s ease-in-out infinite;*/
+				background-color: #e52505;
+			}
+			
+			
+			@-webkit-keyframes colorchange {
+		      0%	{opacity: 1;}
+		      50%	{opacity: 0.15;}
+		      100%	{opacity: 1;}
+		    }
+		    
+
+			.num10r {
+				padding-right: 60%;
+			}
+			.num9r {
+				padding-right: 54%;
+			}
+			.num8r {
+				padding-right: 48%;
+			}
+			.num7r {
+				padding-right: 42%;
+			}
+			.num6r {
+				padding-right: 36%;
+			}
+			.num5r {
+				padding-right: 30%;
+			}
+			.num4r {
+				padding-right: 24%;
+			}
+			.num3r {
+				padding-right: 18%;
+			}
+			.num2r {
+				padding-right: 12%;
+			}
+			.num1r {
+				padding-right: 6%;
+			}
+			.num10l {
+				padding-left: 60%;
+			}
+			.num9l {
+				padding-left: 54%;
+			}
+			.num8l {
+				padding-left: 48%;
+			}
+			.num7l {
+				padding-left: 42%;
+			}
+			.num6l {
+				padding-left: 36%;
+			}
+			.num5l {
+				padding-left: 30%;
+			}
+			.num4l {
+				padding-left: 24%;
+			}
+			.num3l {
+				padding-left: 18%;
+			}
+			.num2l {
+				padding-left: 12%;
+			}
+			.num1l {
+				padding-left: 6%;
+			}
+			
+			.locationTitle {
+				z-index: 1;
+				display: block;
+				width: 90vw;
+				height: 4.5vw;
+				font-family: "Nanum Myeongjo";
+				font-size: 4.5vw;
+				font-weight: 800;
+				margin: 0 auto;
+				padding: 5vw 5vw 12vw 5vw;
+				background-color: white;
+				position: fixed;
+				text-align: left;
+				vertical-align: middle;
+				top: 0vw;
+				overflow: hidden; 
+				text-overflow: ellipsis;
+				white-space:nowrap;;
+				box-shadow: 0px 7px 10px -1px #77777725;
+			}
+			
+			.callNum {
+				font-family: "Gohtic A1";
+				width: 90vw;
+				height: 5vw;
+				font-size: 4vw;
+				font-weight: 400;
+				text-align: left;
+				margin: 1vw -5vw;
+				padding: 0 5vw 0 5vw;
+				color: #003aaf;
+				background-color: white;
+				position: fixed;
+				top: 12vw;
+			}
+			
+			.bookInfo {
+				text-align: center;
+				width: 100%;
+				margin-top: 25vw;
+			}
+			
+			.locationSub {
+				font-size: 3.5vw;
+				font-weight: 700;
+				text-align: center;
+			}
+			
+			.shelfInfo {
+				margin: 0 auto;
+				width: 50vw;
+				height: 100%;
+				padding: 3% 3% 8% 3%;
+				border: 1px solid darkgray;
+			}
+			
+			.directionFace {
+				color: white;
+				height: 5vw;
+				font-size: 5vw;
+				margin: 1vw 4vw;
+				vertical-align: middle;
+			}
+			
+			
+			.hLightDirection {
+				color: #e52505;
+				-webkit-animation: colorchange 1s ease-in-out infinite;
+			}
+			
+			.shelfFaceL {
+				width: 5%;
+				height: 4vw;
+				display: inline-block;
+				color: navy;
+				font-size: 4vw;
+				font-weight: 700;
+				float: left;
+				padding-top: 1%;
+			}
+			
+			.shelfFaceR {
+				width: 5%;
+				height: 4vw;
+				display: inline-block;
+				color: navy;
+				font-size: 4vw;
+				font-weight: 700;
+				float: left;
+				padding-top: 1%;
+			}
+			
+			.bookshelfNum {
+				width: 90%;
+				height: 5vw;
+				display: inline-block;
+				color: #e52505;
+				font-weight: 900;
+				font-size: 5vw;
+				float: left;
+			}
+			
+			.underline {
+				width: 12vw;
+				height: 0.5vw;
+				display: inline-block;
+				margin: 0 5vw;
+			}
+			
+			.category {
+				width: 100%;
+				/*height: 100%;*/
+				color: black;
+				font-size: 3.5vw;
+				font-weight: 700;
+			}
+			
+			.callNumberLeft {
+				width: 40%;
+				float: left;
+				display: inline-block;
+				margin-top: 5.5vw;
+				margin-left: 4vw;
+				margin-right: 1vw;
+				margin-bottom: 4vw;
+				font-size: 2.5vw;
+				font-weight: 900;
+			}
+			
+			.callNumberRight {
+				width: 40%;
+				float: left;
+				display: inline-block;
+				margin-top: 5.5vw;
+				margin-left: 1vw;
+				margin-right: 4vw;
+				margin-bottom: 4vw;
+				font-size: 2.5vw;
+				font-weight: 900;
+			}
+			
+			.bg_img {
+				width: 100%;
+				height: 20vw;
+				background-image: url('./sign.png');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: 120%;
+			}
+			
+			p {
+				margin-top: 1vw;
+				margin-bottom: 1vw;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+	
+		<div class="div_root">
+			<a name="top">&nbsp;</a>
+			<div class="bookInfo">
+				<div class="locationTitle"> 
+					<!--책 제목--> 세일즈맨의 죽음 / 아서 밀러 지음 ; 이선숙 옮김. <br/>
+				<p class="callNum"> 청구기호&nbsp; <span style="font-family: Gothic A1; font-weight: 700;">A822.52 M612dKy</span> </p>
+				</div>
+				
+				<div class="shelfInfo">
+					<div class="shelfFaceL"> <!--서가 면--> B </div> 
+					<div class="bookshelfNum"> <!--서가번호--> <span class="directionFace">←</span> 313 <span class="directionFace hLightDirection">→</span></div>
+					<div class="shelfFaceR"> <!--서가 면--> A </div>
+					<div class="underline"> &nbsp; </div>
+					<div class="category"> <!--대분류--> 800 문학 [Literature] </div>
+					<div style="width: 90%; height: 0.3vw; background-color: black; margin-top: 1vw; margin-left: auto; margin-right: auto;"><!--구분선--></div> 
+					<div class="bg_img"> 
+						<div class="callNumberLeft"> 
+							<p><!--첫청구기호--> A823.4 C </p>
+							<p><!--끝청구기호--> ~A823.52 W </p>
+						</div>
+						<div class="callNumberRight"> 
+							<p><!--첫청구기호--> A821.54 B </p>
+							<p><!--~끝청구기호--> ~A823.4 B </p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div><p>&nbsp;</p></div>
+			
+			<p class="locationSub"> 3층 단행본 6자료실</p> 
+			<p class="locationSub"><span style="color: #e52505">313A</span>번 서가 4번째 칸<span style="font-weight:400;">에 있습니다.</span></p>
+			<div><p>&nbsp;</p></div>
+			
+			<p style="text-align: center; font-size: 3vw; font-weight:700; color: rgb(140,140,140);">단행본 6자료실 지도 ↓</p>
+			
+			<div class="map">
+				<div class="left">
+					<table class="shelf bLeft num6l">
+						<tbody>
+							<tr class="A 272A"><td>272A&nbsp;</td></tr>
+							<tr class="B 272B"><td>272B&nbsp;</td></tr>
+						</tbody>
+					</table>
+			  		<table class="shelf bLeft num6l">
+			  			<tbody>
+							<tr class="A 273A"><td>273A&nbsp;</td></tr>
+							<tr class="B 273B"><td>273B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num6l">
+			  			<tbody>
+							<tr class="A 274A"><td>274A&nbsp;</td></tr>
+							<tr class="B 274B"><td>274B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 275A"><td>275A&nbsp;</td></tr>
+							<tr class="B 275B"><td>275B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 276A"><td>276A&nbsp;</td></tr>
+							<tr class="B 276B"><td>276B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table  class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 277A"><td>277A&nbsp;</td></tr>
+							<tr class="B 277B"><td>277B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 278A"><td>278A&nbsp;</td></tr>
+							<tr class="B 278B"><td>278B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 279A"><td>279A&nbsp;</td></tr>
+							<tr class="B 279B"><td>279B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 280A"><td>280A&nbsp;</td></tr>
+							<tr class="B 280B"><td>280B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 281A"><td>281A&nbsp;</td></tr>
+							<tr class="B 281B"><td>281B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 282A"><td>282A&nbsp;</td></tr>
+							<tr class="B 282B"><td>282B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 283A"><td>283A&nbsp;</td></tr>
+							<tr class="B 283B"><td>283B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 284A"><td>284A&nbsp;</td></tr>
+							<tr class="B 284B"><td>284B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 285A"><td>285A&nbsp;</td></tr>
+							<tr class="B 285B"><td>285B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 286A"><td>286A&nbsp;</td></tr>
+							<tr class="B 286B"><td>286B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num6l">
+			  			<tbody>
+							<tr class="A 287A"><td>287A&nbsp;</td></tr>
+							<tr class="B 287B"><td>287B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num6l">
+			  			<tbody>
+							<tr class="A 288A"><td>288A&nbsp;</td></tr>
+							<tr class="B 288B"><td>288B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num6l">
+			  			<tbody>
+							<tr class="A 289A"><td>289A&nbsp;</td></tr>
+							<tr class="B 289B"><td>289B&nbsp;</td></tr>
+						</tbody>
+                    </table>
+                    
+		  			<table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+                    <table class="shelf_space">
+                        <tbody>
+                          <tr class="space"><td></td></tr>
+                          <tr class="space"><td></td></tr>
+                      </tbody>
+                    </table>
+
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 290A"><td>290A&nbsp;</td></tr>
+							<tr class="B 290B"><td>290B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 291A"><td>291A&nbsp;</td></tr>
+							<tr class="B 291B"><td>291B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 292A"><td>292A&nbsp;</td></tr>
+							<tr class="B 292B"><td>292B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num6l">
+			  			<tbody>
+							<tr class="A 293A"><td>293A&nbsp;</td></tr>
+							<tr class="B 293B"><td>293B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num6l">
+			  			<tbody>
+							<tr class="A 294A"><td>294A&nbsp;</td></tr>
+							<tr class="B 294B"><td>294B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num6l">
+			  			<tbody>
+							<tr class="A 295A"><td>295A&nbsp;</td></tr>
+							<tr class="B 295B"><td>295B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 296A"><td>296A&nbsp;</td></tr>
+							<tr class="B 296B"><td>296B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 297A"><td>297A&nbsp;</td></tr>
+							<tr class="B 297B"><td>297B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 298A"><td>298A&nbsp;</td></tr>
+							<tr class="B 298B"><td>298B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 299A"><td>299A&nbsp;</td></tr>
+							<tr class="B 299B"><td>299B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 300A"><td>300A&nbsp;</td></tr>
+							<tr class="B 300B"><td>300B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bLeft num5l">
+			  			<tbody>
+							<tr class="A 301A"><td>301A&nbsp;</td></tr>
+							<tr class="B 301B"><td>301B&nbsp;</td></tr>
+						</tbody>
+		  			</table>
+				</div>
+			
+				<div class="center">
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 272A">←</span><span class="spanR 344B">→</span></td></tr>
+							<tr><td><span class="spanL 272B">←</span><span class="spanR 344A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 273A">←</span><span class="spanR 343B">→</span></td></tr>
+							<tr><td><span class="spanL 273B">←</span><span class="spanR 343A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 274A">←</span><span class="spanR 342B">→</span></td></tr>
+							<tr><td><span class="spanL 274B">←</span><span class="spanR 342A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 275A">←</span><span class="spanR 341B">→</span></td></tr>
+							<tr><td><span class="spanL 275B">←</span><span class="spanR 341A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 276A">←</span><span class="spanR 340B">→</span></td></tr>
+							<tr><td><span class="spanL 276B">←</span><span class="spanR 340A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 277A">←</span><span class="spanR 339B">→</span></td></tr>
+							<tr><td><span class="spanL 277B">←</span><span class="spanR 339A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 278A">←</span><span class="spanR 338B">→</span></td></tr>
+							<tr><td><span class="spanL 278B">←</span><span class="spanR 338A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 279A">←</span><span class="spanR 337B">→</span></td></tr>
+							<tr><td><span class="spanL 279B">←</span><span class="spanR 337A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 280A">←</span><span class="spanR 336B">→</span></td></tr>
+							<tr><td><span class="spanL 280B">←</span><span class="spanR 336A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 281A">←</span><span class="spanR 335">→</span></td></tr>
+							<tr><td><span class="spanL 281B">←</span><span class="spanR 335">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 282A">←</span><span class="spanR 334">→</span></td></tr>
+							<tr><td><span class="spanL 282B">←</span><span class="spanR 334">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 283A">←</span><span class="spanR 333">→</span></td></tr>
+							<tr><td><span class="spanL 283B">←</span><span class="spanR 333">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 284A">←</span><span class="spanR 332">→</span></td></tr>
+							<tr><td><span class="spanL 284B">←</span><span class="spanR 332">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 285A">←</span><span class="spanR 331">→</span></td></tr>
+							<tr><td><span class="spanL 285B">←</span><span class="spanR 331">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 286A">←</span><span class="spanR 330">→</span></td></tr>
+							<tr><td><span class="spanL 286B">←</span><span class="spanR 330">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 287A">←</span><span class="spanR 329">→</span></td></tr>
+							<tr><td><span class="spanL 287B">←</span><span class="spanR 329">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 288A">←</span><span class="spanR 328">→</span></td></tr>
+							<tr><td><span class="spanL 288B">←</span><span class="spanR 328">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 289A">←</span><span class="spanR 327">→</span></td></tr>
+							<tr><td><span class="spanL 289B">←</span><span class="spanR 327">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 290A">←</span><span class="spanR 326">→</span></td></tr>
+							<tr><td><span class="spanL 290B">←</span><span class="spanR 326">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 325">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 325">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 324">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 324">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 323">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 323">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 322">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 322">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 321">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 321">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 320B">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 320A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 319B">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 319A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 318B">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 318A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 317B">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 317A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 316B">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 316A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 315B">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 315A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL">←</span><span class="spanR 314B">→</span></td></tr>
+							<tr><td><span class="spanL">←</span><span class="spanR 314A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 290A">←</span><span class="spanR 313B">→</span></td></tr>
+							<tr><td><span class="spanL 290B">←</span><span class="spanR 313A hLightDirection">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 291A">←</span><span class="spanR 312B">→</span></td></tr>
+							<tr><td><span class="spanL 291B">←</span><span class="spanR 312A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 292A">←</span><span class="spanR 311B">→</span></td></tr>
+							<tr><td><span class="spanL 292B">←</span><span class="spanR 311A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 293A">←</span><span class="spanR 310B">→</span></td></tr>
+							<tr><td><span class="spanL 293B">←</span><span class="spanR 310A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 294A">←</span><span class="spanR 309B">→</span></td></tr>
+							<tr><td><span class="spanL 294B">←</span><span class="spanR 309A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 295A">←</span><span class="spanR 308B">→</span></td></tr>
+							<tr><td><span class="spanL 295B">←</span><span class="spanR 308A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 296A">←</span><span class="spanR 307B">→</span></td></tr>
+							<tr><td><span class="spanL 296B">←</span><span class="spanR 307A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 297A">←</span><span class="spanR 306B">→</span></td></tr>
+							<tr><td><span class="spanL 297B">←</span><span class="spanR 306A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 298A">←</span><span class="spanR 305B">→</span></td></tr>
+							<tr><td><span class="spanL 298B">←</span><span class="spanR 305A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 299A">←</span><span class="spanR 304B">→</span></td></tr>
+							<tr><td><span class="spanL 299B">←</span><span class="spanR 304A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 300A">←</span><span class="spanR 303B">→</span></td></tr>
+							<tr><td><span class="spanL 300B">←</span><span class="spanR 303A">→</span></td></tr>
+						</tbody>
+					</table>
+                    <table class="shelf direction">
+						<tbody>
+							<tr><td><span class="spanL 301A">←</span><span class="spanR 302B">→</span></td></tr>
+							<tr><td><span class="spanL 301B">←</span><span class="spanR 302A">→</span></td></tr>
+						</tbody>
+					</table>
+				</div>
+			
+				<div class="right">
+					<table class="shelf bRight num2r">
+			  			<tbody>
+							<tr class="B 344B"><td>&nbsp;344B</td></tr>
+							<tr class="A 344A"><td>&nbsp;344A</td></tr>
+						</tbody>
+		  			</table>
+			  		<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 343B"><td>&nbsp;343B</td></tr>
+							<tr class="A 343A"><td>&nbsp;343A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 342B"><td>&nbsp;342B</td></tr>
+							<tr class="A 342A"><td>&nbsp;342A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 341B"><td>&nbsp;341B</td></tr>
+							<tr class="A 341A"><td>&nbsp;341A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 340B"><td>&nbsp;340B</td></tr>
+							<tr class="A 340A"><td>&nbsp;340A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 339B"><td>&nbsp;339B</td></tr>
+							<tr class="A 339A"><td>&nbsp;339A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num2r">
+			  			<tbody>
+							<tr class="B 338B"><td>&nbsp;338B</td></tr>
+							<tr class="A 338A"><td>&nbsp;338A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 337B"><td>&nbsp;337B</td></tr>
+							<tr class="A 337A"><td>&nbsp;337A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 336B"><td>&nbsp;336B</td></tr>
+							<tr class="A 336A"><td>&nbsp;336A</td></tr>
+						</tbody>
+		  			</table>
+		  			
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 335B"><td>&nbsp;335B</td></tr>
+							<tr class="A 335A"><td>&nbsp;335A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 334B"><td>&nbsp;334B</td></tr>
+							<tr class="A 334A"><td>&nbsp;334A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 333B"><td>&nbsp;333B</td></tr>
+							<tr class="A 333A"><td>&nbsp;333A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num2r">
+			  			<tbody>
+							<tr class="B 332B"><td>&nbsp;332B</td></tr>
+							<tr class="A 332A"><td>&nbsp;332A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 331B"><td>&nbsp;331B</td></tr>
+							<tr class="A 331A"><td>&nbsp;331A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 330B"><td>&nbsp;330B</td></tr>
+							<tr class="A 330A"><td>&nbsp;330A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 329B"><td>&nbsp;329B</td></tr>
+							<tr class="A 329A"><td>&nbsp;329A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 328B"><td>&nbsp;328B</td></tr>
+							<tr class="A 328A"><td>&nbsp;328A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 327B"><td>&nbsp;327B</td></tr>
+							<tr class="A 327A"><td>&nbsp;327A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num2r">
+			  			<tbody>
+							<tr class="B 326B"><td>&nbsp;326B</td></tr>
+							<tr class="A 326A"><td>&nbsp;326A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 325B"><td>&nbsp;325B</td></tr>
+							<tr class="A 325A"><td>&nbsp;325A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 324B"><td>&nbsp;324B</td></tr>
+							<tr class="A 324A"><td>&nbsp;324A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 323B"><td>&nbsp;323B</td></tr>
+							<tr class="A 323A"><td>&nbsp;323A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 322B"><td>&nbsp;322B</td></tr>
+							<tr class="A 322A"><td>&nbsp;322A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 321B"><td>&nbsp;321B</td></tr>
+							<tr class="A 321A"><td>&nbsp;321A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num2r">
+			  			<tbody>
+							<tr class="B 320B"><td>&nbsp;320B</td></tr>
+							<tr class="A 320A"><td>&nbsp;320A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 319B"><td>&nbsp;319B</td></tr>
+							<tr class="A 319A"><td>&nbsp;319A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 318B"><td>&nbsp;318B</td></tr>
+							<tr class="A 318A"><td>&nbsp;318A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 317B"><td>&nbsp;317B</td></tr>
+							<tr class="A 317A"><td>&nbsp;317A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 316B"><td>316B</td></tr>
+							<tr class="A 316A"><td>316A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 315B"><td>315B</td></tr>
+							<tr class="A 315A"><td>315A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num2r">
+			  			<tbody>
+							<tr class="B 314B"><td>314B</td></tr>
+							<tr class="A 314A"><td>314A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 313B"><td>313B</td></tr>
+							<tr class="A 313A hLight"><td>313A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 312B"><td>312B</td></tr>
+							<tr class="A 312A"><td>312A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 311B"><td>311B</td></tr>
+							<tr class="A 311A"><td>311A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 310B"><td>310B</td></tr>
+							<tr class="A 310A"><td>310A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 309B"><td>309B</td></tr>
+							<tr class="A 309A"><td>309A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num2r">
+			  			<tbody>
+							<tr class="B 308B"><td>308B</td></tr>
+							<tr class="A 308A"><td>308A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 307B"><td>307B</td></tr>
+							<tr class="A 307A"><td>307A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 306B"><td>306B</td></tr>
+							<tr class="A 306A"><td>306A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 305B"><td>305B</td></tr>
+							<tr class="A 305A"><td>305A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 304B"><td>304B</td></tr>
+							<tr class="A 304A"><td>304A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num1r">
+			  			<tbody>
+							<tr class="B 303B"><td>303B</td></tr>
+							<tr class="A 303A"><td>303A</td></tr>
+						</tbody>
+		  			</table>
+		  			<table class="shelf bRight num2r">
+			  			<tbody>
+							<tr class="B 302B"><td>302B</td></tr>
+							<tr class="A 302A"><td>302A</td></tr>
+						</tbody>
+		  			</table>
+				</div>
+			</div>
+			
+			<div style="position: fixed; bottom: 3vw; right: 4vw;">
+				<a href="#top"><img src="./top btn.png" width=60vw height=40vw></a>	
+			</div>
+			
+		</div>
+			
+
+	</body>
+</html>

@@ -1,0 +1,6162 @@
+[
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 1,
+    "shelfFace": "A",
+    "callNumStart": "001 A",
+    "callNumEnd": "001.3 H",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 1,
+    "shelfFace": "B",
+    "callNumStart": "001.3 H",
+    "callNumEnd": "001.422 Y",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 2,
+    "shelfFace": "A",
+    "callNumStart": "001.4220",
+    "callNumEnd": "001.642 L",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 2,
+    "shelfFace": "B",
+    "callNumStart": "001.642 L",
+    "callNumEnd": "003 L",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 3,
+    "shelfFace": "A",
+    "callNumStart": "003 M",
+    "callNumEnd": "003.72 G",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 3,
+    "shelfFace": "B",
+    "callNumStart": "003.72 K",
+    "callNumEnd": "004 W",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 4,
+    "shelfFace": "A",
+    "callNumStart": "004 Y",
+    "callNumEnd": "004.21 N",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 4,
+    "shelfFace": "B",
+    "callNumStart": "004.21 P",
+    "callNumEnd": "004.6 M",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 5,
+    "shelfFace": "A",
+    "callNumStart": "004.6 O",
+    "callNumEnd": "004.67 Y",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 5,
+    "shelfFace": "B",
+    "callNumStart": "004. 6703",
+    "callNumEnd": "005.1 L",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 6,
+    "shelfFace": "A",
+    "callNumStart": "005.1 M",
+    "callNumEnd": "005.133 Ak",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 6,
+    "shelfFace": "B",
+    "callNumStart": "005.133 Al",
+    "callNumEnd": "005.133 H",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 7,
+    "shelfFace": "A",
+    "callNumStart": "005.133 H",
+    "callNumEnd": "005.133 Se",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 7,
+    "shelfFace": "B",
+    "callNumStart": "005.133 Sh",
+    "callNumEnd": "005.262 G",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 8,
+    "shelfFace": "A",
+    "callNumStart": "005.262 H",
+    "callNumEnd": "005.2762 G",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 8,
+    "shelfFace": "B",
+    "callNumStart": "005.2762 H",
+    "callNumEnd": "005.43 H",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 9,
+    "shelfFace": "A",
+    "callNumStart": "005.43 I",
+    "callNumEnd": "005.4469 B",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 9,
+    "shelfFace": "B",
+    "callNumStart": "005.4469 B",
+    "callNumEnd": "005.54 F",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 10,
+    "shelfFace": "A",
+    "callNumStart": "005.54 G",
+    "callNumEnd": "005.75 A",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 10,
+    "shelfFace": "B",
+    "callNumStart": "005.75 B",
+    "callNumEnd": "006 F",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 11,
+    "shelfFace": "A",
+    "callNumStart": "006 G",
+    "callNumEnd": "006.5 P",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 11,
+    "shelfFace": "B",
+    "callNumStart": "006.5 Q",
+    "callNumEnd": "006.74 F",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 12,
+    "shelfFace": "A",
+    "callNumStart": "006.74 G",
+    "callNumEnd": "020.72 K",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 12,
+    "shelfFace": "B",
+    "callNumStart": "020.72 L",
+    "callNumEnd": "025.49 H",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 13,
+    "shelfFace": "A",
+    "callNumStart": "025.49 I",
+    "callNumEnd": "028.5 F",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 13,
+    "shelfFace": "B",
+    "callNumStart": "028.5 G",
+    "callNumEnd": "041 G",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 14,
+    "shelfFace": "A",
+    "callNumStart": "041 H",
+    "callNumEnd": "070.4 B",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 14,
+    "shelfFace": "B",
+    "callNumStart": "070.4 C",
+    "callNumEnd": "070.92 F",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 15,
+    "shelfFace": "A",
+    "callNumStart": "070.92 G",
+    "callNumEnd": "081 D13",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 15,
+    "shelfFace": "B",
+    "callNumStart": "081 D13",
+    "callNumEnd": "081 H19",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 16,
+    "shelfFace": "A",
+    "callNumStart": "081 H19",
+    "callNumEnd": "081 H99",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 16,
+    "shelfFace": "B",
+    "callNumStart": "081 H99",
+    "callNumEnd": "081 N11",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 17,
+    "shelfFace": "A",
+    "callNumStart": "081 N11",
+    "callNumEnd": "081 Sa",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 17,
+    "shelfFace": "B",
+    "callNumStart": "081 Sa",
+    "callNumEnd": "082 Eu",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 18,
+    "shelfFace": "A",
+    "callNumStart": "082 Eu",
+    "callNumEnd": "082 Sa",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 18,
+    "shelfFace": "B",
+    "callNumStart": "082 Sa",
+    "callNumEnd": "089.51 M",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 19,
+    "shelfFace": "A",
+    "callNumStart": "089.51 M",
+    "callNumEnd": "089.956",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 19,
+    "shelfFace": "B",
+    "callNumStart": "089.956 Z",
+    "callNumEnd": "大 099",
+    "category": "000 총류 [General work]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 20,
+    "shelfFace": "A",
+    "callNumStart": "100 Ab",
+    "callNumEnd": "102 V",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 20,
+    "shelfFace": "B",
+    "callNumStart": "102 W",
+    "callNumEnd": "109.2 C",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 21,
+    "shelfFace": "A",
+    "callNumStart": "109.2 C",
+    "callNumEnd": "111.85 B",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 21,
+    "shelfFace": "B",
+    "callNumStart": "111.85 B",
+    "callNumEnd": "115 C",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 22,
+    "shelfFace": "A",
+    "callNumStart": "115 D",
+    "callNumEnd": "121.3 M",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 22,
+    "shelfFace": "B",
+    "callNumStart": "121.3 P",
+    "callNumEnd": 126.092,
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 23,
+    "shelfFace": "A",
+    "callNumStart": "126.092 S",
+    "callNumEnd": "128.4 D",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 23,
+    "shelfFace": "B",
+    "callNumStart": "128.4 E",
+    "callNumEnd": "133.3 M",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 24,
+    "shelfFace": "A",
+    "callNumStart": "133.3 N 15",
+    "callNumEnd": "138 G429",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 24,
+    "shelfFace": "B",
+    "callNumStart": "138 H",
+    "callNumEnd": "146.4 B",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 25,
+    "shelfFace": "A",
+    "callNumStart": "146.4 C",
+    "callNumEnd": "150.1 F",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 25,
+    "shelfFace": "B",
+    "callNumStart": "150.1 G",
+    "callNumEnd": 150.1952,
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 26,
+    "shelfFace": "A",
+    "callNumStart": 150.1953,
+    "callNumEnd": "152.4 G",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 26,
+    "shelfFace": "B",
+    "callNumStart": "152.4 G",
+    "callNumEnd": "153.12 J",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 27,
+    "shelfFace": "A",
+    "callNumStart": "153.12 K",
+    "callNumEnd": "153.7 S",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 27,
+    "shelfFace": "B",
+    "callNumStart": "153.7 T",
+    "callNumEnd": "155.2 N",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 28,
+    "shelfFace": "A",
+    "callNumStart": "155.2 O",
+    "callNumEnd": "155.412 B",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 28,
+    "shelfFace": "B",
+    "callNumStart": "155.412 G",
+    "callNumEnd": "155.9 S",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 29,
+    "shelfFace": "A",
+    "callNumStart": "155.9 T",
+    "callNumEnd": "158.1 G",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 29,
+    "shelfFace": "B",
+    "callNumStart": "158.1 G",
+    "callNumEnd": 158.1082,
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": "29-1",
+    "shelfFace": "A",
+    "callNumStart": 158.1082,
+    "callNumEnd": "158.3 Y",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": "29-1",
+    "shelfFace": "B",
+    "callNumStart": "158.3 Y",
+    "callNumEnd": "160.14 G",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": "29-2",
+    "shelfFace": "A",
+    "callNumStart": "160.2 B",
+    "callNumEnd": "170 Si",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": "29-2",
+    "shelfFace": "B",
+    "callNumStart": "170 Sk",
+    "callNumEnd": "171.4 G",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 30,
+    "shelfFace": "A",
+    "callNumStart": "171.4 H",
+    "callNumEnd": "174.4 H",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 30,
+    "shelfFace": "B",
+    "callNumStart": "174.4 I",
+    "callNumEnd": "179.7 T",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 31,
+    "shelfFace": "A",
+    "callNumStart": "179.7 V",
+    "callNumEnd": "181.1 C",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 31,
+    "shelfFace": "B",
+    "callNumStart": "181.1 C",
+    "callNumEnd": "181.11 Z",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 32,
+    "shelfFace": "A",
+    "callNumStart": "181.11 Z",
+    "callNumEnd": 181.1166,
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 32,
+    "shelfFace": "B",
+    "callNumStart": 181.1168,
+    "callNumEnd": "181.121 D",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 33,
+    "shelfFace": "A",
+    "callNumStart": "181.121 E",
+    "callNumEnd": 181.1245,
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 33,
+    "shelfFace": "B",
+    "callNumStart": "181.125 C",
+    "callNumEnd": "181.16 Z",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 34,
+    "shelfFace": "A",
+    "callNumStart": "181.161 H",
+    "callNumEnd": "181.25 G",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 34,
+    "shelfFace": "B",
+    "callNumStart": "181.25 G",
+    "callNumEnd": "181.258 I",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 35,
+    "shelfFace": "A",
+    "callNumStart": "181.258 J",
+    "callNumEnd": "181.53 Y",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 35,
+    "shelfFace": "B",
+    "callNumStart": "181.6 B",
+    "callNumEnd": "184 So",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 36,
+    "shelfFace": "A",
+    "callNumStart": "184 Sp",
+    "callNumEnd": "190 A",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 36,
+    "shelfFace": "B",
+    "callNumStart": "190 B",
+    "callNumEnd": "191 P",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 37,
+    "shelfFace": "A",
+    "callNumStart": "191 Q",
+    "callNumEnd": "193 C",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 37,
+    "shelfFace": "B",
+    "callNumStart": "193 D",
+    "callNumEnd": "193 H",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 38,
+    "shelfFace": "A",
+    "callNumStart": "193 H",
+    "callNumEnd": "193 K",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 38,
+    "shelfFace": "B",
+    "callNumStart": "193 K",
+    "callNumEnd": "193 N",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 39,
+    "shelfFace": "A",
+    "callNumStart": "193 N",
+    "callNumEnd": "193 S",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 39,
+    "shelfFace": "B",
+    "callNumStart": "193 S",
+    "callNumEnd": "194 B",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 40,
+    "shelfFace": "A",
+    "callNumStart": "194 B",
+    "callNumEnd": "194 D",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 40,
+    "shelfFace": "B",
+    "callNumStart": "194 D",
+    "callNumEnd": "194 H",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 41,
+    "shelfFace": "A",
+    "callNumStart": "194 H",
+    "callNumEnd": "194 M",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 41,
+    "shelfFace": "B",
+    "callNumStart": "194 M",
+    "callNumEnd": "194 S",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 42,
+    "shelfFace": "A",
+    "callNumStart": "194 Sa",
+    "callNumEnd": "197 B",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 42,
+    "shelfFace": "B",
+    "callNumStart": "197 B",
+    "callNumEnd": "198.9 K",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 43,
+    "shelfFace": "A",
+    "callNumStart": "198.9 K",
+    "callNumEnd": 199.492,
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 1자료실",
+    "bookshelf": 43,
+    "shelfFace": "B",
+    "callNumStart": 199.492,
+    "callNumEnd": "大 174.3",
+    "category": "100 철학 [Philosophy]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 44,
+    "shelfFace": "A",
+    "callNumStart": "200 A",
+    "callNumEnd": "200.952 X",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 44,
+    "shelfFace": "B",
+    "callNumStart": "200.952 Y",
+    "callNumEnd": "208 W",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 45,
+    "shelfFace": "A",
+    "callNumStart": "208 Y",
+    "callNumEnd": "220.6 Se",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 45,
+    "shelfFace": "B",
+    "callNumStart": "220.6 Si",
+    "callNumEnd": 222.4077,
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 46,
+    "shelfFace": "A",
+    "callNumStart": 222.4092,
+    "callNumEnd": "227.107 M",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 46,
+    "shelfFace": "B",
+    "callNumStart": "227.107 O",
+    "callNumEnd": "230.092 R",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 47,
+    "shelfFace": "A",
+    "callNumStart": "230.092 S",
+    "callNumEnd": "232.9 C",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 47,
+    "shelfFace": "B",
+    "callNumStart": "232.9 E",
+    "callNumEnd": "241.691 S",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 48,
+    "shelfFace": "A",
+    "callNumStart": "241.693 H",
+    "callNumEnd": "248.4 Y",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 48,
+    "shelfFace": "B",
+    "callNumStart": "248.4 Y",
+    "callNumEnd": 261.2609,
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 49,
+    "shelfFace": "A",
+    "callNumStart": "261.27 A",
+    "callNumEnd": "262.132 G",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 49,
+    "shelfFace": "B",
+    "callNumStart": "262.132 J",
+    "callNumEnd": "268.01 D",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 50,
+    "shelfFace": "A",
+    "callNumStart": "268.01 H",
+    "callNumEnd": "274.371 D",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 50,
+    "shelfFace": "B",
+    "callNumStart": "274.4 A",
+    "callNumEnd": "282.52 St",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 51,
+    "shelfFace": "A",
+    "callNumStart": "282.52 St",
+    "callNumEnd": "291.17 M",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 51,
+    "shelfFace": "B",
+    "callNumStart": "291.17 O",
+    "callNumEnd": "294.3 H",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 52,
+    "shelfFace": "A",
+    "callNumStart": "294.3 I",
+    "callNumEnd": "294.31 G",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 52,
+    "shelfFace": "B",
+    "callNumStart": "294.31 H",
+    "callNumEnd": "294.332 G",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 53,
+    "shelfFace": "A",
+    "callNumStart": "294.332 G",
+    "callNumEnd": "294.34 J",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 53,
+    "shelfFace": "B",
+    "callNumStart": "294.34 J",
+    "callNumEnd": 294.3509,
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 54,
+    "shelfFace": "A",
+    "callNumStart": 294.3509,
+    "callNumEnd": "294.388 Y",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 54,
+    "shelfFace": "B",
+    "callNumStart": "294.388 Z",
+    "callNumEnd": 294.5436,
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 55,
+    "shelfFace": "A",
+    "callNumStart": 294.5436,
+    "callNumEnd": "297.209 W",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 55,
+    "shelfFace": "B",
+    "callNumStart": 294.209,
+    "callNumEnd": "299.52 W",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 56,
+    "shelfFace": "A",
+    "callNumStart": "299.52 Y",
+    "callNumEnd": 299.9409,
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 56,
+    "shelfFace": "B",
+    "callNumStart": "大 200",
+    "callNumEnd": "大 299",
+    "category": "200 종교 [Religion]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 57,
+    "shelfFace": "A",
+    "callNumStart": "300 A",
+    "callNumEnd": "300.72K",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 57,
+    "shelfFace": "B",
+    "callNumStart": "300.72 L",
+    "callNumEnd": "301 L",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 58,
+    "shelfFace": "A",
+    "callNumStart": "301 L",
+    "callNumEnd": "301.045 P",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 58,
+    "shelfFace": "B",
+    "callNumStart": "301.045 W",
+    "callNumEnd": "301.1 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 59,
+    "shelfFace": "A",
+    "callNumStart": "301.1 H",
+    "callNumEnd": 301.2951,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 59,
+    "shelfFace": "B",
+    "callNumStart": 301.2951,
+    "callNumEnd": "301.435 B",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 60,
+    "shelfFace": "A",
+    "callNumStart": "301.435 G",
+    "callNumEnd": "302.12 R",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 60,
+    "shelfFace": "B",
+    "callNumStart": "302.12 S",
+    "callNumEnd": "302.23 H",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 61,
+    "shelfFace": "A",
+    "callNumStart": "302.23 H",
+    "callNumEnd": "302.3 I",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 61,
+    "shelfFace": "B",
+    "callNumStart": "302.3 J",
+    "callNumEnd": "303.372 C",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 62,
+    "shelfFace": "A",
+    "callNumStart": "303.372 D",
+    "callNumEnd": "303.482 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 62,
+    "shelfFace": "B",
+    "callNumStart": "303.482 Z",
+    "callNumEnd": 303.4833,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 63,
+    "shelfFace": "A",
+    "callNumStart": 303.4833,
+    "callNumEnd": "303.49 J",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 63,
+    "shelfFace": "B",
+    "callNumStart": "303.49 K",
+    "callNumEnd": "304.2 C",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 64,
+    "shelfFace": "A",
+    "callNumStart": "304.2 D",
+    "callNumEnd": "304.632 D",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 64,
+    "shelfFace": "B",
+    "callNumStart": "304.632 G",
+    "callNumEnd": "305.26 R",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 65,
+    "shelfFace": "A",
+    "callNumStart": "305.26 S",
+    "callNumEnd": "305.4 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 65,
+    "shelfFace": "B",
+    "callNumStart": "305.4 Y",
+    "callNumEnd": "305.42 K",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 66,
+    "shelfFace": "A",
+    "callNumStart": "305.42 L",
+    "callNumEnd": "305.5 V",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 66,
+    "shelfFace": "B",
+    "callNumStart": "305.5 W",
+    "callNumEnd": 305.6705,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 67,
+    "shelfFace": "A",
+    "callNumStart": 305.6971,
+    "callNumEnd": 305.81053,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 67,
+    "shelfFace": "B",
+    "callNumStart": 305.81057,
+    "callNumEnd": "306 Al",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 68,
+    "shelfFace": "A",
+    "callNumStart": "306 An",
+    "callNumEnd": 306.0891,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 68,
+    "shelfFace": "B",
+    "callNumStart": 306.0891,
+    "callNumEnd": 306.0951,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 69,
+    "shelfFace": "A",
+    "callNumStart": 306.0951,
+    "callNumEnd": 306.0953,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 69,
+    "shelfFace": "B",
+    "callNumStart": 306.0953,
+    "callNumEnd": "306.201 S",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 70,
+    "shelfFace": "A",
+    "callNumStart": 306.2082,
+    "callNumEnd": 306.262,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 70,
+    "shelfFace": "B",
+    "callNumStart": 306.262,
+    "callNumEnd": "306.44 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 71,
+    "shelfFace": "A",
+    "callNumStart": "306.44 G",
+    "callNumEnd": "306.481 A",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 71,
+    "shelfFace": "B",
+    "callNumStart": "306.481 B",
+    "callNumEnd": "306.7 V",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 72,
+    "shelfFace": "A",
+    "callNumStart": "306.7 V",
+    "callNumEnd": "306.843 B",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 72,
+    "shelfFace": "B",
+    "callNumStart": "306.843 L",
+    "callNumEnd": "306.89 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 73,
+    "shelfFace": "A",
+    "callNumStart": 306.8909,
+    "callNumEnd": 307.1412,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 73,
+    "shelfFace": "B",
+    "callNumStart": 307.14212,
+    "callNumEnd": "307.76 Sc",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 74,
+    "shelfFace": "A",
+    "callNumStart": "307.76 Se",
+    "callNumEnd": "309.42 I",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 74,
+    "shelfFace": "B",
+    "callNumStart": "309.44 M",
+    "callNumEnd": "320.01 K",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 75,
+    "shelfFace": "A",
+    "callNumStart": "320.01 L",
+    "callNumEnd": "320.082 B",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 75,
+    "shelfFace": "B",
+    "callNumStart": "320.082 C",
+    "callNumEnd": "320.1 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 76,
+    "shelfFace": "A",
+    "callNumStart": "320.1 G",
+    "callNumEnd": "320.5 Au",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 76,
+    "shelfFace": "B",
+    "callNumStart": "320.5 B",
+    "callNumEnd": "320.532 F",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 77,
+    "shelfFace": "A",
+    "callNumStart": "320.532 G",
+    "callNumEnd": "320.6 E",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 77,
+    "shelfFace": "B",
+    "callNumStart": "320.6 F",
+    "callNumEnd": "320.946 F",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 78,
+    "shelfFace": "A",
+    "callNumStart": "320.946 G",
+    "callNumEnd": "320.951 B",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 78,
+    "shelfFace": "B",
+    "callNumStart": "320.951 B",
+    "callNumEnd": "320.951 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 79,
+    "shelfFace": "A",
+    "callNumStart": "320.951 G",
+    "callNumEnd": "320.951 J",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 79,
+    "shelfFace": "B",
+    "callNumStart": "320.951 J",
+    "callNumEnd": "320.951 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 80,
+    "shelfFace": "A",
+    "callNumStart": "320.951 Y",
+    "callNumEnd": "320.952 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 80,
+    "shelfFace": "B",
+    "callNumStart": "320.952 G",
+    "callNumEnd": "320.953 T",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 81,
+    "shelfFace": "A",
+    "callNumStart": "320.953 T",
+    "callNumEnd": "320.98 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 81,
+    "shelfFace": "B",
+    "callNumStart": "320.98 G",
+    "callNumEnd": "321.644 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 82,
+    "shelfFace": "A",
+    "callNumStart": "321.644 J",
+    "callNumEnd": "321.9 M",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 82,
+    "shelfFace": "B",
+    "callNumStart": "321.9 N",
+    "callNumEnd": "323 F",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 83,
+    "shelfFace": "A",
+    "callNumStart": "323 G",
+    "callNumEnd": 323.1196,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 83,
+    "shelfFace": "B",
+    "callNumStart": 323.1196,
+    "callNumEnd": "323.4095 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 84,
+    "shelfFace": "A",
+    "callNumStart": "323.4095 Y",
+    "callNumEnd": "323.448 R",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 84,
+    "shelfFace": "B",
+    "callNumStart": "323.448 S",
+    "callNumEnd": "324.2 L",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 85,
+    "shelfFace": "A",
+    "callNumStart": "324.2 M",
+    "callNumEnd": "324.2520 Z",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 85,
+    "shelfFace": "B",
+    "callNumStart": "324.2520 Z",
+    "callNumEnd": "324.73 L",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 86,
+    "shelfFace": "A",
+    "callNumStart": "324.73 G",
+    "callNumEnd": "325.21 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 86,
+    "shelfFace": "B",
+    "callNumStart": "325.21 Z",
+    "callNumEnd": "325.32 S",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 87,
+    "shelfFace": "A",
+    "callNumStart": "325.32 S",
+    "callNumEnd": "327 D",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 87,
+    "shelfFace": "B",
+    "callNumStart": "327 E",
+    "callNumEnd": "327.076 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 88,
+    "shelfFace": "A",
+    "callNumStart": "327.08 C",
+    "callNumEnd": "327.101 H",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 88,
+    "shelfFace": "B",
+    "callNumStart": "327.101 H",
+    "callNumEnd": "327.17 B",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 89,
+    "shelfFace": "A",
+    "callNumStart": "327.17 B",
+    "callNumEnd": "327.2 F",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 89,
+    "shelfFace": "B",
+    "callNumStart": "327.2 G",
+    "callNumEnd": "327.47 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 90,
+    "shelfFace": "A",
+    "callNumStart": "327.47 H",
+    "callNumEnd": "327.5 J",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 90,
+    "shelfFace": "B",
+    "callNumStart": "327.5 J",
+    "callNumEnd": "327.51 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 91,
+    "shelfFace": "A",
+    "callNumStart": "327.51 G",
+    "callNumEnd": 327.51047,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 91,
+    "shelfFace": "B",
+    "callNumStart": 327.51047,
+    "callNumEnd": 327.51053,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 92,
+    "shelfFace": "A",
+    "callNumStart": 327.51053,
+    "callNumEnd": 327.51073,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 92,
+    "shelfFace": "B",
+    "callNumStart": 327.51073,
+    "callNumEnd": 327.52047,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 93,
+    "shelfFace": "A",
+    "callNumStart": 327.52047,
+    "callNumEnd": 327.53051,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 93,
+    "shelfFace": "B",
+    "callNumStart": 327.53052,
+    "callNumEnd": "327.73 P",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 94,
+    "shelfFace": "A",
+    "callNumStart": "327.73 P",
+    "callNumEnd": 327.73053,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 94,
+    "shelfFace": "B",
+    "callNumStart": 327.73053,
+    "callNumEnd": 328.51092,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 95,
+    "shelfFace": "A",
+    "callNumStart": "328.511 A",
+    "callNumEnd": "330 C",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 95,
+    "shelfFace": "B",
+    "callNumStart": "330 C",
+    "callNumEnd": "330 M",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 96,
+    "shelfFace": "A",
+    "callNumStart": "330 O",
+    "callNumEnd": "330 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 96,
+    "shelfFace": "B",
+    "callNumStart": "330.01 A",
+    "callNumEnd": 330.015193,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 97,
+    "shelfFace": "A",
+    "callNumStart": 330.015193,
+    "callNumEnd": "330.02 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 97,
+    "shelfFace": "B",
+    "callNumStart": "330.02 Y",
+    "callNumEnd": "330.09 W",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 98,
+    "shelfFace": "A",
+    "callNumStart": "330.09 Y",
+    "callNumEnd": "330.1 H",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 98,
+    "shelfFace": "B",
+    "callNumStart": "330.1 H",
+    "callNumEnd": "330.122 D",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 99,
+    "shelfFace": "A",
+    "callNumStart": "330.122 D",
+    "callNumEnd": "330.126 R",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 99,
+    "shelfFace": "B",
+    "callNumStart": "330.126 S",
+    "callNumEnd": "330.17 K",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 100,
+    "shelfFace": "A",
+    "callNumStart": "330.17 L",
+    "callNumEnd": "330.9 S",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 100,
+    "shelfFace": "B",
+    "callNumStart": "330.9 T",
+    "callNumEnd": "330.94 F",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 101,
+    "shelfFace": "A",
+    "callNumStart": "330.94 F",
+    "callNumEnd": 330.9492,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 2자료실",
+    "bookshelf": 101,
+    "shelfFace": "B",
+    "callNumStart": 330.9493,
+    "callNumEnd": "330.95042 C",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 102,
+    "shelfFace": "A",
+    "callNumStart": "330.951 A",
+    "callNumEnd": "330.951 S",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 102,
+    "shelfFace": "B",
+    "callNumStart": "330.951 S",
+    "callNumEnd": "330.952 S",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 103,
+    "shelfFace": "A",
+    "callNumStart": "330.952 T",
+    "callNumEnd": "331 D",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 103,
+    "shelfFace": "B",
+    "callNumStart": "331 E",
+    "callNumEnd": "331.25 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 104,
+    "shelfFace": "A",
+    "callNumStart": 331.2509,
+    "callNumEnd": 331.7023,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 104,
+    "shelfFace": "B",
+    "callNumStart": "331.71 B",
+    "callNumEnd": "332.015195 J",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 105,
+    "shelfFace": "A",
+    "callNumStart": "332.015195 L",
+    "callNumEnd": "332.095 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 105,
+    "shelfFace": "B",
+    "callNumStart": "332.0951 G",
+    "callNumEnd": "332.4 G4",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 106,
+    "shelfFace": "A",
+    "callNumStart": "332.4 G5",
+    "callNumEnd": "332.6 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 106,
+    "shelfFace": "B",
+    "callNumStart": "332.601 G",
+    "callNumEnd": "332.6327 H",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 107,
+    "shelfFace": "A",
+    "callNumStart": "332.6327 I",
+    "callNumEnd": "332.72 C",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 107,
+    "shelfFace": "B",
+    "callNumStart": "332.72 G",
+    "callNumEnd": 333.33068,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 108,
+    "shelfFace": "A",
+    "callNumStart": 333.330681,
+    "callNumEnd": 333.73098,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 108,
+    "shelfFace": "B",
+    "callNumStart": "333.731 S",
+    "callNumEnd": "333.8232 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 109,
+    "shelfFace": "A",
+    "callNumStart": "333.8232 H",
+    "callNumEnd": "335.1342 F",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 109,
+    "shelfFace": "B",
+    "callNumStart": "335.14 C",
+    "callNumEnd": "335.411 L",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 110,
+    "shelfFace": "A",
+    "callNumStart": "335.411 M",
+    "callNumEnd": "336 Y58jb",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 110,
+    "shelfFace": "B",
+    "callNumStart": "336 Y58je",
+    "callNumEnd": "337 C3",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 111,
+    "shelfFace": "A",
+    "callNumStart": "337 C4",
+    "callNumEnd": "338 A",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 111,
+    "shelfFace": "B",
+    "callNumStart": "338 B",
+    "callNumEnd": "338.1094 S",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 112,
+    "shelfFace": "A",
+    "callNumStart": "338.1094 T",
+    "callNumEnd": "338.4 Y3",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 112,
+    "shelfFace": "B",
+    "callNumStart": "338.4 Y5",
+    "callNumEnd": 338.4766,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 113,
+    "shelfFace": "A",
+    "callNumStart": 338.4766,
+    "callNumEnd": 338.4791,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 113,
+    "shelfFace": "B",
+    "callNumStart": 338.4791,
+    "callNumEnd": 338.54097,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 114,
+    "shelfFace": "A",
+    "callNumStart": "338.542 A",
+    "callNumEnd": 338.74097,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 114,
+    "shelfFace": "B",
+    "callNumStart": "338.749 B",
+    "callNumEnd": "338.9 B2",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 115,
+    "shelfFace": "A",
+    "callNumStart": "338.9 B3",
+    "callNumEnd": 338.9151,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 115,
+    "shelfFace": "B",
+    "callNumStart": 338.9151,
+    "callNumEnd": "338.951 R",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 116,
+    "shelfFace": "A",
+    "callNumStart": "338.951 S",
+    "callNumEnd": "339 J6",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 116,
+    "shelfFace": "B",
+    "callNumStart": "339 J7",
+    "callNumEnd": "340.923 S",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 117,
+    "shelfFace": "A",
+    "callNumStart": "340.023 Y",
+    "callNumEnd": "340.9 J",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 117,
+    "shelfFace": "B",
+    "callNumStart": "340.9 L",
+    "callNumEnd": "342 Si",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 118,
+    "shelfFace": "A",
+    "callNumStart": "342 So",
+    "callNumEnd": "342.73085 B",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 118,
+    "shelfFace": "B",
+    "callNumStart": "342.73085 C",
+    "callNumEnd": "344.01 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 119,
+    "shelfFace": "A",
+    "callNumStart": "342.01 Z",
+    "callNumEnd": "344.5103 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 119,
+    "shelfFace": "B",
+    "callNumStart": 344.51032,
+    "callNumEnd": "345.44 B",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 120,
+    "shelfFace": "A",
+    "callNumStart": "345.44 C",
+    "callNumEnd": "346.048 O",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 120,
+    "shelfFace": "B",
+    "callNumStart": "346.048 P",
+    "callNumEnd": "346.51 U",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 121,
+    "shelfFace": "A",
+    "callNumStart": "346.51 Y",
+    "callNumEnd": "347.06 J",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 121,
+    "shelfFace": "B",
+    "callNumStart": "347.06 W",
+    "callNumEnd": "350 G418",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 122,
+    "shelfFace": "A",
+    "callNumStart": "350 G419",
+    "callNumEnd": "350.00285 O",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 122,
+    "shelfFace": "B",
+    "callNumStart": "350.00285 P",
+    "callNumEnd": "350.142 St",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 123,
+    "shelfFace": "A",
+    "callNumStart": "350.147 B",
+    "callNumEnd": "351 J466g",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 123,
+    "shelfFace": "B",
+    "callNumStart": "351 J466m",
+    "callNumEnd": "351.51 K6",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 124,
+    "shelfFace": "A",
+    "callNumStart": "351.51 K6",
+    "callNumEnd": "352 T",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 124,
+    "shelfFace": "B",
+    "callNumStart": "352 Y",
+    "callNumEnd": 352.05143,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 125,
+    "shelfFace": "A",
+    "callNumStart": 352.05144,
+    "callNumEnd": "352.63 J",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 125,
+    "shelfFace": "B",
+    "callNumStart": "352.63 L",
+    "callNumEnd": "354.516 H",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 126,
+    "shelfFace": "A",
+    "callNumStart": "354.518 G",
+    "callNumEnd": "355.02 S",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 126,
+    "shelfFace": "B",
+    "callNumStart": "355.02 S",
+    "callNumEnd": 355.0947,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 127,
+    "shelfFace": "A",
+    "callNumStart": 355.0951,
+    "callNumEnd": 358.40095,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 127,
+    "shelfFace": "B",
+    "callNumStart": 358.40096,
+    "callNumEnd": 361.1095,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 128,
+    "shelfFace": "A",
+    "callNumStart": 361.1097,
+    "callNumEnd": 361.61094,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 128,
+    "shelfFace": "B",
+    "callNumStart": 361.61094,
+    "callNumEnd": "361.951 H",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 129,
+    "shelfFace": "A",
+    "callNumStart": "361.951 H",
+    "callNumEnd": 362.11068,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 129,
+    "shelfFace": "B",
+    "callNumStart": 362.11068,
+    "callNumEnd": "362.4 M",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 130,
+    "shelfFace": "A",
+    "callNumStart": "362.4 N",
+    "callNumEnd": "362.66 G",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 130,
+    "shelfFace": "B",
+    "callNumStart": "362.66 H",
+    "callNumEnd": "362.82 G4",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 131,
+    "shelfFace": "A",
+    "callNumStart": "362.82 G4",
+    "callNumEnd": 363.2094,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 131,
+    "shelfFace": "B",
+    "callNumStart": 363.2095,
+    "callNumEnd": 363.58094,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 132,
+    "shelfFace": "A",
+    "callNumStart": 363.58097,
+    "callNumEnd": "363.7 St",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 132,
+    "shelfFace": "B",
+    "callNumStart": "363.7 Su",
+    "callNumEnd": 363.73874,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 133,
+    "shelfFace": "A",
+    "callNumStart": 363.73874,
+    "callNumEnd": 364.1523,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 133,
+    "shelfFace": "B",
+    "callNumStart": 364.1523,
+    "callNumEnd": "368 B2",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 134,
+    "shelfFace": "A",
+    "callNumStart": "368 B4",
+    "callNumEnd": "370 W",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 134,
+    "shelfFace": "B",
+    "callNumStart": "370 Y",
+    "callNumEnd": "370.11W",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 135,
+    "shelfFace": "A",
+    "callNumStart": "370.11 Y",
+    "callNumEnd": "370.15 J4",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 135,
+    "shelfFace": "B",
+    "callNumStart": "370.15 J5",
+    "callNumEnd": 370.19345,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 136,
+    "shelfFace": "A",
+    "callNumStart": 370.19345,
+    "callNumEnd": "370.78 H1",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 136,
+    "shelfFace": "B",
+    "callNumStart": "370.78 H1",
+    "callNumEnd": "370.9 M5",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 137,
+    "shelfFace": "A",
+    "callNumStart": "370.9 M7",
+    "callNumEnd": "370.951 J",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 137,
+    "shelfFace": "B",
+    "callNumStart": "370.951 J",
+    "callNumEnd": 371.01097,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 138,
+    "shelfFace": "A",
+    "callNumStart": 371.01097,
+    "callNumEnd": "371.2 J4",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 138,
+    "shelfFace": "B",
+    "callNumStart": "371.2 J4",
+    "callNumEnd": "371.26 H1",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 139,
+    "shelfFace": "A",
+    "callNumStart": "371.26 H1",
+    "callNumEnd": "371.3207 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 139,
+    "shelfFace": "B",
+    "callNumStart": 371.32095,
+    "callNumEnd": "371.425 S",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 140,
+    "shelfFace": "A",
+    "callNumStart": "371.425 T",
+    "callNumEnd": "371.91 J4",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 140,
+    "shelfFace": "B",
+    "callNumStart": "371.91 J5",
+    "callNumEnd": "372.21 J2",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 141,
+    "shelfFace": "A",
+    "callNumStart": "372.21 J4",
+    "callNumEnd": "372.6044 E",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 141,
+    "shelfFace": "B",
+    "callNumStart": "372.6044 F",
+    "callNumEnd": "373.51 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 142,
+    "shelfFace": "A",
+    "callNumStart": "373.511 B",
+    "callNumEnd": "375.001 G4",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 142,
+    "shelfFace": "B",
+    "callNumStart": "375.001 G4",
+    "callNumEnd": "378.01 B",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 143,
+    "shelfFace": "A",
+    "callNumStart": "378.01 C",
+    "callNumEnd": "378.194 Ar",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 143,
+    "shelfFace": "B",
+    "callNumStart": "378.194 B",
+    "callNumEnd": "378.51 G9",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 144,
+    "shelfFace": "A",
+    "callNumStart": "378.51 G9",
+    "callNumEnd": "378.73 T3",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 144,
+    "shelfFace": "B",
+    "callNumStart": "378.73 T4",
+    "callNumEnd": 381.09841,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 145,
+    "shelfFace": "A",
+    "callNumStart": "381.1 B",
+    "callNumEnd": "382 Y94",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 145,
+    "shelfFace": "B",
+    "callNumStart": "382 Y97",
+    "callNumEnd": "382.3 Si",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 146,
+    "shelfFace": "A",
+    "callNumStart": "382.3 So",
+    "callNumEnd": "384 In",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 146,
+    "shelfFace": "B",
+    "callNumStart": "384 J4",
+    "callNumEnd": 384.54068,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 147,
+    "shelfFace": "A",
+    "callNumStart": 384.54068,
+    "callNumEnd": "387.5 Sa",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 147,
+    "shelfFace": "B",
+    "callNumStart": "387.5 Se",
+    "callNumEnd": "388.4 H1",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 148,
+    "shelfFace": "A",
+    "callNumStart": "388.4 H2",
+    "callNumEnd": 390.09512,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 148,
+    "shelfFace": "B",
+    "callNumStart": 390.095123,
+    "callNumEnd": "391.434 Y",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 149,
+    "shelfFace": "A",
+    "callNumStart": "391.44 B",
+    "callNumEnd": 394.10951,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 149,
+    "shelfFace": "B",
+    "callNumStart": 394.10951,
+    "callNumEnd": "394.3 B",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 150,
+    "shelfFace": "A",
+    "callNumStart": "394.3 C",
+    "callNumEnd": "398.0951 J7",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 150,
+    "shelfFace": "B",
+    "callNumStart": "398.0951 J8",
+    "callNumEnd": 398.20951,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 151,
+    "shelfFace": "A",
+    "callNumStart": 398.20951,
+    "callNumEnd": 398.20962,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 151,
+    "shelfFace": "B",
+    "callNumStart": 398.20964,
+    "callNumEnd": 398.32951,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 152,
+    "shelfFace": "A",
+    "callNumStart": 398.32951,
+    "callNumEnd": 399.0967,
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 152,
+    "shelfFace": "B",
+    "callNumStart": "",
+    "callNumEnd": "",
+    "category": "300 사회과학 [Social Sciences]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 153,
+    "shelfFace": "A",
+    "callNumStart": "400 B",
+    "callNumEnd": "401 G418",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 153,
+    "shelfFace": "B",
+    "callNumStart": "401 G419",
+    "callNumEnd": "401 Sa",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 154,
+    "shelfFace": "A",
+    "callNumStart": "401 Sa",
+    "callNumEnd": "401.0141 V",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 154,
+    "shelfFace": "B",
+    "callNumStart": "401.0141 W",
+    "callNumEnd": "401.2 C3",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 155,
+    "shelfFace": "A",
+    "callNumStart": "401.2 C4",
+    "callNumEnd": "401.5 B3",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 155,
+    "shelfFace": "B",
+    "callNumStart": "401.5 B4",
+    "callNumEnd": "401.5 P1",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 156,
+    "shelfFace": "A",
+    "callNumStart": "401.5 P2",
+    "callNumEnd": "401.8007 S",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 156,
+    "shelfFace": "B",
+    "callNumStart": "401.8007 T",
+    "callNumEnd": "407.6 V",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 157,
+    "shelfFace": "A",
+    "callNumStart": "407.8 T",
+    "callNumEnd": "410.7 An",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 157,
+    "shelfFace": "B",
+    "callNumStart": "410.7 B",
+    "callNumEnd": "410.8 H7",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 158,
+    "shelfFace": "A",
+    "callNumStart": "410.8 H9",
+    "callNumEnd": "411.1 J4",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 158,
+    "shelfFace": "B",
+    "callNumStart": "411.1 J5",
+    "callNumEnd": "412 B1",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 159,
+    "shelfFace": "A",
+    "callNumStart": "412 B3",
+    "callNumEnd": "415 Y1",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 159,
+    "shelfFace": "B",
+    "callNumStart": "415 Y4",
+    "callNumEnd": "417.42 S",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 160,
+    "shelfFace": "A",
+    "callNumStart": "417.42 Y",
+    "callNumEnd": "419 G41",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 160,
+    "shelfFace": "B",
+    "callNumStart": "419 G42",
+    "callNumEnd": "421.5 K",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 161,
+    "shelfFace": "A",
+    "callNumStart": "421.5 L",
+    "callNumEnd": "425 Y52",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 161,
+    "shelfFace": "B",
+    "callNumStart": "425 Y53",
+    "callNumEnd": "428.02 W",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 162,
+    "shelfFace": "A",
+    "callNumStart": "428.02 Y",
+    "callNumEnd": "428.3 P",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 162,
+    "shelfFace": "B",
+    "callNumStart": "428.3 R",
+    "callNumEnd": "435 Sc",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 163,
+    "shelfFace": "A",
+    "callNumStart": "435 Se",
+    "callNumEnd": "443 C6",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 163,
+    "shelfFace": "B",
+    "callNumStart": "443 D",
+    "callNumEnd": "465 N",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 164,
+    "shelfFace": "A",
+    "callNumStart": "465 P",
+    "callNumEnd": 491.4797,
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 164,
+    "shelfFace": "B",
+    "callNumStart": "491.482 M",
+    "callNumEnd": "492.715 O",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 165,
+    "shelfFace": "A",
+    "callNumStart": "492.72 K",
+    "callNumEnd": "495.1 M",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 165,
+    "shelfFace": "B",
+    "callNumStart": "495.1 N",
+    "callNumEnd": "495.15 L7",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 166,
+    "shelfFace": "A",
+    "callNumStart": "495.15 L9",
+    "callNumEnd": "495.607 Y",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 166,
+    "shelfFace": "B",
+    "callNumStart": 495.6071,
+    "callNumEnd": "498.2 T",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 167,
+    "shelfFace": "A",
+    "callNumStart": "498.3 F",
+    "callNumEnd": "大 495.11",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 167,
+    "shelfFace": "B",
+    "callNumStart": "大 495.11",
+    "callNumEnd": "大 499",
+    "category": "400 언어 [Language]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 168,
+    "shelfFace": "A",
+    "callNumStart": "500 AB",
+    "callNumEnd": "501 H7",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 168,
+    "shelfFace": "B",
+    "callNumStart": "501 H8",
+    "callNumEnd": "502 Y53",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 169,
+    "shelfFace": "A",
+    "callNumStart": "502 Y54",
+    "callNumEnd": "508 M5",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 169,
+    "shelfFace": "B",
+    "callNumStart": "508 M6",
+    "callNumEnd": 509.2242,
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 170,
+    "shelfFace": "A",
+    "callNumStart": "509.225 Q",
+    "callNumEnd": "510 G",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 170,
+    "shelfFace": "B",
+    "callNumStart": "510 H",
+    "callNumEnd": "510.2 H1",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 171,
+    "shelfFace": "A",
+    "callNumStart": "510.2 H5",
+    "callNumEnd": "510.76 G",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 171,
+    "shelfFace": "B",
+    "callNumStart": "510.76 H",
+    "callNumEnd": "510.8 T",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 172,
+    "shelfFace": "A",
+    "callNumStart": "510.8 U",
+    "callNumEnd": "511.3 T2",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 172,
+    "shelfFace": "B",
+    "callNumStart": "511.3 T5",
+    "callNumEnd": "512.02 F4",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 173,
+    "shelfFace": "A",
+    "callNumStart": "512.02 F8",
+    "callNumEnd": "512.5 Y5",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 173,
+    "shelfFace": "B",
+    "callNumStart": "512.5 Y6",
+    "callNumEnd": "512.9 J",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 174,
+    "shelfFace": "A",
+    "callNumStart": "512.9 K",
+    "callNumEnd": "515 B2",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 174,
+    "shelfFace": "B",
+    "callNumStart": "515 B3",
+    "callNumEnd": "515.3 G6",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 175,
+    "shelfFace": "A",
+    "callNumStart": "515.3 G9",
+    "callNumEnd": "515.353 S",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 175,
+    "shelfFace": "B",
+    "callNumStart": "515.353 T",
+    "callNumEnd": "515.7242 S",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 176,
+    "shelfFace": "A",
+    "callNumStart": "515.7242 T",
+    "callNumEnd": "516.24 S",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 176,
+    "shelfFace": "B",
+    "callNumStart": "516.24 V",
+    "callNumEnd": "519.08 B",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 177,
+    "shelfFace": "A",
+    "callNumStart": "519.1 B",
+    "callNumEnd": "519.287 L",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 177,
+    "shelfFace": "B",
+    "callNumStart": "519.287 R",
+    "callNumEnd": "519.5 G4",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 178,
+    "shelfFace": "A",
+    "callNumStart": "519.5 G4",
+    "callNumEnd": "519.5 Y",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 178,
+    "shelfFace": "B",
+    "callNumStart": "519.5 Z",
+    "callNumEnd": "519.535 H",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 179,
+    "shelfFace": "A",
+    "callNumStart": "519.535 I",
+    "callNumEnd": "519.7 W",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 179,
+    "shelfFace": "B",
+    "callNumStart": "519.7 Z",
+    "callNumEnd": "521 P",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 180,
+    "shelfFace": "A",
+    "callNumStart": "521 R",
+    "callNumEnd": "523.1 T",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 180,
+    "shelfFace": "B",
+    "callNumStart": "523.1 U",
+    "callNumEnd": "526 A",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 181,
+    "shelfFace": "A",
+    "callNumStart": "526 B",
+    "callNumEnd": "530 F4",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 181,
+    "shelfFace": "B",
+    "callNumStart": "530 F4",
+    "callNumEnd": "530.02 C6",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 182,
+    "shelfFace": "A",
+    "callNumStart": "530.02 C7",
+    "callNumEnd": "530.1 B",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 182,
+    "shelfFace": "B",
+    "callNumStart": "530.1 C",
+    "callNumEnd": "530.12 L6",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 183,
+    "shelfFace": "A",
+    "callNumStart": "530.12 L7",
+    "callNumEnd": "530.141 M",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 183,
+    "shelfFace": "B",
+    "callNumStart": "530.141 N",
+    "callNumEnd": "530.41 C2",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 184,
+    "shelfFace": "A",
+    "callNumStart": "530.41 C3",
+    "callNumEnd": "530.44 St",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 3자료실",
+    "bookshelf": 184,
+    "shelfFace": "B",
+    "callNumStart": "530.44 Sw",
+    "callNumEnd": "531.6092 M",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 185,
+    "shelfFace": "A",
+    "callNumStart": "532 Ac",
+    "callNumEnd": "535.012 C",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 185,
+    "shelfFace": "B",
+    "callNumStart": "535.014 B",
+    "callNumEnd": 536.70182,
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 186,
+    "shelfFace": "A",
+    "callNumStart": 536.70212,
+    "callNumEnd": "538 C",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 186,
+    "shelfFace": "B",
+    "callNumStart": "538 E",
+    "callNumEnd": "539.72 K",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 187,
+    "shelfFace": "A",
+    "callNumStart": "539.72 L",
+    "callNumEnd": "540 H3",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 187,
+    "shelfFace": "B",
+    "callNumStart": "540 H5",
+    "callNumEnd": "541.0421 W5",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 188,
+    "shelfFace": "A",
+    "callNumStart": "541.0421 W7",
+    "callNumEnd": "541.3453 B",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 188,
+    "shelfFace": "B",
+    "callNumStart": "541.3453 C",
+    "callNumEnd": "541.395 F3",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 189,
+    "shelfFace": "A",
+    "callNumStart": "541.395 F4",
+    "callNumEnd": "543.0871 R",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 189,
+    "shelfFace": "B",
+    "callNumStart": "543.0871 S",
+    "callNumEnd": "546.3 B",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 190,
+    "shelfFace": "A",
+    "callNumStart": "546.3 C",
+    "callNumEnd": "547 M8",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 190,
+    "shelfFace": "B",
+    "callNumStart": "547 M8",
+    "callNumEnd": "547.13 Ad",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 191,
+    "shelfFace": "A",
+    "callNumStart": "547.13 C",
+    "callNumEnd": "547.7 C4",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 191,
+    "shelfFace": "B",
+    "callNumStart": "547.7 C6",
+    "callNumEnd": "548.5 Se",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 192,
+    "shelfFace": "A",
+    "callNumStart": "548.5 Sh",
+    "callNumEnd": "550.9518 Y",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 192,
+    "shelfFace": "B",
+    "callNumStart": "551 Ad",
+    "callNumEnd": "551.415 W",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 193,
+    "shelfFace": "A",
+    "callNumStart": "551.415 Y",
+    "callNumEnd": "551.483 H2",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 193,
+    "shelfFace": "B",
+    "callNumStart": "551.483 H3",
+    "callNumEnd": "551.6 K",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 194,
+    "shelfFace": "A",
+    "callNumStart": "551.6 L",
+    "callNumEnd": "553.28 R",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 194,
+    "shelfFace": "B",
+    "callNumStart": "553.28 S",
+    "callNumEnd": "570.752 R",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 195,
+    "shelfFace": "A",
+    "callNumStart": "570.76 G",
+    "callNumEnd": 572.8652,
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 195,
+    "shelfFace": "B",
+    "callNumStart": "572.869 G",
+    "callNumEnd": "574.09 C",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 196,
+    "shelfFace": "A",
+    "callNumStart": "574.09 G",
+    "callNumEnd": "574.19218 G",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 196,
+    "shelfFace": "B",
+    "callNumStart": "574.19218 I",
+    "callNumEnd": "574.5 D",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 197,
+    "shelfFace": "A",
+    "callNumStart": "574.5 E",
+    "callNumEnd": "574.87 O",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 197,
+    "shelfFace": "B",
+    "callNumStart": "574.87 P",
+    "callNumEnd": "575 B",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 198,
+    "shelfFace": "A",
+    "callNumStart": "575 C",
+    "callNumEnd": "576 L5",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 198,
+    "shelfFace": "B",
+    "callNumStart": "576 L6",
+    "callNumEnd": "577.16 S",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 199,
+    "shelfFace": "A",
+    "callNumStart": "577.18 B",
+    "callNumEnd": "581.1 Sa",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 199,
+    "shelfFace": "B",
+    "callNumStart": "581.1 St",
+    "callNumEnd": 582.10959,
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 200,
+    "shelfFace": "A",
+    "callNumStart": "582.13 B",
+    "callNumEnd": "591.15 G",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 200,
+    "shelfFace": "B",
+    "callNumStart": "591.15 P",
+    "callNumEnd": "595.7 M",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 201,
+    "shelfFace": "A",
+    "callNumStart": "595.7 N",
+    "callNumEnd": "598.854 A",
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 201,
+    "shelfFace": "B",
+    "callNumStart": "598.864 H",
+    "callNumEnd": 599.999,
+    "category": "500 순수과학 [Science]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 202,
+    "shelfFace": "A",
+    "callNumStart": "600 A",
+    "callNumEnd": "610 J4",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 202,
+    "shelfFace": "B",
+    "callNumStart": "610 J5",
+    "callNumEnd": "610.9 Y",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 203,
+    "shelfFace": "A",
+    "callNumStart": "610.901 E",
+    "callNumEnd": "612.04 G",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 203,
+    "shelfFace": "B",
+    "callNumStart": "612.04 H",
+    "callNumEnd": "612.82 F",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 204,
+    "shelfFace": "A",
+    "callNumStart": "612.82 G",
+    "callNumEnd": "613.0973 R",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 204,
+    "shelfFace": "B",
+    "callNumStart": "613.0973 S",
+    "callNumEnd": "613.7046 L",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 205,
+    "shelfFace": "A",
+    "callNumStart": "613.7046 M",
+    "callNumEnd": 615.0688,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 205,
+    "shelfFace": "B",
+    "callNumStart": "615.07 B",
+    "callNumEnd": "615.15 Z",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 206,
+    "shelfFace": "A",
+    "callNumStart": "616.18 C",
+    "callNumEnd": "615.58 G",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 206,
+    "shelfFace": "B",
+    "callNumStart": "615.58 H",
+    "callNumEnd": "615 88 D",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 207,
+    "shelfFace": "A",
+    "callNumStart": "615.88 G",
+    "callNumEnd": "616.027 C",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 207,
+    "shelfFace": "B",
+    "callNumStart": "616.027 G",
+    "callNumEnd": "616.079 W",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 208,
+    "shelfFace": "A",
+    "callNumStart": "616.079 Y",
+    "callNumEnd": "616.8498 K",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 208,
+    "shelfFace": "B",
+    "callNumStart": "616.8498 L",
+    "callNumEnd": 616.89008,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 209,
+    "shelfFace": "A",
+    "callNumStart": 616.89008,
+    "callNumEnd": "616.962 C",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 209,
+    "shelfFace": "B",
+    "callNumStart": "616.963 S",
+    "callNumEnd": "617.956 G",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 210,
+    "shelfFace": "A",
+    "callNumStart": "617.96 B",
+    "callNumEnd": "620.002 G",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 210,
+    "shelfFace": "B",
+    "callNumStart": "620.002 H",
+    "callNumEnd": "620.1 M66",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 211,
+    "shelfFace": "A",
+    "callNumStart": "620.1 M69",
+    "callNumEnd": "620.11 Sh",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 211,
+    "shelfFace": "B",
+    "callNumStart": "620.11 Sh",
+    "callNumEnd": "620.118 E",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 212,
+    "shelfFace": "A",
+    "callNumStart": "620.118 F",
+    "callNumEnd": "620.32 B",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 212,
+    "shelfFace": "B",
+    "callNumStart": "620.37 B",
+    "callNumEnd": "621.119 K",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 213,
+    "shelfFace": "A",
+    "callNumStart": "621.2 B",
+    "callNumEnd": "621.31042 M",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 213,
+    "shelfFace": "B",
+    "callNumStart": "621.31042 N",
+    "callNumEnd": "621.3192 H",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 214,
+    "shelfFace": "A",
+    "callNumStart": "621.3192 I",
+    "callNumEnd": "621.367 W7",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 214,
+    "shelfFace": "B",
+    "callNumStart": "621.367 W8",
+    "callNumEnd": "621.381 B",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 215,
+    "shelfFace": "A",
+    "callNumStart": "621.381 C",
+    "callNumEnd": "621.3815 B",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 215,
+    "shelfFace": "B",
+    "callNumStart": "621.3815 B",
+    "callNumEnd": 621.38152,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 216,
+    "shelfFace": "A",
+    "callNumStart": 621.38152,
+    "callNumEnd": "621.382 B",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 216,
+    "shelfFace": "B",
+    "callNumStart": "621.382 B",
+    "callNumEnd": "621.3824 L",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 217,
+    "shelfFace": "A",
+    "callNumStart": "621.3824 M",
+    "callNumEnd": "621.388 B",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 217,
+    "shelfFace": "B",
+    "callNumStart": "621.388 C",
+    "callNumEnd": "621.3981 J",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 218,
+    "shelfFace": "A",
+    "callNumStart": "621.3981 K",
+    "callNumEnd": "621.46 E",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 218,
+    "shelfFace": "B",
+    "callNumStart": "621.46 G",
+    "callNumEnd": "621.5 P",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 219,
+    "shelfFace": "A",
+    "callNumStart": "621.5 S",
+    "callNumEnd": "621.89 M",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 219,
+    "shelfFace": "B",
+    "callNumStart": "621.89 P",
+    "callNumEnd": "623.8 C",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 220,
+    "shelfFace": "A",
+    "callNumStart": "623.8 D",
+    "callNumEnd": "624.15 N",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 220,
+    "shelfFace": "B",
+    "callNumStart": "624.15 O",
+    "callNumEnd": "624.17 T1",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 221,
+    "shelfFace": "A",
+    "callNumStart": "624.17 T1",
+    "callNumEnd": "624.1821 G",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 221,
+    "shelfFace": "B",
+    "callNumStart": "624.1821 G",
+    "callNumEnd": "625.11 G",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 222,
+    "shelfFace": "A",
+    "callNumStart": "625.122 A",
+    "callNumEnd": "627.8 H1",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 222,
+    "shelfFace": "B",
+    "callNumStart": "627.8 H1",
+    "callNumEnd": "628.168 Y",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 223,
+    "shelfFace": "A",
+    "callNumStart": 628.16801,
+    "callNumEnd": 628.53097,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 223,
+    "shelfFace": "B",
+    "callNumStart": "628.532 A",
+    "callNumEnd": "629.1323 J",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 224,
+    "shelfFace": "A",
+    "callNumStart": "629.1323 K",
+    "callNumEnd": "629.232 G",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 224,
+    "shelfFace": "B",
+    "callNumStart": "629.232 M",
+    "callNumEnd": "629.8 Og",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 225,
+    "shelfFace": "A",
+    "callNumStart": "629.8 Og",
+    "callNumEnd": "629.892 T",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 225,
+    "shelfFace": "B",
+    "callNumStart": "629.892 V",
+    "callNumEnd": "631.47 K",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 226,
+    "shelfFace": "A",
+    "callNumStart": 631.4702,
+    "callNumEnd": "634.93 K",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 226,
+    "shelfFace": "B",
+    "callNumStart": "634.94 S",
+    "callNumEnd": 636.9776,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 227,
+    "shelfFace": "A",
+    "callNumStart": 636.9885,
+    "callNumEnd": 641.21095,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 227,
+    "shelfFace": "B",
+    "callNumStart": 641.21095,
+    "callNumEnd": 641.56743,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 228,
+    "shelfFace": "A",
+    "callNumStart": 641.5676,
+    "callNumEnd": "646.437 A",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 228,
+    "shelfFace": "B",
+    "callNumStart": "646.437 J",
+    "callNumEnd": "649.1 M",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 229,
+    "shelfFace": "A",
+    "callNumStart": "649.1 N",
+    "callNumEnd": "650.1 G4",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 229,
+    "shelfFace": "B",
+    "callNumStart": "650.1 G4",
+    "callNumEnd": "650.1 T6",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 230,
+    "shelfFace": "A",
+    "callNumStart": "650.1 T7",
+    "callNumEnd": "650.759 N",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 230,
+    "shelfFace": "B",
+    "callNumStart": "651.78 B",
+    "callNumEnd": "657.4 Y",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 231,
+    "shelfFace": "A",
+    "callNumStart": "657.403 S",
+    "callNumEnd": "657.95 S",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 231,
+    "shelfFace": "B",
+    "callNumStart": "657.95 Y",
+    "callNumEnd": "658 H",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 232,
+    "shelfFace": "A",
+    "callNumStart": "658 I",
+    "callNumEnd": "658.001 M",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 232,
+    "shelfFace": "B",
+    "callNumStart": "658.001 N",
+    "callNumEnd": 658.00924,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 233,
+    "shelfFace": "A",
+    "callNumStart": 658.00941,
+    "callNumEnd": "658.049 J4",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 233,
+    "shelfFace": "B",
+    "callNumStart": "658.049 J5",
+    "callNumEnd": "658.11 Y5",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 234,
+    "shelfFace": "A",
+    "callNumStart": "658.11 Y5",
+    "callNumEnd": "658.15 J5",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 234,
+    "shelfFace": "B",
+    "callNumStart": "658.15 J7",
+    "callNumEnd": "658.1513 J",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 235,
+    "shelfFace": "A",
+    "callNumStart": "658.1513 S",
+    "callNumEnd": "658.16 G1",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 235,
+    "shelfFace": "B",
+    "callNumStart": "658.16 G1",
+    "callNumEnd": "658.3 H2",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 236,
+    "shelfFace": "A",
+    "callNumStart": "658.3 H3",
+    "callNumEnd": 658.31125,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 236,
+    "shelfFace": "B",
+    "callNumStart": 658.31125,
+    "callNumEnd": "658.315 G",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 237,
+    "shelfFace": "A",
+    "callNumStart": "658.315 G",
+    "callNumEnd": "658.4 H",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 237,
+    "shelfFace": "B",
+    "callNumStart": "658.4 I",
+    "callNumEnd": 658.40019,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 238,
+    "shelfFace": "A",
+    "callNumStart": 658.40019,
+    "callNumEnd": 658.4012,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 4자료실",
+    "bookshelf": 238,
+    "shelfFace": "B",
+    "callNumStart": 658.4012,
+    "callNumEnd": 658.4012,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 239,
+    "shelfFace": "A",
+    "callNumStart": 658.4013,
+    "callNumEnd": "658.403 W",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 239,
+    "shelfFace": "B",
+    "callNumStart": "658.403 Y",
+    "callNumEnd": "658.4038 G",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 240,
+    "shelfFace": "A",
+    "callNumStart": "658.4038 G",
+    "callNumEnd": "658.406 Y5",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 240,
+    "shelfFace": "B",
+    "callNumStart": "658.406 Y6",
+    "callNumEnd": "658.409 Y",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 241,
+    "shelfFace": "A",
+    "callNumStart": "658.409 Z",
+    "callNumEnd": 658.4092,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 241,
+    "shelfFace": "B",
+    "callNumStart": 658.4092,
+    "callNumEnd": "658.5 G",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 242,
+    "shelfFace": "A",
+    "callNumStart": "658.5 H",
+    "callNumEnd": "658.57 J",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 242,
+    "shelfFace": "B",
+    "callNumStart": "658.57 K",
+    "callNumEnd": "658.8 H6",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 243,
+    "shelfFace": "A",
+    "callNumStart": "658.8 H7",
+    "callNumEnd": 658.80028,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 243,
+    "shelfFace": "B",
+    "callNumStart": 658.80028,
+    "callNumEnd": "658.83 B2",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 244,
+    "shelfFace": "A",
+    "callNumStart": "658.83 B3",
+    "callNumEnd": "658.85 B3",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 244,
+    "shelfFace": "B",
+    "callNumStart": "658.85 B4",
+    "callNumEnd": "659.1 So",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 245,
+    "shelfFace": "A",
+    "callNumStart": "659.1 St",
+    "callNumEnd": "659.2 B",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 245,
+    "shelfFace": "B",
+    "callNumStart": "659.2 C",
+    "callNumEnd": 660.28072,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 246,
+    "shelfFace": "A",
+    "callNumStart": 660.28072,
+    "callNumEnd": "660.297 M",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 246,
+    "shelfFace": "B",
+    "callNumStart": "660.297 O",
+    "callNumEnd": "660.951 G",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 247,
+    "shelfFace": "A",
+    "callNumStart": "661 B",
+    "callNumEnd": "664.07 S",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 247,
+    "shelfFace": "B",
+    "callNumStart": "664.07 T",
+    "callNumEnd": "668.14 L",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 248,
+    "shelfFace": "A",
+    "callNumStart": "668.14 S",
+    "callNumEnd": "669.722 I",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 248,
+    "shelfFace": "B",
+    "callNumStart": "669.722 K",
+    "callNumEnd": "671.36 I",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 249,
+    "shelfFace": "A",
+    "callNumStart": "671.36 K",
+    "callNumEnd": "681.42 C",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 249,
+    "shelfFace": "B",
+    "callNumStart": "681.42 K",
+    "callNumEnd": "690.22 M",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 250,
+    "shelfFace": "A",
+    "callNumStart": "690.22 P",
+    "callNumEnd": 699,
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 250,
+    "shelfFace": "B",
+    "callNumStart": "700 A",
+    "callNumEnd": "700.92 W",
+    "category": "600 응용과학 [Technology]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 251,
+    "shelfFace": "A",
+    "callNumStart": "700.92 W",
+    "callNumEnd": "701.17 L5",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 251,
+    "shelfFace": "B",
+    "callNumStart": "701.17 L8",
+    "callNumEnd": 704.9489,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 252,
+    "shelfFace": "A",
+    "callNumStart": 704.9489,
+    "callNumEnd": "708.94 G",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 252,
+    "shelfFace": "B",
+    "callNumStart": "708.94 H",
+    "callNumEnd": "709 Sp",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 253,
+    "shelfFace": "A",
+    "callNumStart": "709 St",
+    "callNumEnd": "709.2 C5",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 253,
+    "shelfFace": "B",
+    "callNumStart": "709.2 C7",
+    "callNumEnd": "709.47 Z",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 254,
+    "shelfFace": "A",
+    "callNumStart": 709.47047,
+    "callNumEnd": "709.52 W1",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 254,
+    "shelfFace": "B",
+    "callNumStart": "709.52 W4",
+    "callNumEnd": "711.4 J4",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 255,
+    "shelfFace": "A",
+    "callNumStart": "711.4 J4",
+    "callNumEnd": 712.09519,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 255,
+    "shelfFace": "B",
+    "callNumStart": 712.0952,
+    "callNumEnd": "720.1 Y1",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 256,
+    "shelfFace": "A",
+    "callNumStart": "720.2 Y",
+    "callNumEnd": "720.922 F",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 256,
+    "shelfFace": "B",
+    "callNumStart": "720.922 G",
+    "callNumEnd": "721.21 G",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 257,
+    "shelfFace": "A",
+    "callNumStart": "721.36 O",
+    "callNumEnd": "728.04 G",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 257,
+    "shelfFace": "B",
+    "callNumStart": "728.042 R",
+    "callNumEnd": 730.9542,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 258,
+    "shelfFace": "A",
+    "callNumStart": 730.9545,
+    "callNumEnd": "739.27 G",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 258,
+    "shelfFace": "B",
+    "callNumStart": "739.27 H",
+    "callNumEnd": 741.6023,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 259,
+    "shelfFace": "A",
+    "callNumStart": 741.6028,
+    "callNumEnd": "745.4 C",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 259,
+    "shelfFace": "B",
+    "callNumStart": "745.4 D",
+    "callNumEnd": "746.92 L",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 260,
+    "shelfFace": "A",
+    "callNumStart": "746.92 P",
+    "callNumEnd": "751.6 T",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 260,
+    "shelfFace": "B",
+    "callNumStart": "751.62 A",
+    "callNumEnd": "758.4 S",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 261,
+    "shelfFace": "A",
+    "callNumStart": 758.4094,
+    "callNumEnd": "759.4 R2",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 261,
+    "shelfFace": "B",
+    "callNumStart": "759.4 R3",
+    "callNumEnd": "759.951 J4",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 262,
+    "shelfFace": "A",
+    "callNumStart": "759.951 J5",
+    "callNumEnd": 759.9539,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 262,
+    "shelfFace": "B",
+    "callNumStart": "759.954 B",
+    "callNumEnd": "771.33 G41",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 263,
+    "shelfFace": "A",
+    "callNumStart": "771.33 G42",
+    "callNumEnd": "780.07 B",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 263,
+    "shelfFace": "B",
+    "callNumStart": "780.07 H",
+    "callNumEnd": "780.9 G41",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 264,
+    "shelfFace": "A",
+    "callNumStart": "780.9 G42",
+    "callNumEnd": "780.92 M8",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 264,
+    "shelfFace": "B",
+    "callNumStart": "780.92 M8",
+    "callNumEnd": "781 G4",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 265,
+    "shelfFace": "A",
+    "callNumStart": "781 G9",
+    "callNumEnd": 781.630951,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 265,
+    "shelfFace": "B",
+    "callNumStart": 781.630951,
+    "callNumEnd": 782.14092,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 266,
+    "shelfFace": "A",
+    "callNumStart": 782.14092,
+    "callNumEnd": "786.207 B",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 266,
+    "shelfFace": "B",
+    "callNumStart": "786.207 C",
+    "callNumEnd": "K781 J2",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 267,
+    "shelfFace": "A",
+    "callNumStart": "K781 J2",
+    "callNumEnd": "791.43 G8",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 267,
+    "shelfFace": "B",
+    "callNumStart": "791.43 G9",
+    "callNumEnd": 791.43023,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 268,
+    "shelfFace": "A",
+    "callNumStart": 791.43023,
+    "callNumEnd": 791.43097,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 268,
+    "shelfFace": "B",
+    "callNumStart": 791.43097,
+    "callNumEnd": 791.4572,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 269,
+    "shelfFace": "A",
+    "callNumStart": 791.4572,
+    "callNumEnd": 792.0941,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 269,
+    "shelfFace": "B",
+    "callNumStart": 792.0941,
+    "callNumEnd": 792.8094,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 270,
+    "shelfFace": "A",
+    "callNumStart": 792.8094,
+    "callNumEnd": 794.8152,
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 270,
+    "shelfFace": "B",
+    "callNumStart": 794.8152,
+    "callNumEnd": "796.069 S",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 271,
+    "shelfFace": "A",
+    "callNumStart": "796.069 T",
+    "callNumEnd": "796.357 C",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 5자료실",
+    "bookshelf": 271,
+    "shelfFace": "B",
+    "callNumStart": "796.357 D",
+    "callNumEnd": "799.92 S",
+    "category": "700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 272,
+    "shelfFace": "A",
+    "callNumStart": "",
+    "callNumEnd": "",
+    "category": ""
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 272,
+    "shelfFace": "B",
+    "callNumStart": "",
+    "callNumEnd": "",
+    "category": ""
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 273,
+    "shelfFace": "A",
+    "callNumStart": "800 A",
+    "callNumEnd": "801.93 A",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 273,
+    "shelfFace": "B",
+    "callNumStart": "801.93 B",
+    "callNumEnd": "801.95 Sc",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 274,
+    "shelfFace": "A",
+    "callNumStart": "801.95 Sc",
+    "callNumEnd": "803 R",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 274,
+    "shelfFace": "B",
+    "callNumStart": "803 S",
+    "callNumEnd": "808 Sa",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 275,
+    "shelfFace": "A",
+    "callNumStart": "808 Sc",
+    "callNumEnd": "808.042 M2",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 275,
+    "shelfFace": "B",
+    "callNumStart": "808.042 M3",
+    "callNumEnd": "808.066 J4",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 276,
+    "shelfFace": "A",
+    "callNumStart": "808.066 J4",
+    "callNumEnd": "808.1 J4",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 276,
+    "shelfFace": "B",
+    "callNumStart": "808.1 J5",
+    "callNumEnd": "808.4 G",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 277,
+    "shelfFace": "A",
+    "callNumStart": "808.4 H",
+    "callNumEnd": "808.7 I",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 277,
+    "shelfFace": "B",
+    "callNumStart": "808.7 J",
+    "callNumEnd": "808.8 H9",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 278,
+    "shelfFace": "A",
+    "callNumStart": "808.8 H9",
+    "callNumEnd": "808.8 Se",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 278,
+    "shelfFace": "B",
+    "callNumStart": "808.8 Se",
+    "callNumEnd": "808.81 Se",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 279,
+    "shelfFace": "A",
+    "callNumStart": "808.81 Se",
+    "callNumEnd": "808.88 T",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 279,
+    "shelfFace": "B",
+    "callNumStart": "808.88 U",
+    "callNumEnd": "809 J4",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 280,
+    "shelfFace": "A",
+    "callNumStart": "809 J5",
+    "callNumEnd": "809.04 Y5",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 280,
+    "shelfFace": "B",
+    "callNumStart": "809.04 Y6",
+    "callNumEnd": 809.3088,
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 281,
+    "shelfFace": "A",
+    "callNumStart": 809.3095,
+    "callNumEnd": "809.91 M",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 281,
+    "shelfFace": "B",
+    "callNumStart": "809.91 O",
+    "callNumEnd": 809.93358,
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 282,
+    "shelfFace": "A",
+    "callNumStart": 809.93358,
+    "callNumEnd": "810.5 J",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 282,
+    "shelfFace": "B",
+    "callNumStart": "810.5 Y",
+    "callNumEnd": "810.8 G9",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 283,
+    "shelfFace": "A",
+    "callNumStart": "810.9 G9",
+    "callNumEnd": "810.8 Im",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 283,
+    "shelfFace": "B",
+    "callNumStart": "810.8 Im",
+    "callNumEnd": "810.8 Se",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 284,
+    "shelfFace": "A",
+    "callNumStart": "810.8 Se",
+    "callNumEnd": "810.81 Y5",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 284,
+    "shelfFace": "B",
+    "callNumStart": "810.81 Y5",
+    "callNumEnd": "810.9 G4",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 285,
+    "shelfFace": "A",
+    "callNumStart": "810.9 G4",
+    "callNumEnd": "810.9 Im",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 285,
+    "shelfFace": "B",
+    "callNumStart": "810.9 Im",
+    "callNumEnd": "810.9 So",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 286,
+    "shelfFace": "A",
+    "callNumStart": "810.9 So",
+    "callNumEnd": "810.951 G",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 286,
+    "shelfFace": "B",
+    "callNumStart": "810.951 J",
+    "callNumEnd": "810.97 H",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 287,
+    "shelfFace": "A",
+    "callNumStart": "810.97 I",
+    "callNumEnd": "811.009 G",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 287,
+    "shelfFace": "B",
+    "callNumStart": "811.009 G",
+    "callNumEnd": "811.08 D6",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 288,
+    "shelfFace": "A",
+    "callNumStart": "811.08 D7",
+    "callNumEnd": "811.09 H",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 288,
+    "shelfFace": "B",
+    "callNumStart": "811.09 H",
+    "callNumEnd": "811.409 W",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 289,
+    "shelfFace": "A",
+    "callNumStart": "811.409 Y",
+    "callNumEnd": "811.51 Se",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 289,
+    "shelfFace": "B",
+    "callNumStart": "811.51 Se",
+    "callNumEnd": "811.6 B",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 290,
+    "shelfFace": "A",
+    "callNumStart": "811.6 B",
+    "callNumEnd": "811.609 M",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 290,
+    "shelfFace": "B",
+    "callNumStart": "811.609 M",
+    "callNumEnd": "811.709 Y",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 291,
+    "shelfFace": "A",
+    "callNumStart": "811.709 Y",
+    "callNumEnd": "811.73 M9",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 291,
+    "shelfFace": "B",
+    "callNumStart": "811.73 M9",
+    "callNumEnd": "811.75 J",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 292,
+    "shelfFace": "A",
+    "callNumStart": "811.75 J4",
+    "callNumEnd": 811.7709,
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 292,
+    "shelfFace": "B",
+    "callNumStart": "811.78 An",
+    "callNumEnd": "812.008 H",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 293,
+    "shelfFace": "A",
+    "callNumStart": "812.008 H",
+    "callNumEnd": "812.77 H",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 293,
+    "shelfFace": "B",
+    "callNumStart": "812.77 J",
+    "callNumEnd": "813.08 D7",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 294,
+    "shelfFace": "A",
+    "callNumStart": "813.08 D7",
+    "callNumEnd": "813.08 Y6",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 294,
+    "shelfFace": "B",
+    "callNumStart": "813.08 Y6",
+    "callNumEnd": "813.5 H4",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 295,
+    "shelfFace": "A",
+    "callNumStart": "813.5 H7",
+    "callNumEnd": "813.509 G",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 295,
+    "shelfFace": "B",
+    "callNumStart": "813.509 G",
+    "callNumEnd": "813.56 G",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 296,
+    "shelfFace": "A",
+    "callNumStart": "813.56 H",
+    "callNumEnd": "813.6 Y5",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 296,
+    "shelfFace": "B",
+    "callNumStart": "813.6 Y5",
+    "callNumEnd": "813.708 G",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 297,
+    "shelfFace": "A",
+    "callNumStart": "813.708 G9",
+    "callNumEnd": "813.73 B1",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 297,
+    "shelfFace": "B",
+    "callNumStart": "813.73 B1",
+    "callNumEnd": "813.73 G4",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 298,
+    "shelfFace": "A",
+    "callNumStart": "813.73 G4",
+    "callNumEnd": "813.73 So",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 298,
+    "shelfFace": "B",
+    "callNumStart": "813.73 So",
+    "callNumEnd": "813.74 Y5",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 299,
+    "shelfFace": "A",
+    "callNumStart": "813.74 Y5",
+    "callNumEnd": "813.75 J5",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 299,
+    "shelfFace": "B",
+    "callNumStart": "813.75 J5",
+    "callNumEnd": "813.76 G4",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 300,
+    "shelfFace": "A",
+    "callNumStart": "813.76 G4",
+    "callNumEnd": "813.77 B1",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 300,
+    "shelfFace": "B",
+    "callNumStart": "813.77 B1",
+    "callNumEnd": "813.77 J2",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 301,
+    "shelfFace": "A",
+    "callNumStart": "813.77 J2",
+    "callNumEnd": "813.78 B1",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 301,
+    "shelfFace": "B",
+    "callNumStart": "813.78 B1",
+    "callNumEnd": "813.78 Im",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 302,
+    "shelfFace": "A",
+    "callNumStart": "813.78 Im",
+    "callNumEnd": "813.81 G4",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 302,
+    "shelfFace": "B",
+    "callNumStart": "813.81 G4",
+    "callNumEnd": "814.4 W",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 303,
+    "shelfFace": "A",
+    "callNumStart": "814.4 Y",
+    "callNumEnd": "814.75 Im",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 303,
+    "shelfFace": "B",
+    "callNumStart": "814.75 J",
+    "callNumEnd": "814.78 G9",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 304,
+    "shelfFace": "A",
+    "callNumStart": "814.78 G9",
+    "callNumEnd": "816.73 Y5",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 304,
+    "shelfFace": "B",
+    "callNumStart": "816.73 Y5",
+    "callNumEnd": "818.77 C4",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 305,
+    "shelfFace": "A",
+    "callNumStart": "818.77 C4",
+    "callNumEnd": "818.81 Im",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 305,
+    "shelfFace": "B",
+    "callNumStart": "818.81 Im",
+    "callNumEnd": "819.53 B",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 306,
+    "shelfFace": "A",
+    "callNumStart": "819.53 C",
+    "callNumEnd": "819.54 Y6",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 306,
+    "shelfFace": "B",
+    "callNumStart": "819.54 Y6",
+    "callNumEnd": "820.09 S",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 307,
+    "shelfFace": "A",
+    "callNumStart": "820.1 An",
+    "callNumEnd": 820.9358,
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 307,
+    "shelfFace": "B",
+    "callNumStart": 820.9358,
+    "callNumEnd": "821.47 Dr",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 308,
+    "shelfFace": "A",
+    "callNumStart": "821.47 Ds",
+    "callNumEnd": "821.83 Dk",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 308,
+    "shelfFace": "B",
+    "callNumStart": "821.83 Dl",
+    "callNumEnd": "822.33 Bh",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 309,
+    "shelfFace": "A",
+    "callNumStart": "822.33 Bl",
+    "callNumEnd": "822.33 S8",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 309,
+    "shelfFace": "B",
+    "callNumStart": "822.33 Sch",
+    "callNumEnd": "823.51 Dz",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 310,
+    "shelfFace": "A",
+    "callNumStart": "823.51 Rf",
+    "callNumEnd": "823.89 S",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 310,
+    "shelfFace": "B",
+    "callNumStart": "823.89 W",
+    "callNumEnd": "823.912 L4",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 311,
+    "shelfFace": "A",
+    "callNumStart": "823.912 L4",
+    "callNumEnd": "823.914 F",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 311,
+    "shelfFace": "B",
+    "callNumStart": "823.914 F",
+    "callNumEnd": "823.92 T2",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 312,
+    "shelfFace": "A",
+    "callNumStart": "823.92 T3",
+    "callNumEnd": "A820.9003",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 312,
+    "shelfFace": "B",
+    "callNumStart": "A820.9003",
+    "callNumEnd": "A821.54 A",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 313,
+    "shelfFace": "A",
+    "callNumStart": "A821.54 B",
+    "callNumEnd": "A823.4 B",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 313,
+    "shelfFace": "B",
+    "callNumStart": "A823.4 C",
+    "callNumEnd": "A823.52 W",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 314,
+    "shelfFace": "A",
+    "callNumStart": "A823.52 W",
+    "callNumEnd": "A823.54 C",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 314,
+    "shelfFace": "B",
+    "callNumStart": "A823.54 C",
+    "callNumEnd": "A823.54 H",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 315,
+    "shelfFace": "A",
+    "callNumStart": "A823.54 H",
+    "callNumEnd": "A823.54 M",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 315,
+    "shelfFace": "B",
+    "callNumStart": "A823.54 M",
+    "callNumEnd": "A823.54 T",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 316,
+    "shelfFace": "A",
+    "callNumStart": "A823.54 T",
+    "callNumEnd": "A823.6 P",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 316,
+    "shelfFace": "B",
+    "callNumStart": "A823.6 P",
+    "callNumEnd": "A828.914 D",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 317,
+    "shelfFace": "A",
+    "callNumStart": "C820.8 K",
+    "callNumEnd": "813.044 M",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 317,
+    "shelfFace": "B",
+    "callNumStart": "831.08 F",
+    "callNumEnd": "832.62 Of",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 318,
+    "shelfFace": "A",
+    "callNumStart": "832.62 Of",
+    "callNumEnd": "833.89 M",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 318,
+    "shelfFace": "B",
+    "callNumStart": "833.89 R",
+    "callNumEnd": "833.914 G",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 319,
+    "shelfFace": "A",
+    "callNumStart": "833.914 G",
+    "callNumEnd": "836.79 P",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 319,
+    "shelfFace": "B",
+    "callNumStart": "836.89 D",
+    "callNumEnd": 839.8238,
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 320,
+    "shelfFace": "A",
+    "callNumStart": 839.8238,
+    "callNumEnd": 840.999,
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 320,
+    "shelfFace": "B",
+    "callNumStart": "841 B",
+    "callNumEnd": "842.42 L",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 321,
+    "shelfFace": "A",
+    "callNumStart": "822.33 T",
+    "callNumEnd": "823.74 R",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 321,
+    "shelfFace": "B",
+    "callNumStart": "823.74 R",
+    "callNumEnd": "823.912 H",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 322,
+    "shelfFace": "A",
+    "callNumStart": "823.912 H",
+    "callNumEnd": "823.914 F",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 322,
+    "shelfFace": "B",
+    "callNumStart": "823.914 F",
+    "callNumEnd": "828.703 W",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 323,
+    "shelfFace": "A",
+    "callNumStart": "828.703 W",
+    "callNumEnd": "A821.38 D",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 323,
+    "shelfFace": "B",
+    "callNumStart": "A821.38 W",
+    "callNumEnd": "A823.33 R",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 324,
+    "shelfFace": "A",
+    "callNumStart": "A823.33 R",
+    "callNumEnd": "A823.54 A",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 324,
+    "shelfFace": "B",
+    "callNumStart": "A823.54 A",
+    "callNumEnd": "A823.54 G",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 325,
+    "shelfFace": "A",
+    "callNumStart": "A823.54 G",
+    "callNumEnd": "A823.54 M",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 325,
+    "shelfFace": "B",
+    "callNumStart": "A823.54 M",
+    "callNumEnd": "A823.54 Z",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 326,
+    "shelfFace": "A",
+    "callNumStart": "",
+    "callNumEnd": "",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 326,
+    "shelfFace": "B",
+    "callNumStart": "",
+    "callNumEnd": "",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 327,
+    "shelfFace": "A",
+    "callNumStart": "830.9 K",
+    "callNumEnd": "832.62 D",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 327,
+    "shelfFace": "B",
+    "callNumStart": "832.62 D",
+    "callNumEnd": "833.89 M",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 328,
+    "shelfFace": "A",
+    "callNumStart": "833.89 M",
+    "callNumEnd": "833.914 S",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 328,
+    "shelfFace": "B",
+    "callNumStart": "833.914 S",
+    "callNumEnd": 839.38226,
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 329,
+    "shelfFace": "A",
+    "callNumStart": 839.8226,
+    "callNumEnd": "841.89 R",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 329,
+    "shelfFace": "B",
+    "callNumStart": "841.89 R",
+    "callNumEnd": "843.82 B",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 330,
+    "shelfFace": "A",
+    "callNumStart": "843.82 B",
+    "callNumEnd": "843.914 G",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 330,
+    "shelfFace": "B",
+    "callNumStart": "843.914 G",
+    "callNumEnd": "851.15 D",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 331,
+    "shelfFace": "A",
+    "callNumStart": "851.15 D",
+    "callNumEnd": "862.35 O",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 331,
+    "shelfFace": "B",
+    "callNumStart": "862.35 O",
+    "callNumEnd": "A863.009",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 332,
+    "shelfFace": "A",
+    "callNumStart": "A863.009",
+    "callNumEnd": "875.1 R",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 332,
+    "shelfFace": "B",
+    "callNumStart": "875.1 K",
+    "callNumEnd": "885.2 A",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 333,
+    "shelfFace": "A",
+    "callNumStart": "885.2 S",
+    "callNumEnd": "891.73 D",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 333,
+    "shelfFace": "B",
+    "callNumStart": "891.73 D",
+    "callNumEnd": "891.763 T",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 334,
+    "shelfFace": "A",
+    "callNumStart": 891.763,
+    "callNumEnd": "895.109 C",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 334,
+    "shelfFace": "B",
+    "callNumStart": "895.109 C",
+    "callNumEnd": "895.11 T",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 335,
+    "shelfFace": "A",
+    "callNumStart": "895.1 T",
+    "callNumEnd": "895.114 Y",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 335,
+    "shelfFace": "B",
+    "callNumStart": "895.114 Y",
+    "callNumEnd": "895.13 P",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 336,
+    "shelfFace": "A",
+    "callNumStart": "895.13 Q",
+    "callNumEnd": "895.1348 C",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 336,
+    "shelfFace": "B",
+    "callNumStart": 895.1348,
+    "callNumEnd": 895.1352,
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 337,
+    "shelfFace": "A",
+    "callNumStart": "895.1352 Z",
+    "callNumEnd": "895.194 L",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 337,
+    "shelfFace": "B",
+    "callNumStart": "895.194 L",
+    "callNumEnd": "895.63 H",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 338,
+    "shelfFace": "A",
+    "callNumStart": "895.63 H",
+    "callNumEnd": "895.635 C",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 338,
+    "shelfFace": "B",
+    "callNumStart": "895.635 C",
+    "callNumEnd": "895.635 N",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 339,
+    "shelfFace": "A",
+    "callNumStart": "895.635 N",
+    "callNumEnd": "895.645 K",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 339,
+    "shelfFace": "B",
+    "callNumStart": "895.645 K",
+    "callNumEnd": "大700, 大800",
+    "category": "800 문학 [Literature]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 340,
+    "shelfFace": "A",
+    "callNumStart": "大707 G",
+    "callNumEnd": "大709.2 G",
+    "category": "大700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 340,
+    "shelfFace": "B",
+    "callNumStart": "大709.2F",
+    "callNumEnd": "大712.2E",
+    "category": "大700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 341,
+    "shelfFace": "A",
+    "callNumStart": "大712.2 G",
+    "callNumEnd": "大724.6 S",
+    "category": "大700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 341,
+    "shelfFace": "B",
+    "callNumStart": "大724.6 S",
+    "callNumEnd": "大737.23 G",
+    "category": "大700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 342,
+    "shelfFace": "A",
+    "callNumStart": "大736.509",
+    "callNumEnd": "大745.670",
+    "category": "大700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 342,
+    "shelfFace": "B",
+    "callNumStart": "大745.670",
+    "callNumEnd": "大755.2094",
+    "category": "大700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 343,
+    "shelfFace": "A",
+    "callNumStart": "大755.209",
+    "callNumEnd": "大759.952",
+    "category": "大700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 343,
+    "shelfFace": "B",
+    "callNumStart": "大759.952",
+    "callNumEnd": "大779.2 S",
+    "category": "大700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 344,
+    "shelfFace": "A",
+    "callNumStart": "大779.2 S",
+    "callNumEnd": "大799.3209",
+    "category": "大700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 6자료실",
+    "bookshelf": 344,
+    "shelfFace": "B",
+    "callNumStart": "",
+    "callNumEnd": "",
+    "category": "大700 예술 [The Arts]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 345,
+    "shelfFace": "A",
+    "callNumStart": "929.1 A",
+    "callNumEnd": "929.1 G",
+    "category": "족보 (Genealogy)"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 345,
+    "shelfFace": "B",
+    "callNumStart": "929.1 G",
+    "callNumEnd": "929.1 N",
+    "category": "족보 (Genealogy)"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 346,
+    "shelfFace": "A",
+    "callNumStart": "929.1 N",
+    "callNumEnd": "929.2 Y",
+    "category": "족보 (Genealogy)"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 346,
+    "shelfFace": "B",
+    "callNumStart": "929.2 Y",
+    "callNumEnd": "大929.1 Y",
+    "category": "족보 (Genealogy)"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 347,
+    "shelfFace": "A",
+    "callNumStart": "900 A",
+    "callNumEnd": "904 S",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 347,
+    "shelfFace": "B",
+    "callNumStart": "904 T",
+    "callNumEnd": "909 C",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 348,
+    "shelfFace": "A",
+    "callNumStart": "909 C",
+    "callNumEnd": "909.08 S",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 348,
+    "shelfFace": "B",
+    "callNumStart": "909.08 T",
+    "callNumEnd": "910 P",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 349,
+    "shelfFace": "A",
+    "callNumStart": "910 R",
+    "callNumEnd": "910.285 Y",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 349,
+    "shelfFace": "B",
+    "callNumStart": "910.285 Z",
+    "callNumEnd": "912 K",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 350,
+    "shelfFace": "A",
+    "callNumStart": "912 L",
+    "callNumEnd": "913.52 Y",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 350,
+    "shelfFace": "B",
+    "callNumStart": "913.52 Z",
+    "callNumEnd": "915 G",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 351,
+    "shelfFace": "A",
+    "callNumStart": "915 H",
+    "callNumEnd": "915.1 J",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 351,
+    "shelfFace": "B",
+    "callNumStart": "915.1 K",
+    "callNumEnd": "915.11 P",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 352,
+    "shelfFace": "A",
+    "callNumStart": "915.11 S",
+    "callNumEnd": "915.144 I",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 352,
+    "shelfFace": "B",
+    "callNumStart": "915.144 J",
+    "callNumEnd": "915.2 G",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 353,
+    "shelfFace": "A",
+    "callNumStart": "915.2 H",
+    "callNumEnd": "915.4012 X",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 353,
+    "shelfFace": "B",
+    "callNumStart": 915.4042,
+    "callNumEnd": 920.009,
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 354,
+    "shelfFace": "A",
+    "callNumStart": 920.0094,
+    "callNumEnd": 920.0951,
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 354,
+    "shelfFace": "B",
+    "callNumStart": 920.0952,
+    "callNumEnd": "923.751 G",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 355,
+    "shelfFace": "A",
+    "callNumStart": "923.751 H",
+    "callNumEnd": "930 R",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 355,
+    "shelfFace": "B",
+    "callNumStart": "930 S",
+    "callNumEnd": "936.602 D",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 356,
+    "shelfFace": "A",
+    "callNumStart": "936.603 C",
+    "callNumEnd": "938.05 S",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 356,
+    "shelfFace": "B",
+    "callNumStart": "938.05 T",
+    "callNumEnd": "940.11 B",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 357,
+    "shelfFace": "A",
+    "callNumStart": "940.12 G",
+    "callNumEnd": "940.472 Y",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 357,
+    "shelfFace": "B",
+    "callNumStart": "940.475 H",
+    "callNumEnd": 940.5412,
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 358,
+    "shelfFace": "A",
+    "callNumStart": 940.5412,
+    "callNumEnd": 941.5081,
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 358,
+    "shelfFace": "B",
+    "callNumStart": 941.5081,
+    "callNumEnd": "943.085 F",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 359,
+    "shelfFace": "A",
+    "callNumStart": "943.085 G",
+    "callNumEnd": 944.033,
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 359,
+    "shelfFace": "B",
+    "callNumStart": "944.034 A",
+    "callNumEnd": "945.08 S",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 360,
+    "shelfFace": "A",
+    "callNumStart": "945.08 T",
+    "callNumEnd": "947.07 P",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 360,
+    "shelfFace": "B",
+    "callNumStart": "947.07 R",
+    "callNumEnd": "947.6 V",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 361,
+    "shelfFace": "A",
+    "callNumStart": "947.7 A",
+    "callNumEnd": "950 Sa",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 361,
+    "shelfFace": "B",
+    "callNumStart": "950 Se",
+    "callNumEnd": "951 G",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 362,
+    "shelfFace": "A",
+    "callNumStart": "951 G",
+    "callNumEnd": "951 Y",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 362,
+    "shelfFace": "B",
+    "callNumStart": "951 Y",
+    "callNumEnd": "951.008 H",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 363,
+    "shelfFace": "A",
+    "callNumStart": "951.008 H",
+    "callNumEnd": "951.01 H",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 363,
+    "shelfFace": "B",
+    "callNumStart": "951.01 H",
+    "callNumEnd": "951.03 H",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 364,
+    "shelfFace": "A",
+    "callNumStart": "951.03 I",
+    "callNumEnd": "951.033 Y",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 364,
+    "shelfFace": "B",
+    "callNumStart": "951.033 Y",
+    "callNumEnd": "951.05 B",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 365,
+    "shelfFace": "A",
+    "callNumStart": "951.05 B",
+    "callNumEnd": "951.05 J",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 365,
+    "shelfFace": "B",
+    "callNumStart": "951.05 J",
+    "callNumEnd": 951.0509,
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 366,
+    "shelfFace": "A",
+    "callNumStart": 951.0509,
+    "callNumEnd": 951.0523,
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 366,
+    "shelfFace": "B",
+    "callNumStart": 951.0523,
+    "callNumEnd": "951.054 R",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 367,
+    "shelfFace": "A",
+    "callNumStart": "951.054 S",
+    "callNumEnd": "951.06 G",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 367,
+    "shelfFace": "B",
+    "callNumStart": "951.06 G",
+    "callNumEnd": "951.06 Si",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 368,
+    "shelfFace": "A",
+    "callNumStart": "951.06 Si",
+    "callNumEnd": "951.065 Y",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 368,
+    "shelfFace": "B",
+    "callNumStart": "951.066 A",
+    "callNumEnd": "951.071 B",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 369,
+    "shelfFace": "A",
+    "callNumStart": "951.071 C",
+    "callNumEnd": "951.0712 Si",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 369,
+    "shelfFace": "B",
+    "callNumStart": "951.0712 Si",
+    "callNumEnd": "951.1 B",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 370,
+    "shelfFace": "A",
+    "callNumStart": "951.1 C",
+    "callNumEnd": "951.53 B",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 370,
+    "shelfFace": "B",
+    "callNumStart": "951.53 B",
+    "callNumEnd": "952 C",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 371,
+    "shelfFace": "A",
+    "callNumStart": "952 C",
+    "callNumEnd": "952 Q",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 371,
+    "shelfFace": "B",
+    "callNumStart": "952 R",
+    "callNumEnd": "952.00922 J",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 372,
+    "shelfFace": "A",
+    "callNumStart": "952.00922 L",
+    "callNumEnd": "952.01 Si",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 372,
+    "shelfFace": "B",
+    "callNumStart": "952.01 So",
+    "callNumEnd": "952.026 T",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 373,
+    "shelfFace": "A",
+    "callNumStart": "952.026 W",
+    "callNumEnd": "952.04 C",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 373,
+    "shelfFace": "B",
+    "callNumStart": "952.04 C",
+    "callNumEnd": "952.07 Z",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 374,
+    "shelfFace": "A",
+    "callNumStart": "952.07092 K",
+    "callNumEnd": "953 Ir",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 374,
+    "shelfFace": "B",
+    "callNumStart": "953 Is",
+    "callNumEnd": "953.02 Sh",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 375,
+    "shelfFace": "A",
+    "callNumStart": "953.02 Si",
+    "callNumEnd": "953.031 M",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 375,
+    "shelfFace": "B",
+    "callNumStart": "953.031 M",
+    "callNumEnd": "954 Y",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 376,
+    "shelfFace": "A",
+    "callNumStart": "954 Y",
+    "callNumEnd": "956.1 L",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 376,
+    "shelfFace": "B",
+    "callNumStart": "956.1 L",
+    "callNumEnd": "958.042 S",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 377,
+    "shelfFace": "A",
+    "callNumStart": "958.043 D",
+    "callNumEnd": "959.87 N",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 377,
+    "shelfFace": "B",
+    "callNumStart": "959.87 Y",
+    "callNumEnd": "971 B",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 378,
+    "shelfFace": "A",
+    "callNumStart": "971 B",
+    "callNumEnd": "973 L",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 378,
+    "shelfFace": "B",
+    "callNumStart": "973 L",
+    "callNumEnd": "973.3092 F",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 379,
+    "shelfFace": "A",
+    "callNumStart": "973.3092 F",
+    "callNumEnd": "973.913 W",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 379,
+    "shelfFace": "B",
+    "callNumStart": 973.913092,
+    "callNumEnd": 974.710046,
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 380,
+    "shelfFace": "A",
+    "callNumStart": 947.71004,
+    "callNumEnd": 980.03509,
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 380,
+    "shelfFace": "B",
+    "callNumStart": 980.03509,
+    "callNumEnd": 998.2,
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 381,
+    "shelfFace": "A",
+    "callNumStart": "大900 S",
+    "callNumEnd": "大915 D",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 381,
+    "shelfFace": "B",
+    "callNumStart": "大915 H",
+    "callNumEnd": "大915.2 C",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 382,
+    "shelfFace": "A",
+    "callNumStart": "大915.2 G",
+    "callNumEnd": "大951.0061",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 382,
+    "shelfFace": "B",
+    "callNumStart": "大951.006",
+    "callNumEnd": "大951.0712",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 383,
+    "shelfFace": "A",
+    "callNumStart": "大951.0712",
+    "callNumEnd": "大952.2251",
+    "category": "900 역사 [History]"
+  },
+  {
+    "room": "단행본 7자료실",
+    "bookshelf": 383,
+    "shelfFace": "B",
+    "callNumStart": "大952.249L",
+    "callNumEnd": 995.95,
+    "category": "900 역사 [History]"
+  }
+]
