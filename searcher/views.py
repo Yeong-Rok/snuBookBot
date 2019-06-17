@@ -12,6 +12,9 @@ from selenium.common.exceptions import TimeoutException
 
 import requests
 from bs4 import BeautifulSoup
+import pycurl
+from io import BytesIO
+import lxml.html
 import time
 
 def index(request):
@@ -67,12 +70,6 @@ def getResults(driver):
     finally:
         driver.quit()
 
-
-import pycurl
-from io import BytesIO
-from bs4 import BeautifulSoup
-import time
-
 @csrf_exempt
 def search(request):
     start = time.time()
@@ -111,15 +108,15 @@ def search(request):
 
         #저장된 데이터를 Bs4 객체에 넣어 파싱 및 출력
         body = buffer.getvalue().decode('utf-8')
-        soup = BeautifulSoup(body, 'html.parser')
-        obj = soup.find("h2",{"class":"EXLResultTitle"}).text
+        tree = lxml.html.fromstring(body)
+        obj = tree.cssselect('.EXLResultTitle')
         res = {
             "version": "2.0",
             "template": {
                 "outputs": [
                     {
                         "simpleText": {
-                            "text": obj
+                            "text": obj[0].text_content()
                         }
                     }
                 ]
