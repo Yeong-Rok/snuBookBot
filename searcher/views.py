@@ -10,6 +10,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import TimeoutException
 
+import requests
+from bs4 import BeautifulSoup
+import time
+
 def index(request):
     return render(request, 'searcher/index.html')
 
@@ -19,9 +23,10 @@ def room1(request):
 def room6(request):
      return render(request, 'searcher/06.html')
 
-url = 'https://primoapac01.hosted.exlibrisgroup.com/primo-explore/search?query='
-others = ',AND&pfilter=pfilter,exact,books,AND&vid=82SNU&mfacet=library,include,MAIN,1&lang=ko_KR&mode=advanced'
-
+#url = 'https://primoapac01.hosted.exlibrisgroup.com/primo-explore/search?query='
+#others = ',AND&pfilter=pfilter,exact,books,AND&vid=82SNU&mfacet=library,include,MAIN,1&lang=ko_KR&mode=advanced'
+url = 'https://primoapac01.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?ct=facet&fctN=facet_library&fctV=MAIN&rfnGrp=1&rfnGrpCounter=1&frbg=&vl(19022558UI4)=books&&indx=1&fn=search&dscnt=0&vl(1UIStartWith0)=contains&tb=t&mode=Advanced&vid=82SNU&ct=search&vl(D15540194UI3)=all_items&vl(19016099UI0)='
+others = '&vl(15540188UI0)=AND&srt=rank&tab=all&Submit=검색&vl(19016102UI5)=all_items&dum=true&vl(freeText0)='
 
 def make_driver():
     options = webdriver.ChromeOptions()
@@ -29,30 +34,33 @@ def make_driver():
     options.add_argument('window-size=1920x1080')
     options.add_argument("disable-gpu")
 
-    
     driver = webdriver.Chrome('/usr/bin/chromedriver', options = options)
     return driver
 
+def searchTitle(target):
+#def searchTitle(target, driver):
+    #driver.get(url + 'title,contains,' + target + others)
+    return requests.get(url + 'title' + others + target)
+    #return getResults(driver)
 
-def searchTitle(target, driver):
-    driver.get(url + 'title,contains,' + target + others)
-    return getResults(driver)
-
-def searchCreator(target, driver):
-    driver.get(url + 'creator,contains,' + target + others)
-    return getResults(driver)
+def searchCreator(target):
+#def searchCreator(target, driver):
+    #driver.get(url + 'creator,contains,' + target + others)
+    return requests.get(url + 'creator' + others + target)
+    #return getResults(driver)
 
 def getResults(driver):
     results = {}
     try:
-        elements = WebDriverWait(driver, 5).until(
-            EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".item-title"))
+        elements = WebDriverWait(driver, 3).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".EXLResultTitle "))
         )
         index = 0
         for e in elements:
             index += 1
             results[index] = e.text
         driver.quit()
+        print(results)
         return results
     except TimeoutException as ex:
         print("Exception has been thrown. " + str(ex))
@@ -62,27 +70,34 @@ def getResults(driver):
 
 @csrf_exempt
 def search(request):
+    start = time.time()
     if request.method == 'POST':
         req = json.loads(request.body)
         reqTitle = req["action"]["detailParams"]["title"]["value"]
-        driver = make_driver()
-
-        result = searchTitle(reqTitle, driver)
-        # 일단 가져오는지 보게 첫 번째 것만...
-        answer = result[1]
-        print(answer)
+        response = searchTitle(reqTitle)
+        html = response.text
+        soup = BeautifulSoup(html, 'html.parser')
+        titles = soup.select('.EXLResultTitle')
+        index = 0
+        results = {}
+        for t in titles:
+            results[index] = t.text
+            print(results[index])
+            index += 1
+        answer = results[0]
         res = {
-            "version": "2.0",
-            "template": {
-                "outputs": [
-                    {
-                        "simpleText": {
-                            "text": answer 
+                "version": "2.0",
+                "template": {
+                    "outputs": [
+                        {
+                            "simpleText": {
+                                "text": 'answer'
+                            }
                         }
-                    }
-                ]
+                    ]
+                }
             }
-        }
+        print("time :", time.time() - start)
         return JsonResponse(res)
 
 @csrf_exempt
@@ -109,10 +124,7 @@ def test(request):
             }
         }
         return JsonResponse(res)
-   
 
-import requests
-from bs4 import BeautifulSoup
 
 @csrf_exempt
 def getPosition(request):
