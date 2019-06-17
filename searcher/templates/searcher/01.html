@@ -1,408 +1,49 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
 <html lang="en-us">
 
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width">
 		<link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,700,900|Nanum+Myeongjo:800&display=swap&subset=korean" rel="stylesheet">
-
-		<style type="text/css">
-			html, body { width: 100%; height: 100%; margin: 0; padding: 0;}
-			
-			.div_root {
-				margin: auto;
-				max-width: 100%;
-				height: 100%;
-				overflow: auto;
-				font-family: "Gothic A1";
-			}
-			
-			.map {
-				width: 80vw;
-				height: 60vw; /*끝까지 하는 법 물어보기!!*/
-				border : 1px solid darkgray;
-				padding: 0 3% 0 3%;
-				margin: 0 auto;
-				background-color: #fcfaf7;
-				overflow: auto;
-			}
-			
-			.left {
-		        float: left;
-		        width: 42%;
-		        height: 100%;
-		    }
-		    
-		    .center {
-		    	float: left;
-		    	width: 16%;
-		    	height: 100%;
-		    	font-size: 3vw;
-		    }
-		    
-		    .right {
-		        float: left;
-		        width: 42%;
-		        height: 100%;
-		    }
-		    
-		    .direction {
-		    	width: 100%;
-		    }
-		    
-		    .spanL {
-		    	width: 50%;
-		    	float: left;
-		    	text-align:left;
-		    	font-size: 2.5vw;
-		    	font-weight: 900;
-		    	margin: 0;
-		    	padding: 0;
-		    	display: inline-block;
-		    	color: #fcfaf7;
-		    }
-		    
-		    .spanR {
-		    	width: 50%;
-		    	float: right;
-		    	text-align:right;
-		    	font-size: 2.5vw;
-		    	font-weight: 900;
-		    	margin: 0;
-		    	padding: 0;
-		    	display: inline-block;
-		    	color: #fcfaf7;
-		    }
-		    
-		    .shelf {
-		    	width: 100%;
-		    	margin: 5vw 0 5vw 0;
-		    	font-size: 2.5vw;
-		    	font-weight: 400;
-		    }
-		    
-		    .bLeft  {
-		    	text-align: right;
-		    }
-		    
-		    .bRight {
-		    	text-align: left;
-		    }
-		    
-		    .A {
-		    	width: 100%;
-				background-color: rgb(220,220,220);
-				display: inline-block;
-				color: rgb(130,130,130);
-		    }
-		    
-		    .B {
-		    	width: 100%;
-				background-color: rgb(200,200,200);
-				display: inline-block;
-				color: rgb(130,130,130);
-		    }
-		    
-		    .shelf_space {
-		    	width: 100%;
-				font-size: 2.5vw;
-				margin: 5vw 0 5vw 0;
-				background-color: #fcfaf7;
-			}
-			
-		    .space {
-		    	width: 100%;
-				background-color: #fcfaf7;
-				display: inline-block;
-				font-size: 2.5vw;
-		    }
-		    
-		    tbody {
-		    	width: 100%;
-		    	display: inline-block;
-		    }
-		    tr {
-		    	width: 100%;
-		    	display: inline-block;
-		    }
-			td {
-				width: 100%;
-				height: 3vw;
-				display: inline-block;
-				padding-top: 0.5vw;
-			}
-			
-			.hLight {
-				font-weight: 900;
-				color: white;
-				font-size: 2.5vw;
-				/*-webkit-animation: colorchange 0.7s ease-in-out infinite;*/
-				background-color: #e52505;
-			}
-			
-			
-			@-webkit-keyframes colorchange {
-		      0%	{opacity: 1;}
-		      50%	{opacity: 0.15;}
-		      100%	{opacity: 1;}
-		    }
-		    
-
-			.num10r {
-				padding-right: 60%;
-			}
-			.num9r {
-				padding-right: 54%;
-			}
-			.num8r {
-				padding-right: 48%;
-			}
-			.num7r {
-				padding-right: 42%;
-			}
-			.num6r {
-				padding-right: 36%;
-			}
-			.num5r {
-				padding-right: 30%;
-			}
-			.num4r {
-				padding-right: 24%;
-			}
-			.num3r {
-				padding-right: 18%;
-			}
-			.num2r {
-				padding-right: 12%;
-			}
-			.num1r {
-				padding-right: 6%;
-			}
-			.num10l {
-				padding-left: 60%;
-			}
-			.num9l {
-				padding-left: 54%;
-			}
-			.num8l {
-				padding-left: 48%;
-			}
-			.num7l {
-				padding-left: 42%;
-			}
-			.num6l {
-				padding-left: 36%;
-			}
-			.num5l {
-				padding-left: 30%;
-			}
-			.num4l {
-				padding-left: 24%;
-			}
-			.num3l {
-				padding-left: 18%;
-			}
-			.num2l {
-				padding-left: 12%;
-			}
-			.num1l {
-				padding-left: 6%;
-			}
-			
-			.locationTitle {
-				z-index: 1;
-				display: block;
-				width: 90vw;
-				height: 4.5vw;
-				font-family: "Nanum Myeongjo";
-				font-size: 4.5vw;
-				font-weight: 800;
-				margin: 0 auto;
-				padding: 5vw 5vw 12vw 5vw;
-				background-color: white;
-				position: fixed;
-				text-align: left;
-				vertical-align: middle;
-				top: 0vw;
-				overflow: hidden; 
-				text-overflow: ellipsis;
-				white-space:nowrap;;
-				box-shadow: 0px 7px 10px -1px #77777725;
-			}
-			
-			.callNum {
-				font-family: "Gohtic A1";
-				width: 90vw;
-				height: 5vw;
-				font-size: 4vw;
-				font-weight: 400;
-				text-align: left;
-				margin: 1vw -5vw;
-				padding: 0 5vw 0 5vw;
-				color: #003aaf;
-				background-color: white;
-				position: fixed;
-				top: 12vw;
-			}
-			
-			.bookInfo {
-				text-align: center;
-				width: 100%;
-				margin-top: 25vw;
-			}
-			
-			.locationSub {
-				font-size: 3.5vw;
-				font-weight: 700;
-				text-align: center;
-			}
-			
-			.shelfInfo {
-				margin: 0 auto;
-				width: 50vw;
-				height: 100%;
-				padding: 3% 3% 8% 3%;
-				border: 1px solid darkgray;
-			}
-			
-			.directionFace {
-				color: white;
-				height: 5vw;
-				font-size: 5vw;
-				margin: 1vw 4vw;
-				vertical-align: middle;
-			}
-			
-			
-			.hLightDirection {
-				color: #e52505;
-				-webkit-animation: colorchange 1s ease-in-out infinite;
-			}
-			
-			.shelfFaceL {
-				width: 5%;
-				height: 4vw;
-				display: inline-block;
-				color: navy;
-				font-size: 4vw;
-				font-weight: 700;
-				float: left;
-				padding-top: 1%;
-			}
-			
-			.shelfFaceR {
-				width: 5%;
-				height: 4vw;
-				display: inline-block;
-				color: navy;
-				font-size: 4vw;
-				font-weight: 700;
-				float: left;
-				padding-top: 1%;
-			}
-			
-			.bookshelfNum {
-				width: 90%;
-				height: 5vw;
-				display: inline-block;
-				color: #e52505;
-				font-weight: 900;
-				font-size: 5vw;
-				float: left;
-			}
-			
-			.underline {
-				width: 12vw;
-				height: 0.5vw;
-				display: inline-block;
-				margin: 0 5vw;
-			}
-			
-			.category {
-				width: 100%;
-				/*height: 100%;*/
-				color: black;
-				font-size: 3.5vw;
-				font-weight: 700;
-			}
-			
-			.callNumberLeft {
-				width: 40%;
-				float: left;
-				display: inline-block;
-				margin-top: 5.5vw;
-				margin-left: 4vw;
-				margin-right: 1vw;
-				margin-bottom: 4vw;
-				font-size: 2.5vw;
-				font-weight: 900;
-			}
-			
-			.callNumberRight {
-				width: 40%;
-				float: left;
-				display: inline-block;
-				margin-top: 5.5vw;
-				margin-left: 1vw;
-				margin-right: 4vw;
-				margin-bottom: 4vw;
-				font-size: 2.5vw;
-				font-weight: 900;
-			}
-			
-			.bg_img {
-				width: 100%;
-				height: 20vw;
-				background-image: url('./sign.png');
-				background-position: center center;
-				background-repeat: no-repeat;
-				background-size: 120%;
-			}
-			
-			p {
-				margin-top: 1vw;
-				margin-bottom: 1vw;
-			}
-		
-		</style>
+		<link rel="stylesheet" href="{% static 'searcher/이미지 이름.png' %}" type="text/css">
 	</head>
 	
 	<body>
-	
 		<div class="div_root">
 			<a name="top">&nbsp;</a>
 			<div class="bookInfo">
 				<div class="locationTitle"> 
-					<!--책 제목--> 세일즈맨의 죽음 / 아서 밀러 지음 ; 이선숙 옮김. <br/>
-				<p class="callNum"> 청구기호&nbsp; <span style="font-family: Gothic A1; font-weight: 700;">042.52 M612dKo3</span> </p>
+					<!--책 제목--> title <br/>
+					<p class="callNumber"> 청구기호&nbsp;<span style="font-family: Gothic A1; font-weight: 700;">callNumber</span></p>
 				</div>
 				
 				<div class="shelfInfo">
 					<div class="shelfFaceL"> <!--서가 면--> B </div> 
-					<div class="bookshelfNum"> <!--서가번호--> <span class="directionFace">←</span> 014 <span class="directionFace hLightDirection"> → </span></div>
-					<div class="shelfFaceR"> <!--서가 면--> A </div>
-					<div class="underline"> &nbsp; </div>
-					<div class="category"> <!--대분류--> 000 총류 [General works] </div>
-					<div style="width: 90%; height: 0.3vw; background-color: black; margin-top: 1vw; margin-left: auto; margin-right: auto;"><!--구분선--></div> 
+					<div class="bookshelf"> <!--서가번호--> <span class="directionFaceL">←</span> bookshelf <span class="directionFaceR hLightDirection"> → </span></div>
+					<div class="shelfFaceR"> <!--서가 면--> A </div>>
+					<div class="category"> <!--대분류--> category </div>
+					<div class="underline"><!--구분선--></div> 
 					<div class="bg_img"> 
 						<div class="callNumberLeft"> 
-							<p><!--첫청구기호--> 070.4 C </p>
-							<p><!--끝청구기호--> ~070.92 F </p>
+							<p><!--첫청구기호-->B_callNumS</p>
+							<p><!--끝청구기호-->~B_callNumE</p>
 						</div>
 						<div class="callNumberRight"> 
-							<p><!--첫청구기호--> 041 H </p>
-							<p><!--~끝청구기호--> ~070.4 B </p>
+							<p><!--첫청구기호-->A_callNumS</p>
+							<p><!--~끝청구기호-->~A_callNumE</p>
 						</div>
 					</div>
 				</div>
-				
 			</div>
 			
 			<div><p>&nbsp;</p></div>
 			<p style="text-align: center; font-size: 3vw; font-weight:700; color: rgb(140,140,140);"> 도서 위치</p> 
-			<p class="locationSub"> 3층 단행본 1자료실&nbsp;<span style="color: #e52505">14A</span>번 서가 <span style="color: #e52505">3</span>번째 칸</p> 
+			<p class="locationSub"> room&nbsp;
+				<span style="color: #e52505">bookshelf+shelfFace</span>번 서가 
+				<span style="color: #e52505">bookshelfNum</span>번째 칸</p> 
 			<div><p>&nbsp;</p></div>
-			<p style="text-align: center; font-size: 3vw; font-weight:700; color: rgb(140,140,140);">서가위치 (단행본 1자료실) ↓</p>
+			<p style="text-align: center; font-size: 3vw; font-weight:700; color: rgb(140,140,140);">서가 위치</p>
 			
 			<div class="map">
 				<div class="left">
@@ -956,11 +597,6 @@
 		  			</table>
 				</div>
 			</div>
-			
-			<!--<div style="position: fixed; bottom: 3vw; right: 4vw;">-->
-			<!--	<a href="#top"><img src="./top btn.png" width=60vw height=40vw></a>	-->
-			<!--</div>-->
-			
 		</div>
 			
 	<script>
