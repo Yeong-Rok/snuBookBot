@@ -68,35 +68,63 @@ def getResults(driver):
         driver.quit()
 
 
+import pycurl
+from io import BytesIO
+from bs4 import BeautifulSoup
+import time
+
 @csrf_exempt
 def search(request):
     start = time.time()
     if request.method == 'POST':
         req = json.loads(request.body)
         reqTitle = req["action"]["detailParams"]["title"]["value"]
-        response = searchTitle(reqTitle)
-        html = response.text
-        soup = BeautifulSoup(html, 'html.parser')
-        titles = soup.select('.EXLResultTitle')
-        index = 0
-        results = {}
-        for t in titles:
-            results[index] = t.text
-            print(results[index])
-            index += 1
-        answer = results[0]
+        
+        buffer = BytesIO()
+
+        # Curl 객체 생성
+        c = pycurl.Curl()
+
+        #헤더 설정
+        c.setopt(pycurl.HTTPHEADER, [
+            "User-Agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5)\
+                    AppleWebKit 537.36 (KHTML, like Gecko) Chrome",
+            "Accept:text/html,application/xhtml+xml,application/xml;\
+                    q=0.9,imgwebp,*/*;q=0.8"
+                    ])
+
+        # url 인코딩
+        reqUrl = (url + 'title' + others + reqTitle).encode('UTF-8')
+        #대상 Url 설정
+        c.setopt(c.URL, reqUrl)
+
+        # 결과로 반환된 값을 저장할 buffer 지정
+        # ByteIO를 사용할 것을 권장
+        c.setopt(c.WRITEDATA, buffer)
+
+        # SSL 인증서 확인 무시
+        c.setopt(c.SSL_VERIFYPEER, False)
+
+        # 웹에 접근한 후, 세션을 종료하는 코드
+        c.perform()
+        c.close()
+
+        #저장된 데이터를 Bs4 객체에 넣어 파싱 및 출력
+        body = buffer.getvalue().decode('utf-8')
+        soup = BeautifulSoup(body, 'html.parser')
+        obj = soup.find("h2",{"class":"EXLResultTitle"}).text
         res = {
-                "version": "2.0",
-                "template": {
-                    "outputs": [
-                        {
-                            "simpleText": {
-                                "text": 'answer'
-                            }
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "simpleText": {
+                            "text": obj
                         }
-                    ]
-                }
+                    }
+                ]
             }
+        }
         print("time :", time.time() - start)
         return JsonResponse(res)
 
