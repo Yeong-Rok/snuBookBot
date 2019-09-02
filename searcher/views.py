@@ -1,15 +1,8 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+from .models import Result
 import json
-
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
-from selenium.common.exceptions import TimeoutException
-
 import requests
 from bs4 import BeautifulSoup
 import time
@@ -37,22 +30,57 @@ def search(request):
     start = time.time()
     if request.method == 'POST':
         req = json.loads(request.body)
-        reqTitle = req["action"]["detailParams"]["title"]["value"]
-        response = searchTitle(reqTitle)
+        req_user_id = req["userRequest"]["user"]["id"]
+        req_title = req["action"]["detailParams"]["title"]["value"]
+        # Result.objects.create(user_id = req_user_id, req_title = req_title)
         res = {
                 "version": "2.0",
                 "template": {
                     "outputs": [
                         {
                             "simpleText": {
-                                "text": 'answer'
+                                "text": '검색 중입니다...'
                             }
+                        },
+                        {
+                            "simpleText": {
+                                "text": "두 번째 답변입니다."
+                            }
+                        }
+                    ],
+                    "quickReplies": [
+                        {
+                            "label": "결과 보기",
+                            "action": "message",
+                            "messageText": "'" + req_title + "' 검색 결과 보기"
                         }
                     ]
                 }
             }
         print("time :", time.time() - start)
         return JsonResponse(res)
+
+@csrf_exempt
+def result(request):
+    if request.method == 'POST':
+        req = json.loads(request.body)
+        req_user_id = req["userRequest"]["user"]["id"]
+        # res_title = Result.objects.get(user_id = req_user_id)
+        # print(res_title)
+        res = {
+                "version": "2.0",
+                "template": {
+                    "outputs": [
+                        {
+                            "simpleText": {
+                                "text": '잠깐만요 작업중이에요'
+                            }
+                        }
+                    ]
+                }
+            }
+        return JsonResponse(res)
+
 
 @csrf_exempt
 def getPosition(request):

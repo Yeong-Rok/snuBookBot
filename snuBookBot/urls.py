@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', searcher.views.index, name='index'),
     path('search/', searcher.views.search, name='search'),
+    path('result/', searcher.views.result, name='result'),
     path('position/', searcher.views.getPosition, name='getPosition'),
     path('room/', include('searcher.urls')),
 ]
