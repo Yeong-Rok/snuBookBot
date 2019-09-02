@@ -4,7 +4,15 @@ from django.db import models
 class Result(models.Model):
     user_id = models.CharField(max_length=256)
     req_title = models.TextField()
-    res_title = models.TextField(blank=True, null=True)
+    #res_title = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return self.search_result
+        return self.req_title
+
+
+class Response(models.Model):
+    user_id = models.CharField(max_length=256)
+    res_title = models.TextField()
+
+    def __str__(self):
+        return self.res_title

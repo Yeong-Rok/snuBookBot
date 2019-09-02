@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from .models import Result
+from .models import Result, Response
 import json
 import requests
 from bs4 import BeautifulSoup
@@ -27,12 +27,11 @@ def searchCreator(target):
 
 @csrf_exempt
 def search(request):
-    start = time.time()
     if request.method == 'POST':
         req = json.loads(request.body)
         req_user_id = req["userRequest"]["user"]["id"]
         req_title = req["action"]["detailParams"]["title"]["value"]
-        # Result.objects.create(user_id = req_user_id, req_title = req_title)
+        Result.objects.create(user_id = req_user_id, req_title = req_title)
         res = {
                 "version": "2.0",
                 "template": {
@@ -44,7 +43,7 @@ def search(request):
                         },
                         {
                             "simpleText": {
-                                "text": "두 번째 답변입니다."
+                                "text": "'" + req_title +  "'에 대한 검색을 완료했습니다. 결과를 확인하시려면 '결과 보기'를 눌러주세요."
                             }
                         }
                     ],
@@ -52,12 +51,11 @@ def search(request):
                         {
                             "label": "결과 보기",
                             "action": "message",
-                            "messageText": "'" + req_title + "' 검색 결과 보기"
+                            "messageText": "결과 보기"
                         }
                     ]
                 }
             }
-        print("time :", time.time() - start)
         return JsonResponse(res)
 
 @csrf_exempt
@@ -65,15 +63,14 @@ def result(request):
     if request.method == 'POST':
         req = json.loads(request.body)
         req_user_id = req["userRequest"]["user"]["id"]
-        # res_title = Result.objects.get(user_id = req_user_id)
-        # print(res_title)
+        res_title = Response.objects.filter(user_id = req_user_id).last().res_title
         res = {
                 "version": "2.0",
                 "template": {
                     "outputs": [
                         {
                             "simpleText": {
-                                "text": '잠깐만요 작업중이에요'
+                                "text": res_title
                             }
                         }
                     ]
