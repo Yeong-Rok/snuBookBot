@@ -14,8 +14,19 @@ def result_post_save(sender, **kwargs):
     html = response.text
     soup = BeautifulSoup(html, 'html.parser')
     titles = soup.select('.EXLResultTitle')
+    availabilities = soup.select('.EXLResultAvailability')
 
-    Response.objects.create(user_id = req_user_id, res_title =  titles[0].text)
+    Response.objects.create(
+            user_id = req_user_id,
+            title = titles[0].text,
+            availability = availabilities[0].text,
+
+            title1 = titles[1].text,
+            availability1 = availabilities[1].text,
+
+            title2 = titles[2].text,
+            availability2 = availabilities[2].text,
+    )
 
 
 url = 'https://primoapac01.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?ct=facet&fctN=facet_library&fctV=MAIN&rfnGrp=1&rfnGrpCounter=1&frbg=&vl(19022558UI4)=books&&indx=1&fn=search&dscnt=0&vl(1UIStartWith0)=contains&tb=t&mode=Advanced&vid=82SNU&ct=search&vl(D15540194UI3)=all_items&vl(19016099UI0)='

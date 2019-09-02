@@ -63,14 +63,39 @@ def result(request):
     if request.method == 'POST':
         req = json.loads(request.body)
         req_user_id = req["userRequest"]["user"]["id"]
-        res_title = Response.objects.filter(user_id = req_user_id).last().res_title
+        result = Response.objects.filter(user_id = req_user_id).last()
         res = {
                 "version": "2.0",
                 "template": {
                     "outputs": [
                         {
-                            "simpleText": {
-                                "text": res_title
+                            "listCard": {
+                                "header": {
+                                    "title": "검색 결과"
+                                },
+                                "items": [
+                                    {
+                                        "title": result.title,
+                                        "description": result.availability,
+                                        "link": {
+                                            "web": "https://lib.snu.ac.kr"
+                                        }
+                                    },
+                                    {
+                                        "title": result.title1,
+                                        "description": result.availability1,
+                                        "link": {
+                                            "web": "https://lib.snu.ac.kr"
+                                        }
+                                    },
+                                    {
+                                        "title": result.title2,
+                                        "description": result.availability2,
+                                        "link": {
+                                            "web": "https://lib.snu.ac.kr"
+                                        }
+                                    },
+                                ]
                             }
                         }
                     ]

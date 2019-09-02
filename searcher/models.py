@@ -12,7 +12,14 @@ class Result(models.Model):
 
 class Response(models.Model):
     user_id = models.CharField(max_length=256)
-    res_title = models.TextField()
+    title = models.TextField()
+    availability = models.CharField(max_length=256)
+ 
+    title1 = models.TextField(blank=True, null=True)
+    availability1 = models.CharField(max_length=256, blank=True, null=True)
+
+    title2 = models.TextField(blank=True, null=True)
+    availability2 = models.CharField(max_length=256, blank=True, null=True)
 
     def __str__(self):
-        return self.res_title
+        return self.title
