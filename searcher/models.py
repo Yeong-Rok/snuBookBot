@@ -8,9 +8,9 @@ class Title(models.Model):
     def __str__(self):
         return self.user_id
 
-class Creator(models.Model):
+class Author(models.Model):
     user_id = models.CharField(max_length=256)
-    creator = models.CharField(max_length=256)
+    author = models.CharField(max_length=256)
 
     def __str__(self):
         return self.user_id
