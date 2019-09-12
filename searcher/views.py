@@ -63,96 +63,106 @@ def result(request):
         req_user_id = req["userRequest"]["user"]["id"]
         result = Response.objects.filter(user_id = req_user_id).last()
         res = {
-                "version": "2.0",
-                "template": {
-                    "outputs": [
-                        {
-                            "carousel": {
-                                "type": "basicCard",
-                                "items": []
-                            }
-                        }, 
-                    ],
-                    "quickReplies": [
-                        {
-                            "label": "다른 책 찾기",
-                            "action": "message",
-                            "messageText": "다른 책 찾기"
-                        },
-                        {
-                            "label": "처음으로",
-                            "action": "message",
-                            "messageText": "처음으로"
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "carousel": {
+                            "type": "basicCard",
+                            "items": []
                         }
-                    ]
-                },
-                "context": {
-                    
-                }
-            }
-        
-        if (result.title0 != None):
-                    card = {
-                        "title": result.title0,
-                        "description": result.detail0,
+                    },
+                ],
+                "quickReplies": [
+                    {
+                        "label": "다른 책 찾기",
+                        "action": "message",
+                        "messageText": "다른 책 찾기"
+                    },
+                    {
+                        "label": "처음으로",
+                        "action": "message",
+                        "messageText": "처음으로"
                     }
-                    res["template"]["outputs"][0]["carousel"]["items"].append(card)
+                ]
+            },
+            "context": {
+
+            }
+        }
+
+        if (result.title0 is None):
+            card = {
+                "title": "검색 결과가 없습니다."
+            }
+            res["template"]["outputs"][0]["carousel"]["items"].append(card)
+
+            return JsonResponse(res)
+
+
+        if (result.title0 != None):
+            card = {
+                "title": result.title0,
+                "description": result.detail0,
+            }
+            res["template"]["outputs"][0]["carousel"]["items"].append(card)
 
 
         if (result.title1 != None):
-                    card = {
-                        "title": result.title1,
-                        "description": result.detail1,
-                    }
-                    res["template"]["outputs"][0]["carousel"]["items"].append(card)
+            card = {
+                "title": result.title1,
+                "description": result.detail1,
+            }
+            res["template"]["outputs"][0]["carousel"]["items"].append(card)
 
         if (result.title2 != None):
-                    card = {
-                        "title": result.title2,
-                        "description": result.detail2,
-                    }
-                    res["template"]["outputs"][0]["carousel"]["items"].append(card)
+            card = {
+                "title": result.title2,
+                "description": result.detail2,
+            }
+            res["template"]["outputs"][0]["carousel"]["items"].append(card)
+
         if (result.title4 != None):
-                    card = {
-                        "title": result.title4,
-                        "description": result.detail4,
-                    }
-                    res["template"]["outputs"][0]["carousel"]["items"].append(card)
+            card = {
+                "title": result.title4,
+                "description": result.detail4,
+            }
+            res["template"]["outputs"][0]["carousel"]["items"].append(card)
 
         if (result.title5 != None):
-                    card = {
-                        "title": result.title5,
-                        "description": result.detail5,
-                    }
-                    res["template"]["outputs"][0]["carousel"]["items"].append(card)
+            card = {
+                "title": result.title5,
+                "description": result.detail5,
+            }
+            res["template"]["outputs"][0]["carousel"]["items"].append(card)
 
         if (result.title6 != None):
-                    card = {
-                        "title": result.title6,
-                        "description": result.detail6,
-                    }
-                    res["template"]["outputs"][0]["carousel"]["items"].append(card)
+            card = {
+                "title": result.title6,
+                "description": result.detail6,
+            }
+            res["template"]["outputs"][0]["carousel"]["items"].append(card)
 
         if (result.title7 != None):
-                    card = {
-                        "title": result.title7,
-                        "description": result.detail7,
-                    }
-                    res["template"]["outputs"][0]["carousel"]["items"].append(card)
+            card = {
+                "title": result.title7,
+                "description": result.detail7,
+            }
+            res["template"]["outputs"][0]["carousel"]["items"].append(card)
 
         if (result.title8 != None):
-                    card = {
-                        "title": result.title8,
-                        "description": result.detail8,
-                    }
-                    res["template"]["outputs"][0]["carousel"]["items"].append(card)
+            card = {
+                "title": result.title8,
+                "description": result.detail8,
+            }
+            res["template"]["outputs"][0]["carousel"]["items"].append(card)
 
         if (result.title9 != None):
-                    card = {
-                        "title": result.title9,
-                        "description": result.detail9,
-                    }
-                    res["template"]["outputs"][0]["carousel"]["items"].append(card)
+            card = {
+                "title": result.title9,
+                "description": result.detail9,
+            }
+            res["template"]["outputs"][0]["carousel"]["items"].append(card)
 
         if (result.more):
             card = {

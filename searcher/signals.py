@@ -10,25 +10,35 @@ from bs4 import BeautifulSoup
 def title_post_save(sender, **kwargs):
     req = kwargs['instance']
     response = search_title(req.title)
-    result = parse(response)
+    books = select_books(response)
+    books_length = len(books)
+    is_more = True if books_length > 10 else False
+    result = parse(books, books_length)
     url = get_title_url(req.title)
-    create_response(result, req.user_id, url)
+    create_response(result, req.user_id, url, is_more)
 
 @receiver(post_save, sender = Author)
 def author_post_save(sender, **kwargs):
     req = kwargs['instance']
     response = search_author(req.author)
-    result = parse(response)
+    books = select_books(response)
+    books_length = len(books)
+    is_more = True if books_length > 10 else False
+    result = parse(books, books_length)
     url = get_author_url(req.author)
-    create_response(result, req.user_id, url)
+    create_response(result, req.user_id, url, is_more)
 
-def parse(response):
+def select_books(response):
     html = response.text
     soup = BeautifulSoup(html, 'html.parser')
     books = soup.select('.EXLSummaryFields')
+
+    return books
+
+def parse(books, books_length):
     result = []
     for i in range(9):
-        if (i >= len(books)):
+        if (i >= books_length):
             break
         author = books[i].select('.EXLResultAuthor') 
         detail = books[i].select('.EXLResultAvailability')[0]
@@ -48,10 +58,11 @@ def parse(response):
 
     return result
 
-def create_response(result, _user_id, _url):
+def create_response(result, _user_id, _url, is_more):
     Response.objects.create(
         user_id = _user_id,
         url = _url,
+        more = is_more,
 
         title0 = result[0]['title'] if len(result) > 0 else None,
         detail0 = result[0]['availability'] + ": " + result[0]['author'] + " ; " + result[0]['publisher'] if len(result) > 0 else None,
@@ -93,8 +104,6 @@ def create_response(result, _user_id, _url):
         title9 = result[9]['title'] if len(result) > 9 else None,
         detail9 = result[9]['availability'] + ": " + result[9]['author'] + " ; " + result[9]['publisher'] if len(result) > 9 else None,
         callNumber9 = result[9]['callNumber'] if len(result) > 9 else None,
-
-        more = True if len(books) > 10 else False
     )
 
 url = 'https://primoapac01.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?ct=facet&fctN=facet_library&fctV=MAIN&rfnGrp=1&rfnGrpCounter=1&frbg=&vl(19022558UI4)=books&&indx=1&fn=search&dscnt=0&vl(1UIStartWith0)=contains&tb=t&mode=Advanced&vid=82SNU&ct=search&vl(D15540194UI3)=all_items&vl(19016099UI0)='
@@ -104,10 +113,10 @@ def search_title(target):
     return requests.get(url + 'title' + others + target)
 
 def search_author(target):
-    return requests.get(url + 'author' + others + target)
+    return requests.get(url + 'creator' + others + target)
 
 def get_title_url(target):
     return url + 'title' + others + target
 
 def get_author_url(target):
-    return url + 'author' + others + target
+    return url + 'creator' + others + target
